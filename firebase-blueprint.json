@@ -1,0 +1,121 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "A luxury couture clothing design in the Vastra catalog with unique code, pricing structure, and category relations.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "code": { "type": "string", "maxLength": 64, "pattern": "^[A-Z0-9\\-]+$", "description": "Unique atelier garment code (e.g. VAS-WED-001)" },
+        "name": { "type": "string", "maxLength": 200, "description": "Garment design name" },
+        "category": { "type": "string", "maxLength": 100, "description": "Display name of garment category" },
+        "categoryId": { "type": "string", "maxLength": 128, "description": "Relational identifier linking to /categories/{categoryId}" },
+        "occasion": { "type": "string", "maxLength": 100, "description": "Ceremonial occasion" },
+        "gender": { "type": "string", "maxLength": 50, "enum": ["Couples", "Women", "Men", "Kids", "Unisex"] },
+        "description": { "type": "string", "maxLength": 1500, "description": "Curated garment narrative" },
+        "fabric": { "type": "string", "maxLength": 500, "description": "Textile, weave, and embroidery details" },
+        "price": { "type": "string", "maxLength": 120, "description": "Display price or bespoke tier declaration" },
+        "pricingType": { "type": "string", "enum": ["bespoke", "fixed", "range", "starting_at"], "description": "Pricing tier classification" },
+        "currency": { "type": "string", "maxLength": 10, "description": "Currency code (default INR)" },
+        "basePrice": { "type": "number", "description": "Optional numeric baseline price for sorting" },
+        "colors": { "type": "array", "description": "Garment color palette tags" },
+        "sizes": { "type": "array", "description": "Available sizing options and bespoke specifications" },
+        "availableColors": { "type": "array", "description": "Available color dye variations" },
+        "image": { "type": "string", "maxLength": 500, "description": "URL to high-resolution cropped garment photograph" },
+        "fullPageImage": { "type": "string", "maxLength": 500, "description": "URL to complete original catalog page" },
+        "sourceCatalog": { "type": "string", "maxLength": 200, "description": "Source PDF filename" },
+        "sourceCatalogName": { "type": "string", "maxLength": 200, "description": "Source collection title" },
+        "sourceCatalogId": { "type": "string", "maxLength": 128, "description": "Relational identifier linking to /catalogs/{catalogId}" },
+        "sourcePage": { "type": "number", "description": "Page number within source PDF catalog" },
+        "pageFile": { "type": "string", "maxLength": 200, "description": "Local page render filename" },
+        "crop": { "type": "object", "description": "Normalized coordinates of garment bounding box on catalog page" },
+        "published": { "type": "boolean", "description": "Showroom publication status" },
+        "featured": { "type": "boolean", "description": "Featured placement flag" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "code", "name", "category", "categoryId", "occasion", "price", "image", "published"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Couture classification defining garments, gender, applicable occasions, and atelier craftsmanship metadata.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "name": { "type": "string", "maxLength": 100, "description": "Category display title" },
+        "slug": { "type": "string", "maxLength": 100, "pattern": "^[a-z0-9\\-]+$", "description": "URL slug for category navigation" },
+        "description": { "type": "string", "maxLength": 1000, "description": "Category design ethos and description" },
+        "gender": { "type": "string", "maxLength": 50, "enum": ["Couples", "Women", "Men", "Kids", "Unisex"] },
+        "applicableOccasions": { "type": "array", "description": "Ceremonial occasions featuring garments from this category" },
+        "displayOrder": { "type": "number", "description": "Display order in category navigation" },
+        "featuredImage": { "type": "string", "maxLength": 500, "description": "Hero preview image URL" },
+        "productCount": { "type": "number", "description": "Number of available designs" },
+        "isFeatured": { "type": "boolean", "description": "Flag for featured prominence" },
+        "tags": { "type": "array", "description": "Craftsmanship and style keywords" },
+        "metadata": { "type": "object", "description": "Atelier craftsmanship specifications, consultation specs, and lead times" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "name", "slug", "description", "gender", "displayOrder"]
+    },
+    "Catalog": {
+      "title": "Catalog",
+      "description": "An authoritative occasion PDF lookbook catalog with metadata and download links.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "title": { "type": "string", "maxLength": 200, "description": "Collection lookbook title" },
+        "occasion": { "type": "string", "maxLength": 100, "description": "Ceremony occasion" },
+        "filename": { "type": "string", "maxLength": 200, "description": "Source PDF file name" },
+        "url": { "type": "string", "maxLength": 500, "description": "Public download and viewing URL" },
+        "coverImage": { "type": "string", "maxLength": 500, "description": "Cover page thumbnail URL" },
+        "previewPage": { "type": "string", "maxLength": 500, "description": "Showcase inner spread preview URL" },
+        "pageCount": { "type": "number", "description": "Total pages in PDF document" },
+        "description": { "type": "string", "maxLength": 1000, "description": "Collection narrative" },
+        "tags": { "type": "array", "description": "Search and occasion tags" },
+        "productCount": { "type": "number", "description": "Number of garments cataloged from this PDF" },
+        "published": { "type": "boolean", "description": "Publication status" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "title", "occasion", "filename", "url", "coverImage", "pageCount"]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Customer bespoke tailoring or order consultation request.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "customerName": { "type": "string", "maxLength": 200 },
+        "contactNumber": { "type": "string", "maxLength": 50 },
+        "email": { "type": "string", "maxLength": 100 },
+        "productId": { "type": "string", "maxLength": 128 },
+        "productName": { "type": "string", "maxLength": 200 },
+        "productCode": { "type": "string", "maxLength": 64 },
+        "requestedSize": { "type": "string", "maxLength": 50 },
+        "requestedColor": { "type": "string", "maxLength": 100 },
+        "message": { "type": "string", "maxLength": 2000 },
+        "status": { "type": "string", "enum": ["New", "Contacted", "Completed", "Archived"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "customerName", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Clothing collection designs displayed in the showroom with product codes, bespoke pricing, and category metadata."
+    },
+    "/categories/{categoryId}": {
+      "schema": "Category",
+      "description": "Couture categories including gender classifications, occasion mapping, and atelier craftsmanship metadata."
+    },
+    "/catalogs/{catalogId}": {
+      "schema": "Catalog",
+      "description": "Occasion lookbook PDF documents and metadata."
+    },
+    "/inquiries/{inquiryId}": {
+      "schema": "Inquiry",
+      "description": "Customer order consultations and bespoke atelier inquiries."
+    }
+  }
+}

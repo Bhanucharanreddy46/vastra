@@ -1,0 +1,14 @@
+{
+  "name": "vastra",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Build successful'"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sharp": "^0.35.5"
+  }
+}

@@ -1,0 +1,773 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Vastra — Luxury Fashion Brand</title>
+<meta name="description" content="Vastra is an upcoming luxury fashion house blending timeless craftsmanship, contemporary design, and refined elegance.">
+<meta name="theme-color" content="#11100E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vastra">
+<meta property="og:title" content="Vastra — Luxury Fashion Brand">
+<meta property="og:description" content="Vastra is an upcoming luxury fashion house blending timeless craftsmanship, contemporary design, and refined elegance.">
+<!-- When you host the site, add your absolute URLs here:
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+<meta property="og:image" content="https://YOUR-DOMAIN/images/og-vastra.jpg">  (1200×630, wordmark in ivory on charcoal)
+<meta name="twitter:card" content="summary_large_image"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Sanskrit&display=swap">
+
+<script>
+/* ============================================================
+   CENTRAL CONFIGURATION — change everything here.
+   ============================================================ */
+const CONFIG = {
+  BRAND_NAME: "Vastra",
+  LAUNCH_DATE: "2026-12-12T11:00:00+05:30",        // ISO date-time; the countdown reads only this
+  EMAIL: "himanandan@myvastra.in",
+  INSTAGRAM_URL: "https://www.instagram.com/",      // placeholder: replace with the brand profile
+  /* Newsletter: set this to your provider's endpoint (Mailchimp, Brevo, ConvertKit,
+     Formspree, or your own API). The form POSTs JSON: { email, source }.
+     Any 2xx response is treated as success. */
+  SUBSCRIBE_ENDPOINT: "",
+  /* While SUBSCRIBE_ENDPOINT is empty, PREVIEW_MODE lets you see the loading and
+     success states. It stores nothing and says so in the modal. Set false to
+     show an honest "not open yet" error instead. */
+  PREVIEW_MODE: true
+};
+document.documentElement.classList.add("js");
+</script>
+
+<style>
+/* Layout: one centred, full-height cover page, then a slow asymmetric editorial scroll
+   on a 12-column grid; a single ivory "page" interrupts the charcoal. */
+:root{
+  color-scheme: dark;
+  --ink:#11100E;          /* deep charcoal ground */
+  --ink-2:#191714;        /* raised surfaces */
+  --ivory:#F1EADB;        /* primary text */
+  --champagne:#D9C7A3;    /* accent */
+  --gold:#B39A6B;         /* muted gold, hairlines and details */
+  --beige:#A69B86;        /* secondary text on charcoal */
+  --umber:#6A5F50;        /* secondary text on ivory */
+  --line:rgba(241,234,219,.14);
+  --line-dark:rgba(17,16,14,.16);
+  --wash:rgba(217,199,163,.08);
+  --error:#E0A48E;
+
+  --display:"Bodoni Moda","Didot","Bodoni 72","Playfair Display",Georgia,serif;
+  --sans:"Jost","Avenir Next","Century Gothic","Helvetica Neue",Arial,sans-serif;
+  --deva:"Tiro Devanagari Sanskrit","Kohinoor Devanagari","Noto Serif Devanagari",serif;
+
+  --gutter:clamp(20px,5vw,76px);
+  --ease:cubic-bezier(.22,.7,.2,1);
+  --track:.22em;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{background:var(--ink);color:var(--ivory);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,figure{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:1px solid var(--champagne);outline-offset:5px}
+::selection{background:var(--champagne);color:var(--ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+.label{font-family:var(--sans);font-size:.6875rem;font-weight:400;letter-spacing:.34em;text-transform:uppercase}
+.serif-it{font-family:var(--display);font-style:italic;font-weight:400}
+
+/* animated underline for text links */
+.u{position:relative;display:inline-block;padding-block:6px}
+.u::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.u:hover::after,.u:focus-visible::after{transform:scaleX(1);transform-origin:left}
+
+/* film grain / textile texture */
+.grain{position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.09;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- loader ---------- */
+.loader{position:fixed;inset:0;z-index:200;background:var(--ink);display:none;place-items:center;transition:opacity 1s var(--ease),visibility 0s 1s}
+.js .loader{display:grid}
+.loader__in{display:grid;justify-items:center;gap:18px;transition:transform 1.1s var(--ease),opacity .9s var(--ease),letter-spacing 1.1s var(--ease)}
+.loader__mark{font-family:var(--display);font-size:clamp(1.7rem,5vw,2.6rem);letter-spacing:.3em;text-indent:.3em;text-transform:uppercase}
+.loader__est{color:var(--beige)}
+.loader__bar{width:120px;height:1px;background:var(--line);overflow:hidden}
+.loader__bar i{display:block;height:100%;background:var(--champagne);transform:scaleX(0);transform-origin:left;animation:fill 1.4s var(--ease) .1s forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+.is-ready .loader{opacity:0;visibility:hidden;pointer-events:none}
+.is-ready .loader__in{transform:scale(1.5);opacity:0}
+
+/* ---------- navigation ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;
+  padding:calc(env(safe-area-inset-top,0px) + 22px) var(--gutter) 22px;transition:background-color .6s var(--ease),padding .6s var(--ease)}
+.nav.is-solid{background:var(--ink);padding-block:calc(env(safe-area-inset-top,0px) + 14px) 14px;box-shadow:0 1px 0 var(--line)}
+.nav__brand{font-family:var(--display);font-size:1.05rem;letter-spacing:.3em;text-transform:uppercase}
+.nav__links{display:flex;gap:clamp(22px,3.4vw,46px);color:var(--beige)}
+.nav__links a{transition:color .4s var(--ease)}
+.nav__links a:hover,.nav__links a:focus-visible{color:var(--ivory)}
+.burger{display:none;width:44px;height:44px;margin-right:-10px;place-items:center}
+.burger span{display:block;width:24px;height:1px;background:var(--ivory);box-shadow:0 7px 0 var(--ivory);transform:translateY(-3.5px)}
+@media (max-width:760px){.nav__links{display:none}.burger{display:grid}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-rows:1fr auto;isolation:isolate;overflow:hidden}
+.hero__bg{position:absolute;inset:0;z-index:-1}
+.hero__bg canvas{width:100%;height:100%;display:block;transform:scale(1.06)}
+.hero__bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 46%,transparent 0,rgba(17,16,14,.55) 62%,var(--ink) 100%)}
+.hero__center{display:grid;justify-items:center;align-content:center;text-align:center;gap:clamp(18px,2.6vh,30px);padding:120px var(--gutter) 40px}
+.wordmark{font-family:var(--display);font-weight:400;font-size:clamp(3.1rem,13vw,11rem);line-height:1;letter-spacing:var(--track);text-indent:var(--track);text-transform:uppercase;white-space:nowrap}
+.hero__soon{font-size:clamp(.75rem,1.1vw,.9rem);letter-spacing:.62em;text-indent:.62em;color:var(--champagne)}
+.hero__rule{width:1px;height:clamp(28px,5vh,54px);background:linear-gradient(var(--gold),transparent)}
+.hero__line{color:var(--ivory);letter-spacing:.3em}
+.hero__sub{font-size:clamp(1.05rem,1.5vw,1.3rem);color:var(--beige);max-width:34ch;line-height:1.5}
+.hero__foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:16px;padding:0 var(--gutter) 28px;color:var(--beige)}
+.hero__deva{font-family:var(--deva);font-size:1.25rem;letter-spacing:.04em;color:var(--champagne);display:flex;align-items:baseline;gap:14px}
+.hero__deva small{font-family:var(--sans);font-size:.6875rem;letter-spacing:.3em;text-transform:uppercase;color:var(--beige)}
+.hero__scroll{justify-self:end}
+@media (max-width:760px){.hero__foot{grid-template-columns:1fr;justify-items:center}.hero__deva,.hero__scroll{display:none}}
+
+/* CTA */
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 34px;border:1px solid rgba(241,234,219,.42);
+  font-size:.72rem;font-weight:400;letter-spacing:.34em;text-transform:uppercase;color:var(--ivory);
+  transition:border-color .45s var(--ease),background-color .45s var(--ease),color .45s var(--ease),padding .45s var(--ease)}
+.cta__t{transition:transform .45s var(--ease)}
+.cta__a{display:inline-block;width:0;opacity:0;overflow:hidden;transform:translateX(-8px);transition:width .45s var(--ease),opacity .45s var(--ease),transform .45s var(--ease)}
+.cta:hover,.cta:focus-visible{border-color:var(--champagne);background:var(--wash);color:var(--champagne)}
+.cta:hover .cta__a,.cta:focus-visible .cta__a{width:1.9em;opacity:1;transform:none}
+.cta:hover .cta__t,.cta:focus-visible .cta__t{transform:translateX(-2px)}
+.cta[disabled]{opacity:.6;cursor:progress}
+.cta--full{width:100%}
+.whatsapp-inquire-link{display:inline-flex;align-items:center;gap:9px;font-size:.73rem;letter-spacing:.26em;text-transform:uppercase;color:var(--champagne);padding:10px 24px;border:1px solid rgba(217,199,163,.36);border-radius:999px;transition:all .4s var(--ease);text-decoration:none}
+.whatsapp-inquire-link svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+.whatsapp-inquire-link:hover,.whatsapp-inquire-link:focus-visible{background:var(--wash);border-color:var(--champagne);color:var(--ivory);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+
+
+/* hero load sequence (runs once the loader lifts) */
+.js .seq{opacity:0}
+.js .hero__bg{opacity:0}
+.is-ready .hero__bg{animation:bgin 2.8s var(--ease) forwards}
+.is-ready .seq{animation:rise 1.4s var(--ease) both;animation-delay:calc(var(--i)*.28s + .25s)}
+.is-ready .wordmark.seq{animation-name:markin;animation-duration:2s}
+@keyframes bgin{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(18px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+@keyframes markin{from{opacity:0;transform:translateY(22px);filter:blur(12px);letter-spacing:.42em;text-indent:.42em}to{opacity:1;transform:none;filter:none;letter-spacing:var(--track);text-indent:var(--track)}}
+
+/* ---------- shared section scaffolding ---------- */
+.section{padding:clamp(96px,16vh,200px) var(--gutter)}
+.section[id],#top{scroll-margin-top:60px}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2.4vw,40px);max-width:1680px;margin-inline:auto}
+.js [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease);transition-delay:var(--d,0s)}
+.js [data-reveal].is-in{opacity:1;transform:none}
+
+/* ---------- about (the ivory page) ---------- */
+.about{background:var(--ivory);color:var(--ink)}
+.about .label{color:var(--umber);grid-column:1/4;padding-top:.9em}
+.about__body{grid-column:5/12;display:grid;gap:clamp(28px,5vh,56px)}
+.about__lead{font-family:var(--display);font-weight:400;font-size:clamp(1.75rem,3.7vw,3.5rem);line-height:1.22;letter-spacing:-.005em;text-wrap:balance}
+.about__lead em{font-style:italic}
+.about__note{font-size:1.15rem;color:var(--umber);max-width:38ch;padding-top:26px;border-top:1px solid var(--line-dark)}
+@media (max-width:860px){.about .label,.about__body{grid-column:1/-1}.about .label{padding-bottom:32px}}
+
+/* ---------- philosophy ---------- */
+.tenets{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:clamp(16px,2.4vw,40px)}
+.tenet{border-top:1px solid var(--line);padding-top:26px;display:grid;gap:14px;align-content:start}
+.tenet:nth-child(2){margin-top:clamp(40px,9vh,120px)}
+.tenet:nth-child(3){margin-top:clamp(80px,18vh,240px)}
+.tenet h3{font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,5vw,4.6rem);letter-spacing:.08em;line-height:1;text-transform:uppercase}
+.tenet p{font-size:clamp(1.05rem,1.4vw,1.3rem);color:var(--champagne)}
+.tenet span{color:var(--beige)}
+@media (max-width:760px){.tenets{grid-template-columns:1fr;row-gap:64px}.tenet:nth-child(n){margin-top:0}}
+
+/* ---------- plates ---------- */
+.plates{padding-top:0}
+.plate{display:grid;gap:16px}
+.plate__frame{display:block;width:100%;position:relative;overflow:hidden;background:var(--ink-2);max-width:100%}
+.js .plate__frame{clip-path:inset(100% 0 0 0);transition:clip-path 1.6s var(--ease)}
+.js .plate.is-in .plate__frame{clip-path:inset(0)}
+.plate__shift{position:absolute;inset:-9% 0;will-change:transform}
+.plate__shift canvas{width:100%;height:100%;display:block;transition:transform 1.8s var(--ease)}
+.plate__frame:hover canvas,.plate__frame:focus-visible canvas{transform:scale(1.045)}
+.plate figcaption{display:flex;justify-content:space-between;gap:16px;color:var(--beige)}
+.plate figcaption i{font-family:var(--display);font-size:1rem;letter-spacing:0;text-transform:none;color:var(--ivory)}
+.plate--a{grid-column:1/8}.plate--a .plate__frame{aspect-ratio:4/5}
+.plate--b{grid-column:9/13;margin-top:clamp(80px,22vh,300px)}.plate--b .plate__frame{aspect-ratio:3/4}
+.plate--c{grid-column:4/9;margin-top:clamp(64px,14vh,180px)}.plate--c .plate__frame{aspect-ratio:5/4}
+.plates__note{grid-column:10/13;align-self:end;color:var(--beige);font-size:1.1rem;line-height:1.5}
+@media (max-width:760px){
+  .plate--a,.plate--b,.plate--c,.plates__note{grid-column:1/-1;margin-top:0}
+  .plates .grid{row-gap:56px}
+  .plate__frame{width:calc(100% + 2*var(--gutter));max-width:none;margin-inline:calc(-1*var(--gutter))}
+}
+
+/* ---------- countdown ---------- */
+.count{text-align:center;border-top:1px solid var(--line)}
+.count__in{display:grid;justify-items:center;gap:clamp(36px,7vh,72px)}
+.count h2,.contact h2{color:var(--champagne)}
+.count__row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:min(100%,980px)}
+.unit{display:grid;gap:14px;padding-inline:8px}
+.unit+.unit{border-left:1px solid var(--line)}
+.unit b{font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,9vw,7rem);line-height:1;font-variant-numeric:tabular-nums lining-nums}
+.unit span{color:var(--beige)}
+.count__date{color:var(--beige);font-size:1.1rem}
+@media (max-width:520px){.count__row{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:44px}.unit:nth-child(3){border-left:0}.unit span{letter-spacing:.24em}}
+
+/* ---------- contact ---------- */
+.contact{text-align:center}
+.contact__in{display:grid;justify-items:center;gap:clamp(24px,4vh,40px)}
+.contact__mail{font-family:var(--display);font-size:clamp(1.6rem,5.4vw,4.4rem);line-height:1.1;overflow-wrap:anywhere;user-select:all}
+.contact__links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px clamp(24px,5vw,56px);color:var(--beige)}
+.contact__links a,.contact__links button{min-height:44px;display:inline-flex;align-items:center;letter-spacing:.34em;text-transform:uppercase;font-size:.6875rem;font-weight:400;transition:color .4s var(--ease)}
+.contact__links a:hover,.contact__links button:hover{color:var(--ivory)}
+
+/* ---------- footer ---------- */
+.foot{border-top:1px solid var(--line);padding:clamp(56px,9vh,96px) var(--gutter) 36px;display:grid;gap:clamp(40px,7vh,72px)}
+.foot__top{display:grid;justify-items:center;gap:14px;text-align:center}
+.foot__mark{font-family:var(--display);font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:.3em;text-indent:.3em;text-transform:uppercase}
+.foot__tag{color:var(--champagne)}
+.foot__row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px 32px;color:var(--beige)}
+.foot__legal{display:flex;gap:28px}
+.foot__legal button{letter-spacing:.3em;text-transform:uppercase;font-size:.6875rem;min-height:44px}
+.foot__social{display:flex;gap:6px}
+.foot__social a,.foot__social button{width:44px;height:44px;display:grid;place-items:center;transition:color .4s var(--ease)}
+.foot__social a:hover,.foot__social button:hover{color:var(--champagne)}
+.foot__social svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.2}
+@media (max-width:760px){.foot__row{flex-direction:column;text-align:center}}
+
+/* ---------- dialogs ---------- */
+dialog{border:0;padding:0;color:var(--ivory);background:transparent;max-width:none;max-height:none}
+dialog::backdrop{background:rgba(10,9,8,.82)}
+dialog[open]{animation:dlg .6s var(--ease)}
+dialog[open]::backdrop{animation:fade .6s var(--ease)}
+@keyframes dlg{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.sheet{width:min(92vw,540px);background:var(--ink-2);border:1px solid var(--line);padding:clamp(36px,6vw,60px) clamp(24px,5vw,56px);display:grid;gap:22px;position:relative;text-align:center}
+.sheet h2{font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,4.4vw,2.1rem);letter-spacing:.14em;text-transform:uppercase;line-height:1.25;text-wrap:balance}
+.sheet p{color:var(--beige);font-size:1rem}
+.x{position:absolute;top:6px;right:6px;width:44px;height:44px;display:grid;place-items:center;color:var(--beige);transition:color .3s var(--ease),transform .5s var(--ease)}
+.x:hover{color:var(--ivory);transform:rotate(90deg)}
+.x svg{width:14px;height:14px;stroke:currentColor;stroke-width:1}
+.form{display:grid;gap:18px;margin-top:8px;text-align:left}
+.field label{display:block;color:var(--beige);margin-bottom:4px}
+.field input{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(241,234,219,.4);color:var(--ivory);font:300 1.1rem var(--sans);padding:12px 0;border-radius:0;transition:border-color .4s var(--ease)}
+.field input::placeholder{color:rgba(166,155,134,.6)}
+.field input:focus{outline:0;border-bottom-color:var(--champagne)}
+.field input[aria-invalid="true"]{border-bottom-color:var(--error)}
+.msg{min-height:1.5em;font-size:.9rem;color:var(--error)}
+.preview{font-size:.8rem;color:var(--beige);border-top:1px solid var(--line);padding-top:16px;text-align:center}
+.spin{display:none;width:12px;height:12px;border:1px solid currentColor;border-right-color:transparent;border-radius:50%;margin-right:12px;animation:spin .9s linear infinite}
+[data-state="loading"] .spin{display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.done{display:grid;gap:18px}
+.done h2{color:var(--champagne)}
+
+.menu{width:100vw;height:100dvh;background:var(--ink)}
+.menu__in{height:100%;display:grid;grid-template-rows:auto 1fr auto;padding:calc(env(safe-area-inset-top,0px) + 22px) var(--gutter) 36px}
+.menu__top{display:flex;justify-content:space-between;align-items:center}
+.menu__links{display:grid;align-content:center;gap:22px}
+.menu__links a{font-family:var(--display);font-size:clamp(2.2rem,11vw,3.6rem);letter-spacing:.1em;text-transform:uppercase;line-height:1.1;animation:rise .9s var(--ease) both;animation-delay:calc(var(--i)*.09s + .1s)}
+.menu .x{position:static;margin-right:-12px}
+.menu__foot{color:var(--beige)}
+
+.light{width:min(94vw,1100px)}
+.light__in{position:relative;display:grid;gap:14px;justify-items:center}
+.light canvas{display:block;max-width:100%;max-height:78vh;width:auto;height:78vh;background:var(--ink-2)}
+.light .x{top:-46px;right:-6px}
+.light p{color:var(--beige)}
+
+/* ---------- custom cursor (fine pointers only) ---------- */
+.cur,.cur-dot{display:none}
+@media (hover:hover) and (pointer:fine){
+  .has-cur body,.has-cur a,.has-cur button{cursor:none}
+  .has-cur dialog,.has-cur dialog *{cursor:auto}.has-cur dialog a,.has-cur dialog button{cursor:pointer}
+  .has-cur .cur,.has-cur .cur-dot{display:grid;position:fixed;left:0;top:0;z-index:100;pointer-events:none;border-radius:50%;opacity:0;transition:opacity .4s}
+  .has-cur .cur.on,.has-cur .cur-dot.on{opacity:1}
+  .cur-dot{width:5px;height:5px;margin:-2.5px;background:var(--champagne)}
+  .cur{width:34px;height:34px;margin:-17px;place-items:center}
+  .cur i{position:absolute;inset:0;border:1px solid rgba(217,199,163,.55);border-radius:50%;transition:transform .5s var(--ease),background-color .5s var(--ease),border-color .5s var(--ease)}
+  .cur b{position:relative;font:400 .56rem var(--sans);letter-spacing:.3em;text-indent:.3em;color:var(--ink);opacity:0;transition:opacity .4s}
+  .cur.is-link i{transform:scale(1.35)}
+  .cur.is-cta i{transform:scale(1.9);border-color:var(--champagne)}
+  .cur.is-view i{transform:scale(2.5);background:var(--champagne);border-color:var(--champagne)}
+  .cur.is-view b{opacity:1}
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .loader{display:none}
+  .js .seq,.js .hero__bg,.js [data-reveal]{opacity:1;transform:none;filter:none}
+  .js .plate__frame{clip-path:none}
+}
+</style>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader__in">
+    <div class="loader__mark" data-brand>Vastra</div>
+    <div class="loader__est label">Est. 2026</div>
+    <div class="loader__bar"><i></i></div>
+  </div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cur-dot" aria-hidden="true"></div>
+<div class="cur" aria-hidden="true"><i></i><b>VIEW</b></div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-brand aria-label="Vastra, back to top">Vastra</a>
+  <nav class="nav__links label" aria-label="Primary">
+    <a class="u" href="/clothing-catalog" data-magnetic style="color:var(--champagne)">Clothing Catalog</a>
+    <a class="u" href="#about" data-magnetic>About</a>
+    <a class="u" href="#contact" data-magnetic>Contact</a>
+    <a class="u" data-instagram href="#" target="_blank" rel="noopener noreferrer" data-magnetic>Instagram</a>
+  </nav>
+  <button class="burger" id="openMenu" aria-label="Open menu" aria-haspopup="dialog"><span></span></button>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero__bg" aria-hidden="true"><canvas id="silk" width="256" height="160"></canvas></div>
+    <div class="hero__center">
+      <h1 class="wordmark seq" id="heroTitle" style="--i:0" data-brand>Vastra</h1>
+      <p class="hero__soon label seq" style="--i:2">Luxury Fashion Brand</p>
+      <span class="hero__rule seq" style="--i:3" aria-hidden="true"></span>
+      <p class="hero__sub serif-it seq" style="--i:4">An expression of refined Indian luxury.</p>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:16px;">
+        <a href="/clothing-catalog" class="cta seq" style="--i:5; background:var(--champagne); color:var(--ink); border-color:var(--champagne);"><span class="cta__t">Explore Clothing Catalog</span><span class="cta__a" aria-hidden="true">&nbsp;→</span></a>
+        <a href="https://wa.me/919440209898?text=Hello%20Vastra%2C%20I%20would%20like%20to%20enquire%20about%20your%20couture%20collection." target="_blank" rel="noopener noreferrer" class="whatsapp-inquire-link seq" style="--i:5.5;" aria-label="Enquire via WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.44C8.95 7.44 8.68 7.5 8.46 7.74C8.24 7.98 7.62 8.56 7.62 9.73C7.62 10.9 8.47 12.03 8.6 12.2C8.73 12.37 10.28 14.75 12.65 15.77C14.62 16.62 15.02 16.45 15.46 16.41C15.9 16.37 16.88 15.83 17.08 15.26C17.28 14.7 17.28 14.21 17.22 14.11C17.16 14.01 17.01 13.95 16.78 13.84C16.55 13.72 15.43 13.17 15.22 13.1C15.01 13.02 14.86 12.98 14.71 13.21C14.56 13.44 14.13 13.95 14 14.1C13.87 14.25 13.74 14.27 13.51 14.16C13.28 14.04 12.54 13.8 11.66 13.02C10.98 12.41 10.52 11.66 10.39 11.43C10.26 11.2 10.37 11.08 10.49 10.96C10.6 10.86 10.73 10.68 10.85 10.54C10.97 10.4 11.01 10.29 11.09 10.14C11.17 9.99 11.13 9.86 11.07 9.74C11.01 9.63 10.56 8.52 10.37 8.06C10.19 7.62 10 7.68 9.86 7.67C9.73 7.67 9.58 7.66 9.42 7.66C9.27 7.66 9.11 7.44 9.11 7.44Z"/>
+          </svg>
+          <span>Enquire via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero__foot label seq" style="--i:6">
+      <span class="hero__deva" lang="sa">वस्त्र <small lang="en">Sanskrit, “garment”</small></span>
+      <span>© 2026 <span data-brand>Vastra</span></span>
+      <a class="hero__scroll u" href="#about" data-magnetic>Scroll</a>
+    </div>
+  </section>
+
+  <section class="section about" id="about" aria-labelledby="aboutTitle">
+    <div class="grid">
+      <h2 class="label" id="aboutTitle" data-reveal>The Art of Arrival</h2>
+      <div class="about__body">
+        <p class="about__lead" data-reveal style="--d:.1s">Vastra is a contemporary luxury fashion house rooted in <em>timeless elegance</em>, refined craftsmanship, and the beauty of considered design.</p>
+        <p class="about__note serif-it" data-reveal style="--d:.25s">Where timeless craftsmanship meets contemporary elegance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tenetsTitle">
+    <div class="grid">
+      <h2 class="sr" id="tenetsTitle">Our philosophy</h2>
+      <div class="tenets">
+        <article class="tenet" data-reveal><span class="label">On making</span><h3>Craft</h3><p class="serif-it">Made with intention.</p></article>
+        <article class="tenet" data-reveal><span class="label">On shape</span><h3>Form</h3><p class="serif-it">Designed beyond seasons.</p></article>
+        <article class="tenet" data-reveal><span class="label">On time</span><h3>Legacy</h3><p class="serif-it">Created to endure.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section plates" aria-labelledby="platesTitle">
+    <div class="grid">
+      <h2 class="sr" id="platesTitle">Studies from the atelier</h2>
+      <figure class="plate plate--a" data-plate>
+        <button class="plate__frame" data-cursor="view" data-kind="silk" data-ratio="0.8" data-title="Silk, in low light" aria-label="View “Silk, in low light” larger">
+          <span class="plate__shift" data-parallax="34"><canvas data-kind="silk"></canvas></span>
+        </button>
+        <figcaption class="label"><i>Silk, in low light</i><span>Mulberry satin</span></figcaption>
+      </figure>
+      <figure class="plate plate--b" data-plate>
+        <button class="plate__frame" data-cursor="view" data-kind="zari" data-ratio="0.75" data-title="Zari buti, hand-laid" aria-label="View “Zari buti, hand-laid” larger">
+          <span class="plate__shift" data-parallax="20"><canvas data-kind="zari"></canvas></span>
+        </button>
+        <figcaption class="label"><i>Zari buti, hand-laid</i><span>Metal thread</span></figcaption>
+      </figure>
+      <figure class="plate plate--c" data-plate>
+        <button class="plate__frame" data-cursor="view" data-kind="arch" data-ratio="1.25" data-title="The threshold" aria-label="View “The threshold” larger">
+          <span class="plate__shift" data-parallax="26"><canvas data-kind="arch"></canvas></span>
+        </button>
+        <figcaption class="label"><i>The threshold</i><span>Sandstone, morning</span></figcaption>
+      </figure>
+      <p class="plates__note serif-it" data-reveal>Cloth first. Then light. Then the person who wears it.</p>
+    </div>
+  </section>
+
+
+  <section class="section contact" id="contact" aria-labelledby="contactTitle">
+    <div class="contact__in">
+      <h2 class="label" id="contactTitle" data-reveal>For Enquiries</h2>
+      <p class="contact__mail" id="mailText" data-email data-reveal style="--d:.1s">himanandan@myvastra.in</p>
+      <div class="contact__links" data-reveal style="--d:.2s">
+        <a class="u" data-instagram href="#" target="_blank" rel="noopener noreferrer" data-magnetic>Instagram</a>
+        <a class="u" data-mailto href="#" data-magnetic>Email</a>
+        <button class="u" id="copyMail" data-magnetic><span id="copyLabel" aria-live="polite">Copy address</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot__top">
+    <div class="foot__mark" data-brand>Vastra</div>
+    <p class="foot__tag label">Timeless. Refined. Vastra.</p>
+  </div>
+  <div class="foot__row">
+    <span class="label">© 2026 <span data-brand>Vastra</span>. All rights reserved.</span>
+    <div class="foot__legal">
+      <a class="u" href="/clothing-catalog" style="font-size:.6875rem; letter-spacing:.3em; text-transform:uppercase;">Clothing Catalog</a>
+      <a class="u" href="/clothing-catalog#download-catalogs" style="font-size:.6875rem; letter-spacing:.3em; text-transform:uppercase;">Download 8 PDFs</a>
+      <button class="u" data-notice="Privacy Policy">Privacy Policy</button>
+      <button class="u" data-notice="Terms">Terms</button>
+    </div>
+    <div class="foot__social">
+      <a data-instagram href="#" target="_blank" rel="noopener noreferrer" aria-label="Vastra on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6" fill="currentColor"/></svg></a>
+      <a data-mailto href="#" aria-label="Email Vastra"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13"/><path d="M3 6l9 7 9-7"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Newsletter modal -->
+<dialog id="notify" aria-labelledby="notifyTitle">
+  <div class="sheet">
+    <button class="x" data-close aria-label="Close"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
+    <div id="notifyForm">
+      <div style="display:grid;gap:18px">
+        <h2 id="notifyTitle">Be the first to know</h2>
+        <p>Vastra is preparing something timeless. Leave your email and be among the first to discover our world.</p>
+      </div>
+      <form class="form" id="form" novalidate data-state="idle">
+        <div class="field">
+          <label class="label" for="email">Your email address</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="emailMsg">
+        </div>
+        <p class="msg" id="emailMsg" role="alert"></p>
+        <button class="cta cta--full" id="submit" type="submit"><span class="spin" aria-hidden="true"></span><span class="cta__t" id="submitLabel">Notify Me</span><span class="cta__a" aria-hidden="true">&nbsp;→</span></button>
+      </form>
+    </div>
+    <div class="done" id="notifyDone" hidden tabindex="-1" role="status">
+      <h2>Welcome to Vastra.</h2>
+      <p class="serif-it" style="font-size:1.15rem">Your invitation to discover Vastra will arrive soon.</p>
+      <button class="cta" data-close style="justify-self:center;margin-top:8px"><span class="cta__t">Close</span></button>
+    </div>
+    <p class="preview" id="previewNote" hidden>Preview: this form is not connected to a mailing list yet, so no address is saved.</p>
+  </div>
+</dialog>
+
+<!-- Mobile menu -->
+<dialog id="menu" class="menu" aria-label="Menu">
+  <div class="menu__in">
+    <div class="menu__top">
+      <span class="nav__brand" data-brand>Vastra</span>
+      <button class="x" data-close aria-label="Close menu"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
+    </div>
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="/clothing-catalog" style="--i:0; color:var(--champagne);">Clothing Catalog</a>
+      <a href="#about" style="--i:1" data-close>About</a>
+      <a href="#contact" style="--i:2" data-close>Contact</a>
+      <a data-instagram href="#" target="_blank" rel="noopener noreferrer" style="--i:3">Instagram</a>
+      <a href="#" style="--i:4" data-close data-open-notify>Get Notified</a>
+    </nav>
+    <p class="menu__foot label">© 2026 Vastra</p>
+  </div>
+</dialog>
+
+<!-- Plate viewer -->
+<dialog id="light" class="light" aria-labelledby="lightTitle">
+  <div class="light__in">
+    <button class="x" data-close aria-label="Close"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
+    <canvas id="lightCanvas"></canvas>
+    <p class="label" id="lightTitle"></p>
+  </div>
+</dialog>
+
+<!-- Placeholder notice for legal pages -->
+<dialog id="notice" aria-labelledby="noticeTitle">
+  <div class="sheet">
+    <button class="x" data-close aria-label="Close"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
+    <h2 id="noticeTitle"></h2>
+    <p id="noticeText"></p>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const root = document.documentElement;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const fine = matchMedia("(hover:hover) and (pointer:fine)").matches;
+
+  /* ---------- bind config ---------- */
+  $$("[data-brand]").forEach(e => e.textContent = CONFIG.BRAND_NAME);
+  $$("[data-email]").forEach(e => e.textContent = CONFIG.EMAIL);
+  $$("[data-mailto]").forEach(e => e.href = "mailto:" + CONFIG.EMAIL);
+  $$("[data-instagram]").forEach(e => e.href = CONFIG.INSTAGRAM_URL);
+
+  /* ---------- loader → hero ---------- */
+  const ready = () => root.classList.add("is-ready");
+  if (reduce) ready(); else setTimeout(ready, 1700);
+
+  /* ---------- procedural imagery ---------- */
+  const mix = (a, b, t) => a + (b - a) * t;
+  // Silk: folded satin as layered sine folds under one soft moving light.
+  function silk(ctx, w, h, t, o) {
+    const img = ctx.createImageData(w, h), d = img.data, TAU = Math.PI * 2;
+    const lx = o.lx + .28 * Math.sin(t * .07), ly = o.ly + .1 * Math.cos(t * .05);
+    for (let y = 0; y < h; y++) {
+      const v = y / h;
+      for (let x = 0; x < w; x++) {
+        const u = x / w;
+        const f = u * o.freq + v * o.slant + .34 * Math.sin(v * 2.3 + t * .13) + .17 * Math.sin(v * 5.2 - u * 3.1 + t * .09);
+        const a = .5 + .5 * Math.sin(f * TAU), b = .5 + .5 * Math.sin(f * TAU * 2.3 + 1.3);
+        let l = a * a * a * .72 + Math.pow(b, 6) * .28;
+        const dx = u - lx, dy = v - ly;
+        l *= o.amb + (1 - o.amb) * Math.exp(-(dx * dx) / o.spread - (dy * dy) / (o.spread * 2.6));
+        const i = (y * w + x) * 4;
+        d[i] = mix(o.lo[0], o.hi[0], l); d[i + 1] = mix(o.lo[1], o.hi[1], l); d[i + 2] = mix(o.lo[2], o.hi[2], l); d[i + 3] = 255;
+      }
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+  const HERO = { freq: 2.6, slant: .7, lx: .5, ly: .42, spread: .16, amb: .22, lo: [17, 16, 14], hi: [128, 110, 82] };
+  const PLATE = { freq: 2.1, slant: .9, lx: .42, ly: .36, spread: .3, amb: .3, lo: [30, 26, 21], hi: [222, 205, 170] };
+
+  // Zari: a half-drop repeat of buti motifs in metal thread, with a woven border.
+  function zari(ctx, w, h) {
+    const g = ctx.createLinearGradient(0, 0, w, h);
+    g.addColorStop(0, "#211d18"); g.addColorStop(1, "#0f0e0c");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
+    ctx.fillStyle = "rgba(241,234,219,.035)";
+    for (let y = 0; y < h; y += 3) ctx.fillRect(0, y, w, 1);
+    const lx = w * .36, ly = h * .3, R = Math.max(w, h) * .55;
+    const lit = (x, y) => .14 + .8 * Math.exp(-((x - lx) ** 2 + (y - ly) ** 2) / (R * R * .5));
+    const dot = (x, y, r) => { ctx.globalAlpha = lit(x, y); ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fill(); };
+    ctx.fillStyle = "#D2B984";
+    const s = w / 5.2, r = Math.max(.7, w / 520), top = h * .8;
+    for (let row = -1, y = s * .5; y < top - s * .3; row++, y += s * .9) {
+      for (let x = (row % 2 ? s : s * .5); x < w + s; x += s) {
+        const sz = s * .26;
+        for (let a = 0; a < Math.PI * 2; a += .16) {           // teardrop outline
+          dot(x + sz * .6 * Math.sin(a) * Math.pow(Math.sin(a / 2), 1.5) + sz * .28 * Math.pow(Math.cos(a / 2), 4), y - sz * .9 * Math.cos(a), r);
+        }
+        for (let p = 0; p < 6; p++) {                           // inner flower
+          const a = p * Math.PI / 3;
+          dot(x + Math.cos(a) * sz * .22, y + sz * .32 + Math.sin(a) * sz * .22, r * 1.15);
+        }
+        dot(x, y + sz * .32, r * 1.6);
+        dot(x, y + sz * 1.14, r); dot(x, y + sz * 1.34, r * .8);
+      }
+    }
+    // border band
+    ctx.globalAlpha = 1; ctx.strokeStyle = "rgba(210,185,132,.5)"; ctx.lineWidth = Math.max(1, r);
+    [top, top + h * .012, h * .965, h * .977].forEach(y => { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke(); });
+    const bs = w / 13, by = top + (h * .965 - top) / 2;
+    for (let x = bs / 2; x < w; x += bs) {
+      ctx.globalAlpha = lit(x, by) * .9 + .1;
+      ctx.beginPath(); ctx.moveTo(x, by - bs * .38); ctx.lineTo(x + bs * .3, by); ctx.lineTo(x, by + bs * .38); ctx.lineTo(x - bs * .3, by); ctx.closePath(); ctx.stroke();
+      dot(x, by, r * 1.4); dot(x + bs / 2, by - bs * .3, r); dot(x + bs / 2, by + bs * .3, r);
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // Arch: a sandstone threshold, nested cusped arches receding into shade.
+  function arch(ctx, w, h) {
+    const g = ctx.createLinearGradient(0, 0, w, h);
+    g.addColorStop(0, "#c2b49c"); g.addColorStop(1, "#8b7e69");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
+    const base = h * .86, cx = w * .56, tones = ["#a39680", "#7d7160", "#564d41", "#322c25", "#18150f"];
+    tones.forEach((c, i) => {
+      const k = 1 - i * .17, wd = w * .5 * k, ht = h * .74 * k, top = base - ht, sp = top + ht * .42, x0 = cx - wd / 2, x1 = cx + wd / 2;
+      ctx.fillStyle = c; ctx.beginPath(); ctx.moveTo(x0, base); ctx.lineTo(x0, sp);
+      ctx.bezierCurveTo(x0, sp - ht * .3, cx - wd * .14, top + ht * .1, cx, top);
+      ctx.bezierCurveTo(cx + wd * .14, top + ht * .1, x1, sp - ht * .3, x1, sp);
+      ctx.lineTo(x1, base); ctx.closePath(); ctx.fill();
+    });
+    ctx.fillStyle = "#6f6454"; ctx.fillRect(0, base, w, h - base);
+    const sh = ctx.createLinearGradient(0, base, 0, h);
+    sh.addColorStop(0, "rgba(17,16,14,.45)"); sh.addColorStop(1, "rgba(17,16,14,0)");
+    ctx.fillStyle = sh; ctx.fillRect(0, base, w, h - base);
+    // a shaft of morning light across wall and floor
+    ctx.fillStyle = "rgba(241,234,219,.13)"; ctx.beginPath();
+    ctx.moveTo(w * .02, 0); ctx.lineTo(w * .2, 0); ctx.lineTo(w * .5, h); ctx.lineTo(w * .2, h); ctx.closePath(); ctx.fill();
+    // a single drape of champagne cloth in the innermost arch
+    const dg = ctx.createLinearGradient(cx - w * .02, 0, cx + w * .02, 0);
+    dg.addColorStop(0, "rgba(217,199,163,0)"); dg.addColorStop(.5, "rgba(217,199,163,.75)"); dg.addColorStop(1, "rgba(217,199,163,0)");
+    ctx.fillStyle = dg; ctx.fillRect(cx - w * .02, base - h * .3, w * .04, h * .3);
+  }
+
+  function paint(canvas, kind, w, h) {
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    if (kind === "silk") {                       // rendered small, scaled up: soft like a long exposure
+      canvas.width = Math.max(120, Math.round(w / 3.2)); canvas.height = Math.max(120, Math.round(h / 3.2));
+      silk(canvas.getContext("2d"), canvas.width, canvas.height, 4, PLATE);
+    } else {
+      canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+      (kind === "zari" ? zari : arch)(canvas.getContext("2d"), canvas.width, canvas.height);
+    }
+  }
+
+  /* ---------- hero background: slow light across silk ---------- */
+  const hc = $("#silk"), hx = hc.getContext("2d");
+  let heroOn = true, last = 0;
+  silk(hx, hc.width, hc.height, 0, HERO);
+  if (!reduce) {
+    const tick = now => {
+      if (heroOn && !document.hidden && now - last > 42) { last = now; silk(hx, hc.width, hc.height, now / 1000, HERO); }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+    new IntersectionObserver(e => heroOn = e[0].isIntersecting).observe(hc);
+  }
+
+  /* ---------- scroll: reveals, lazy plates, nav, parallax ---------- */
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+  }), { threshold: .15, rootMargin: "0px 0px -6% 0px" });
+  $$("[data-reveal],[data-plate]").forEach(e => io.observe(e));
+
+  const lazy = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const c = e.target, r = c.getBoundingClientRect();
+    paint(c, c.dataset.kind, r.width, r.height); lazy.unobserve(c);
+  }), { rootMargin: "500px 0px" });
+  $$(".plate canvas").forEach(c => lazy.observe(c));
+
+  const nav = $("#nav"), shifts = $$("[data-parallax]");
+  let queued = false;
+  const onScroll = () => {
+    queued = false;
+    nav.classList.toggle("is-solid", scrollY > innerHeight * .7);
+    if (reduce) return;
+    shifts.forEach(el => {
+      const r = el.parentElement.getBoundingClientRect();
+      if (r.bottom < -100 || r.top > innerHeight + 100) return;
+      const p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
+      el.style.transform = `translate3d(0,${(p * -el.dataset.parallax).toFixed(1)}px,0)`;
+    });
+  };
+  addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+
+  /* ---------- dialogs ---------- */
+  $$("dialog").forEach(d => {
+    d.addEventListener("click", e => { if (e.target === d) d.close(); });              // click outside
+    $$("[data-close]", d).forEach(b => b.addEventListener("click", () => d.close()));  // Escape is native
+  });
+  const notify = $("#notify"), form = $("#form"), email = $("#email"), msg = $("#emailMsg");
+  const formWrap = $("#notifyForm"), done = $("#notifyDone"), submit = $("#submit"), submitLabel = $("#submitLabel");
+  const setState = s => { form.dataset.state = s; submit.disabled = s === "loading"; submitLabel.textContent = s === "loading" ? "Sending" : "Notify Me"; };
+  const fail = text => { msg.textContent = text; email.setAttribute("aria-invalid", "true"); setState("error"); email.focus(); };
+
+  $$("[data-open-notify]").forEach(b => b.addEventListener("click", e => {
+    e.preventDefault();
+    formWrap.hidden = false; done.hidden = true; msg.textContent = ""; email.removeAttribute("aria-invalid"); setState("idle");
+    $("#previewNote").hidden = !!CONFIG.SUBSCRIBE_ENDPOINT || !CONFIG.PREVIEW_MODE;
+    if ($("#menu").open) $("#menu").close();
+    notify.showModal(); email.focus();
+  }));
+  email.addEventListener("input", () => { if (form.dataset.state === "error") { msg.textContent = ""; email.removeAttribute("aria-invalid"); setState("idle"); } });
+
+  /* The one place a newsletter provider plugs in. Resolve = subscribed, throw = failed. */
+  async function subscribe(address) {
+    if (CONFIG.SUBSCRIBE_ENDPOINT) {
+      const res = await fetch(CONFIG.SUBSCRIBE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ email: address, source: "coming-soon" })
+      });
+      if (!res.ok) throw new Error("server");
+      return;
+    }
+    if (CONFIG.PREVIEW_MODE) return new Promise(r => setTimeout(r, 1100));   // stores nothing
+    throw new Error("closed");
+  }
+
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    if (form.dataset.state === "loading") return;
+    const v = email.value.trim();
+    if (!v) return fail("Enter your email address.");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return fail("That address looks incomplete. Check it and try again.");
+    msg.textContent = ""; email.removeAttribute("aria-invalid"); setState("loading");
+    try {
+      await subscribe(v);
+      form.reset(); setState("idle"); formWrap.hidden = true; done.hidden = false; done.focus();
+    } catch (err) {
+      fail(err.message === "closed"
+        ? "The list is not open yet. Write to " + CONFIG.EMAIL + " and we will add you."
+        : navigator.onLine === false ? "You appear to be offline. Reconnect and try again."
+        : "We could not add you just now. Try again in a moment.");
+    }
+  });
+
+  $("#openMenu").addEventListener("click", () => $("#menu").showModal());
+
+  const light = $("#light"), lc = $("#lightCanvas");
+  $$(".plate__frame").forEach(b => b.addEventListener("click", () => {
+    const ratio = +b.dataset.ratio, hh = Math.min(innerHeight * .78, (Math.min(innerWidth * .94, 1100)) / ratio), ww = hh * ratio;
+    lc.style.height = hh + "px"; lc.style.width = ww + "px";
+    $("#lightTitle").textContent = b.dataset.title;
+    light.showModal(); paint(lc, b.dataset.kind, ww, hh);
+  }));
+
+  $$("[data-notice]").forEach(b => b.addEventListener("click", () => {
+    $("#noticeTitle").textContent = b.dataset.notice;
+    $("#noticeText").textContent = "This page is a placeholder. The full " + b.dataset.notice.toLowerCase() + " will be published here before " + CONFIG.BRAND_NAME + " opens.";
+    $("#notice").showModal();
+  }));
+
+  /* ---------- copy address ---------- */
+  $("#copyMail").addEventListener("click", async () => {
+    const lab = $("#copyLabel");
+    try { await navigator.clipboard.writeText(CONFIG.EMAIL); lab.textContent = "Copied"; }
+    catch { const r = document.createRange(); r.selectNodeContents($("#mailText")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); lab.textContent = "Selected"; }
+    setTimeout(() => lab.textContent = "Copy address", 2200);
+  });
+
+  /* ---------- countdown: reads only CONFIG.LAUNCH_DATE ---------- */
+  if ($("#cd")) {
+    const launch = new Date(CONFIG.LAUNCH_DATE), pad = n => String(n).padStart(2, "0");
+    const els = { d: $("#cd"), h: $("#ch"), m: $("#cm"), s: $("#cs") };
+    if (isNaN(launch)) {
+      if ($("#countDate")) $("#countDate").textContent = "Launch date to be announced.";
+    } else {
+      if ($("#countDate")) $("#countDate").textContent = "Arriving " + new Intl.DateTimeFormat(undefined, { day: "numeric", month: "long", year: "numeric" }).format(launch);
+      const timer = setInterval(update, 1000);
+      function update() {
+        let t = Math.max(0, Math.floor((launch - Date.now()) / 1000));
+        els.d.textContent = pad(Math.floor(t / 86400)); els.h.textContent = pad(Math.floor(t % 86400 / 3600));
+        els.m.textContent = pad(Math.floor(t % 3600 / 60)); els.s.textContent = pad(t % 60);
+        if (t === 0) { clearInterval(timer); if ($("#countTitle")) $("#countTitle").textContent = CONFIG.BRAND_NAME + " has arrived"; }
+      }
+      update();
+    }
+  }
+
+  /* ---------- cursor + magnetic links (desktop, motion allowed) ---------- */
+  if (fine && !reduce) {
+    root.classList.add("has-cur");
+    const ring = $(".cur"), dot = $(".cur-dot");
+    let mx = 0, my = 0, rx = 0, ry = 0, seen = false;
+    addEventListener("mousemove", e => {
+      mx = e.clientX; my = e.clientY;
+      if (!seen) { seen = true; rx = mx; ry = my; ring.classList.add("on"); dot.classList.add("on"); }
+      dot.style.transform = `translate3d(${mx}px,${my}px,0)`;
+      const t = e.target.closest?.("[data-cursor],a,button");
+      ring.classList.toggle("is-cta", t?.dataset.cursor === "cta");
+      ring.classList.toggle("is-view", t?.dataset.cursor === "view");
+      ring.classList.toggle("is-link", !!t && !t.dataset.cursor);
+    }, { passive: true });
+    document.addEventListener("mouseleave", () => { ring.classList.remove("on"); dot.classList.remove("on"); seen = false; });
+    (function loop() { rx += (mx - rx) * .16; ry += (my - ry) * .16; ring.style.transform = `translate3d(${rx.toFixed(1)}px,${ry.toFixed(1)}px,0)`; requestAnimationFrame(loop); })();
+
+    $$("[data-magnetic]").forEach(el => {
+      el.style.transition = "transform .6s cubic-bezier(.22,.7,.2,1), color .4s";
+      el.addEventListener("mousemove", e => {
+        const r = el.getBoundingClientRect();
+        el.style.transform = `translate(${((e.clientX - r.left - r.width / 2) * .28).toFixed(1)}px,${((e.clientY - r.top - r.height / 2) * .4).toFixed(1)}px)`;
+      });
+      el.addEventListener("mouseleave", () => el.style.transform = "");
+    });
+  }
+})();
+</script>
+
+</body></html>

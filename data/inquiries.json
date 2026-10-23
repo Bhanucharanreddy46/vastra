@@ -1,0 +1,16 @@
+[
+  {
+    "id": "INQ-MVJUH2BK-453",
+    "customerName": "Ananya Sharma",
+    "contactNumber": "+91 98450 12345",
+    "email": "ananya@example.com",
+    "productId": "vas-wed-008",
+    "productName": "Rose Gold & Ruby Lotus Heritage Kalidar Bridal Lehenga",
+    "productCode": "VAS-WED-008",
+    "requestedSize": "Made-to-Measure",
+    "requestedColor": "As Shown",
+    "message": "Looking for bridal consultation for December wedding",
+    "status": "New",
+    "createdAt": "2026-10-22T17:58:24.512Z"
+  }
+]

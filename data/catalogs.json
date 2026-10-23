@@ -1,0 +1,141 @@
+[
+  {
+    "id": "cat-wedding",
+    "title": "Royal Wedding Couture Collection",
+    "occasion": "Wedding",
+    "filename": "Wedding__10459534.pdf",
+    "url": "/assets/aistudio/Wedding__10459534.pdf",
+    "coverImage": "/catalog-pages/wedding_01.jpg",
+    "previewPage": "/catalog-pages/wedding_02.jpg",
+    "pageCount": 6,
+    "description": "Regal bridal coordinates, royal groom sherwanis, Banarasi lehengas, and junior wedding ensembles.",
+    "tags": [
+      "Bridal",
+      "Groom",
+      "Royal Coordinates",
+      "Kids Wedding"
+    ]
+  },
+  {
+    "id": "cat-sangeeth",
+    "title": "Sangeeth & Cocktail Celebration",
+    "occasion": "Sangeeth",
+    "filename": "Sangeeth_505cd679.pdf",
+    "url": "/assets/aistudio/Sangeeth_505cd679.pdf",
+    "coverImage": "/catalog-pages/sangeeth_01.jpg",
+    "previewPage": "/catalog-pages/sangeeth_03.jpg",
+    "pageCount": 5,
+    "description": "Glamorous cocktail lehengas, shimmering sequin tuxedos, sculptural gowns, and party couture.",
+    "tags": [
+      "Sangeeth",
+      "Cocktail",
+      "Sequin Tuxedos",
+      "Evening Gowns"
+    ]
+  },
+  {
+    "id": "cat-haldi",
+    "title": "Haldi & Mehendi Celebration",
+    "occasion": "Haldi",
+    "filename": "Haldi__0ce6bdf7.pdf",
+    "url": "/assets/aistudio/Haldi__0ce6bdf7.pdf",
+    "coverImage": "/catalog-pages/haldi_01.jpg",
+    "previewPage": "/catalog-pages/haldi_03.jpg",
+    "pageCount": 5,
+    "description": "Sunshine yellow shararas, mirror-work lehengas, Kalamkari silk kurtas, and joyful kids outfits.",
+    "tags": [
+      "Haldi",
+      "Yellow",
+      "Mirrorwork",
+      "Shararas",
+      "Kurtas"
+    ]
+  },
+  {
+    "id": "cat-engagement",
+    "title": "Engagement & Roka Ceremonies",
+    "occasion": "Engagement",
+    "filename": "ENGAGEMENT_d957291d.pdf",
+    "url": "/assets/aistudio/ENGAGEMENT_d957291d.pdf",
+    "coverImage": "/catalog-pages/engagement_01.jpg",
+    "previewPage": "/catalog-pages/engagement_02.jpg",
+    "pageCount": 5,
+    "description": "Contemporary 3D floral lehengas, Pichwai silk kurtas, velvet tuxedos, and tailored junior suits.",
+    "tags": [
+      "Engagement",
+      "Bride",
+      "Groom",
+      "3D Florals",
+      "Kids"
+    ]
+  },
+  {
+    "id": "cat-house-warming",
+    "title": "House Warming & Griha Pravesh",
+    "occasion": "House Warming",
+    "filename": "House_warming_ceremony_28991031.pdf",
+    "url": "/assets/aistudio/House_warming_ceremony_28991031.pdf",
+    "coverImage": "/catalog-pages/house_warming_01.jpg",
+    "previewPage": "/catalog-pages/house_warming_03.jpg",
+    "pageCount": 6,
+    "description": "Traditional auspicious attire featuring Kanchipuram sarees, silk angrakhas, and handcrafted brocades.",
+    "tags": [
+      "House Warming",
+      "Tradition",
+      "Silk",
+      "Pichwai",
+      "Boys & Girls"
+    ]
+  },
+  {
+    "id": "cat-baby-shower",
+    "title": "Baby Shower & Sreemantham",
+    "occasion": "Baby Shower",
+    "filename": "Baby_shower_48fc727b.pdf",
+    "url": "/assets/aistudio/Baby_shower_48fc727b.pdf",
+    "coverImage": "/catalog-pages/baby_shower_01.jpg",
+    "previewPage": "/catalog-pages/baby_shower_02.jpg",
+    "pageCount": 6,
+    "description": "Maternity couture gowns, coordinated couple ensembles, pastel sherwanis, and festive silk sarees.",
+    "tags": [
+      "Baby Shower",
+      "Maternity Gowns",
+      "Couples",
+      "Men's Kurta"
+    ]
+  },
+  {
+    "id": "cat-naming-ceremony",
+    "title": "Naming Ceremony & Cradle Rites",
+    "occasion": "Naming Ceremony",
+    "filename": "Naming_cermony_a8dcb215.pdf",
+    "url": "/assets/aistudio/Naming_cermony_a8dcb215.pdf",
+    "coverImage": "/catalog-pages/naming_ceremony_01.jpg",
+    "previewPage": "/catalog-pages/naming_ceremony_04.jpg",
+    "pageCount": 7,
+    "description": "Family coordinate ensembles, luxury baby girl tulle frocks, and baby boy miniature velvet bandhgalas.",
+    "tags": [
+      "Naming Ceremony",
+      "Baby Girls",
+      "Baby Boys",
+      "Family Coordinate"
+    ]
+  },
+  {
+    "id": "cat-pre-wedding",
+    "title": "Pre-Wedding Shoot & Rehearsal",
+    "occasion": "Pre-Wedding",
+    "filename": "Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+    "url": "/assets/aistudio/Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+    "coverImage": "/catalog-pages/pre_wedding_01.jpg",
+    "previewPage": "/catalog-pages/pre_wedding_02.jpg",
+    "pageCount": 5,
+    "description": "Cinematic photoshoot couture with sweeping mermaid gowns, tailored double-breasted suits, and palace coordinates.",
+    "tags": [
+      "Pre-Wedding",
+      "Photoshoot",
+      "Evening Gowns",
+      "Tailored Suits"
+    ]
+  }
+]

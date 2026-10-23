@@ -1,0 +1,96 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == "kmbhanucharanreddy@gmail.com" ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidCategory(data) {
+      return data.keys().hasAll(['id', 'name', 'slug', 'description', 'gender', 'displayOrder']) &&
+        data.id is string && isValidId(data.id) &&
+        data.name is string && data.name.size() <= 100 &&
+        data.slug is string && data.slug.size() <= 100 &&
+        data.description is string && data.description.size() <= 1000 &&
+        data.gender in ['Couples', 'Women', 'Men', 'Kids', 'Unisex'] &&
+        data.displayOrder is number;
+    }
+
+    function isValidProduct(data) {
+      return data.keys().hasAll(['id', 'code', 'name', 'category', 'categoryId', 'occasion', 'price', 'image', 'published']) &&
+        data.id is string && isValidId(data.id) &&
+        data.code is string && data.code.size() <= 64 &&
+        data.name is string && data.name.size() <= 200 &&
+        data.category is string && data.category.size() <= 100 &&
+        data.categoryId is string && isValidId(data.categoryId) &&
+        data.occasion is string && data.occasion.size() <= 100 &&
+        data.price is string && data.price.size() <= 120 &&
+        data.image is string && data.image.size() <= 500 &&
+        data.published is bool;
+    }
+
+    function isValidCatalog(data) {
+      return data.keys().hasAll(['id', 'title', 'occasion', 'filename', 'url', 'coverImage', 'pageCount']) &&
+        data.id is string && isValidId(data.id) &&
+        data.title is string && data.title.size() <= 200 &&
+        data.occasion is string && data.occasion.size() <= 100 &&
+        data.filename is string && data.filename.size() <= 200 &&
+        data.url is string && data.url.size() <= 500 &&
+        data.coverImage is string && data.coverImage.size() <= 500 &&
+        data.pageCount is number;
+    }
+
+    function isValidInquiry(data) {
+      return data.keys().hasAll(['id', 'customerName', 'status', 'createdAt']) &&
+        data.id is string && isValidId(data.id) &&
+        data.customerName is string && data.customerName.size() <= 200 &&
+        data.status in ['New', 'Contacted', 'Completed', 'Archived'];
+    }
+
+    // 2. Categories: Public read for showroom filtering, admin-only writes
+    match /categories/{categoryId} {
+      allow get, list: if true;
+      allow create: if isValidId(categoryId) && isAdmin() && isValidCategory(request.resource.data);
+      allow update: if isValidId(categoryId) && isAdmin() && isValidCategory(request.resource.data);
+      allow delete: if isValidId(categoryId) && isAdmin();
+    }
+
+    // 3. Products: Public read for showroom collection, admin-only writes
+    match /products/{productId} {
+      allow get, list: if true;
+      allow create: if isValidId(productId) && isAdmin() && isValidProduct(request.resource.data);
+      allow update: if isValidId(productId) && isAdmin() && isValidProduct(request.resource.data);
+      allow delete: if isValidId(productId) && isAdmin();
+    }
+
+    // 4. Catalogs: Public read for lookbook downloads, admin-only writes
+    match /catalogs/{catalogId} {
+      allow get, list: if true;
+      allow create: if isValidId(catalogId) && isAdmin() && isValidCatalog(request.resource.data);
+      allow update: if isValidId(catalogId) && isAdmin() && isValidCatalog(request.resource.data);
+      allow delete: if isValidId(catalogId) && isAdmin();
+    }
+
+    // 5. Inquiries: Public create with schema validation, admin-only management
+    match /inquiries/{inquiryId} {
+      allow create: if isValidId(inquiryId) && isValidInquiry(request.resource.data);
+      allow get, list, update, delete: if isAdmin();
+    }
+  }
+}

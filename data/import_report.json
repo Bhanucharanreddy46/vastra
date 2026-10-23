@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-10-22T17:27:54.235Z",
+  "totalCatalogs": 8,
+  "catalogsProcessed": [
+    {
+      "title": "Royal Wedding Couture Collection",
+      "filename": "Wedding__10459534.pdf",
+      "pageCount": 6,
+      "occasion": "Wedding"
+    },
+    {
+      "title": "Sangeeth & Cocktail Celebration",
+      "filename": "Sangeeth_505cd679.pdf",
+      "pageCount": 5,
+      "occasion": "Sangeeth"
+    },
+    {
+      "title": "Haldi & Mehendi Celebration",
+      "filename": "Haldi__0ce6bdf7.pdf",
+      "pageCount": 5,
+      "occasion": "Haldi"
+    },
+    {
+      "title": "Engagement & Roka Ceremonies",
+      "filename": "ENGAGEMENT_d957291d.pdf",
+      "pageCount": 5,
+      "occasion": "Engagement"
+    },
+    {
+      "title": "House Warming & Griha Pravesh",
+      "filename": "House_warming_ceremony_28991031.pdf",
+      "pageCount": 6,
+      "occasion": "House Warming"
+    },
+    {
+      "title": "Baby Shower & Sreemantham",
+      "filename": "Baby_shower_48fc727b.pdf",
+      "pageCount": 6,
+      "occasion": "Baby Shower"
+    },
+    {
+      "title": "Naming Ceremony & Cradle Rites",
+      "filename": "Naming_cermony_a8dcb215.pdf",
+      "pageCount": 7,
+      "occasion": "Naming Ceremony"
+    },
+    {
+      "title": "Pre-Wedding Shoot & Rehearsal",
+      "filename": "Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+      "pageCount": 5,
+      "occasion": "Pre-Wedding"
+    }
+  ],
+  "totalPagesReviewed": 45,
+  "totalProductsExtracted": 66,
+  "productsPublished": 66,
+  "occasionsCovered": [
+    "Baby Shower",
+    "Engagement",
+    "Haldi",
+    "House Warming",
+    "Pre-Wedding",
+    "Naming Ceremony",
+    "Sangeeth",
+    "Wedding"
+  ],
+  "categoriesCovered": [
+    "Couple Coordinates",
+    "Women's Occasion Wear",
+    "Men's Couture",
+    "Bridal Wear",
+    "Groom Couture",
+    "Kids Girls",
+    "Kids Boys",
+    "Baby Girls",
+    "Baby Boys"
+  ],
+  "imageStoragePath": "/public/catalog-images/",
+  "status": "COMPLETE",
+  "verificationNotes": "All 8 catalogs verified against authoritative PDFs with page-level provenance and unique product codes."
+}

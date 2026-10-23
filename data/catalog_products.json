@@ -1,0 +1,3236 @@
+[
+  {
+    "id": "vas-bsh-001",
+    "code": "VAS-BSH-001",
+    "name": "Ivory & Champagne Embroidered Maternity Ensemble",
+    "category": "Couple Coordinates",
+    "occasion": "Baby Shower",
+    "gender": "Couples",
+    "colors": [
+      "Ivory",
+      "Champagne Gold",
+      "Pastel Floral"
+    ],
+    "fabric": "Raw Silk & Chiffon with Zardozi Florals",
+    "price": "Price on Request (Bespoke)",
+    "description": "Hand-embellished maternity couture lehenga ensemble paired with coordinated men's Chikankari kurta.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 2,
+    "pageFile": "baby_shower_02.jpg",
+    "crop": {
+      "leftPct": 0.02,
+      "topPct": 0.24,
+      "widthPct": 0.3,
+      "heightPct": 0.74
+    },
+    "image": "/catalog-images/vas-bsh-001.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory",
+      "Champagne Gold",
+      "Pastel Floral"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.241Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.241Z"
+  },
+  {
+    "id": "vas-bsh-002",
+    "code": "VAS-BSH-002",
+    "name": "Blush Ruffled Tulle Maternity Ballgown & Tuxedo",
+    "category": "Couple Coordinates",
+    "occasion": "Baby Shower",
+    "gender": "Couples",
+    "colors": [
+      "Blush Pink",
+      "Pastel Rose",
+      "Powder Cream"
+    ],
+    "fabric": "Micro-Pleated Tiered Tulle with Satin Lining",
+    "price": "Price on Request (Bespoke)",
+    "description": "Dramatic cloud-ruffle maternity ballgown in soft powder pink paired with blush tailored men's blazer.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 2,
+    "pageFile": "baby_shower_02.jpg",
+    "crop": {
+      "leftPct": 0.33,
+      "topPct": 0.24,
+      "widthPct": 0.33,
+      "heightPct": 0.74
+    },
+    "image": "/catalog-images/vas-bsh-002.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Blush Pink",
+      "Pastel Rose",
+      "Powder Cream"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.304Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.304Z"
+  },
+  {
+    "id": "vas-bsh-003",
+    "code": "VAS-BSH-003",
+    "name": "Sage Green Organza Kalidar & Mint Floral Sherwani",
+    "category": "Couple Coordinates",
+    "occasion": "Baby Shower",
+    "gender": "Couples",
+    "colors": [
+      "Sage Green",
+      "Mint",
+      "Ivory"
+    ],
+    "fabric": "Mulberry Organza with Threadwork & Resham Motifs",
+    "price": "Price on Request (Bespoke)",
+    "description": "Flowing botanical printed maternity Anarkali lehenga accompanied by a mint green floral embroidered short sherwani.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 2,
+    "pageFile": "baby_shower_02.jpg",
+    "crop": {
+      "leftPct": 0.67,
+      "topPct": 0.24,
+      "widthPct": 0.31,
+      "heightPct": 0.74
+    },
+    "image": "/catalog-images/vas-bsh-003.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Sage Green",
+      "Mint",
+      "Ivory"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.362Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.362Z"
+  },
+  {
+    "id": "vas-bsh-004",
+    "code": "VAS-BSH-004",
+    "name": "Regal Heritage South Silk Kanchipuram & Gold Kurta",
+    "category": "Couple Coordinates",
+    "occasion": "Baby Shower",
+    "gender": "Couples",
+    "colors": [
+      "Gold",
+      "Plum Purple",
+      "Warm Sand"
+    ],
+    "fabric": "Pure Kanchipuram Silk with Temple Zari Borders",
+    "price": "Price on Request (Bespoke)",
+    "description": "Timeless plum and gold pure silk Kanchipuram saree draped with traditional temple borders, paired with gold raw silk men's kurta.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 3,
+    "pageFile": "baby_shower_03.jpg",
+    "crop": {
+      "leftPct": 0.02,
+      "topPct": 0.12,
+      "widthPct": 0.31,
+      "heightPct": 0.86
+    },
+    "image": "/catalog-images/vas-bsh-004.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Gold",
+      "Plum Purple",
+      "Warm Sand"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.418Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.418Z"
+  },
+  {
+    "id": "vas-bsh-005",
+    "code": "VAS-BSH-005",
+    "name": "Royal Velvet Sherwani & Heritage Zardozi Shawl",
+    "category": "Couple Coordinates",
+    "occasion": "Baby Shower",
+    "gender": "Couples",
+    "colors": [
+      "Midnight Black",
+      "Deep Crimson Red",
+      "Antique Gold"
+    ],
+    "fabric": "Silk Velvet with Antique Zari & Paisley Weaves",
+    "price": "Price on Request (Bespoke)",
+    "description": "Celebrity-grade velvet tailored ensemble featuring a richly embroidered black sherwani and heritage crimson zardozi shawl.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 3,
+    "pageFile": "baby_shower_03.jpg",
+    "crop": {
+      "leftPct": 0.33,
+      "topPct": 0.12,
+      "widthPct": 0.34,
+      "heightPct": 0.86
+    },
+    "image": "/catalog-images/vas-bsh-005.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Midnight Black",
+      "Deep Crimson Red",
+      "Antique Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.493Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.493Z"
+  },
+  {
+    "id": "vas-bsh-006",
+    "code": "VAS-BSH-006",
+    "name": "Pastel Banarasi Pink Saree with Ivory Bandhgala",
+    "category": "Couple Coordinates",
+    "occasion": "Baby Shower",
+    "gender": "Couples",
+    "colors": [
+      "Candy Pink",
+      "Ivory",
+      "Soft Gold"
+    ],
+    "fabric": "Banarasi Silk Brocade & Raw Silk",
+    "price": "Price on Request (Bespoke)",
+    "description": "Intricately woven pink Banarasi silk saree with heavy heritage jewelry, paired with an ivory textured bandhgala vest.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 3,
+    "pageFile": "baby_shower_03.jpg",
+    "crop": {
+      "leftPct": 0.67,
+      "topPct": 0.12,
+      "widthPct": 0.31,
+      "heightPct": 0.86
+    },
+    "image": "/catalog-images/vas-bsh-006.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Candy Pink",
+      "Ivory",
+      "Soft Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.553Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.553Z"
+  },
+  {
+    "id": "vas-bsh-007",
+    "code": "VAS-BSH-007",
+    "name": "Blush Pink Accordion Pleat Maternity Gown",
+    "category": "Women's Occasion Wear",
+    "occasion": "Baby Shower",
+    "gender": "Women",
+    "colors": [
+      "Blush Pink",
+      "Pastel Floral"
+    ],
+    "fabric": "Micro-Pleated Georgette with Handcrafted Floral Belt",
+    "price": "Price on Request (Bespoke)",
+    "description": "Graceful blush pink pleated gown with delicate flutter sleeves and handcrafted floral corsage accent.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 5,
+    "pageFile": "baby_shower_05.jpg",
+    "crop": {
+      "leftPct": 0.02,
+      "topPct": 0.22,
+      "widthPct": 0.3,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-bsh-007.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Blush Pink",
+      "Pastel Floral"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.601Z",
+    "categoryId": "cat-womens-occasion",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.601Z"
+  },
+  {
+    "id": "vas-bsh-008",
+    "code": "VAS-BSH-008",
+    "name": "Off-Shoulder Ivory Chiffon Maternity Gown",
+    "category": "Women's Occasion Wear",
+    "occasion": "Baby Shower",
+    "gender": "Women",
+    "colors": [
+      "Ivory White",
+      "Earthy Green"
+    ],
+    "fabric": "Pure Silk Chiffon with Delicate Draping",
+    "price": "Price on Request (Bespoke)",
+    "description": "Ethereal ivory off-shoulder maternity gown adorned with fresh botanicals and handcrafted waist garland.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 5,
+    "pageFile": "baby_shower_05.jpg",
+    "crop": {
+      "leftPct": 0.33,
+      "topPct": 0.22,
+      "widthPct": 0.33,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-bsh-008.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory White",
+      "Earthy Green"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.646Z",
+    "categoryId": "cat-womens-occasion",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.646Z"
+  },
+  {
+    "id": "vas-bsh-009",
+    "code": "VAS-BSH-009",
+    "name": "Dusty Rose Tiered Ruffle Tulle Ballgown",
+    "category": "Women's Occasion Wear",
+    "occasion": "Baby Shower",
+    "gender": "Women",
+    "colors": [
+      "Dusty Mauve",
+      "Rose Gold"
+    ],
+    "fabric": "Layered French Tulle with Structured Sweetheart Bodice",
+    "price": "Price on Request (Bespoke)",
+    "description": "Showstopping mauve tulle gown featuring cascading ruffles, romantic flutter sleeves, and floral tiara styling.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 5,
+    "pageFile": "baby_shower_05.jpg",
+    "crop": {
+      "leftPct": 0.67,
+      "topPct": 0.22,
+      "widthPct": 0.31,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-bsh-009.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Dusty Mauve",
+      "Rose Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.698Z",
+    "categoryId": "cat-womens-occasion",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.698Z"
+  },
+  {
+    "id": "vas-bsh-010",
+    "code": "VAS-BSH-010",
+    "name": "Hot Pink Thread Embroidered Open Sherwani",
+    "category": "Men's Couture",
+    "occasion": "Baby Shower",
+    "gender": "Men",
+    "colors": [
+      "Hot Pink",
+      "Ivory White"
+    ],
+    "fabric": "Silk Brocade with White Floral Thread Embroidery",
+    "price": "Price on Request (Bespoke)",
+    "description": "Vibrant fuchsia open-front jacket with intricate ivory botanical threadwork layered over crisp white kurta.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 6,
+    "pageFile": "baby_shower_06.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.22,
+      "widthPct": 0.24,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-bsh-010.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_06.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Hot Pink",
+      "Ivory White"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.748Z",
+    "categoryId": "cat-mens-couture",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.748Z"
+  },
+  {
+    "id": "vas-bsh-011",
+    "code": "VAS-BSH-011",
+    "name": "Powder Blue Floral Embellished Bandi Jacket",
+    "category": "Men's Couture",
+    "occasion": "Baby Shower",
+    "gender": "Men",
+    "colors": [
+      "Powder Blue",
+      "Lilac",
+      "Silver"
+    ],
+    "fabric": "Raw Silk with Hand-Embroidered Sequin & Resham Work",
+    "price": "Price on Request (Bespoke)",
+    "description": "Contemporary powder blue open-front jacket detailed with tone-on-tone florals over a pastel lilac kurta.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 6,
+    "pageFile": "baby_shower_06.jpg",
+    "crop": {
+      "leftPct": 0.48,
+      "topPct": 0.16,
+      "widthPct": 0.26,
+      "heightPct": 0.82
+    },
+    "image": "/catalog-images/vas-bsh-011.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_06.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Powder Blue",
+      "Lilac",
+      "Silver"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.794Z",
+    "categoryId": "cat-mens-couture",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.794Z"
+  },
+  {
+    "id": "vas-bsh-012",
+    "code": "VAS-BSH-012",
+    "name": "Ivory Raw Silk Embroidered Asymmetric Kurta",
+    "category": "Men's Couture",
+    "occasion": "Baby Shower",
+    "gender": "Men",
+    "colors": [
+      "Ivory Cream",
+      "Champagne Gold"
+    ],
+    "fabric": "Raw Silk with Neckline Floral Zardozi Work",
+    "price": "Price on Request (Bespoke)",
+    "description": "Minimalist regal ivory kurta with diagonal yoke embroidery, tailored cuffs, and coordinated straight trousers.",
+    "sourceCatalog": "Baby_shower_48fc727b.pdf",
+    "sourceCatalogName": "Baby Shower Couture",
+    "sourcePage": 6,
+    "pageFile": "baby_shower_06.jpg",
+    "crop": {
+      "leftPct": 0.74,
+      "topPct": 0.16,
+      "widthPct": 0.25,
+      "heightPct": 0.82
+    },
+    "image": "/catalog-images/vas-bsh-012.jpg",
+    "fullPageImage": "/catalog-pages/baby_shower_06.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory Cream",
+      "Champagne Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.840Z",
+    "categoryId": "cat-mens-couture",
+    "sourceCatalogId": "cat-baby-shower",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.840Z"
+  },
+  {
+    "id": "vas-eng-001",
+    "code": "VAS-ENG-001",
+    "name": "Petal Applique Off-Shoulder Couture Lehenga",
+    "category": "Bridal Wear",
+    "occasion": "Engagement",
+    "gender": "Bride",
+    "colors": [
+      "Pastel Rose",
+      "Slate Grey",
+      "Blush Pink"
+    ],
+    "fabric": "3D Floral Fabric Petals on Ombre Raw Silk & Tulle",
+    "price": "Price on Request (Bespoke)",
+    "description": "Avant-garde engagement bridal lehenga featuring hand-crafted 3D floral petals cascading down an ombre skirt.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 2,
+    "pageFile": "engagement_02.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-eng-001.jpg",
+    "fullPageImage": "/catalog-pages/engagement_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Pastel Rose",
+      "Slate Grey",
+      "Blush Pink"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.881Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.881Z"
+  },
+  {
+    "id": "vas-eng-002",
+    "code": "VAS-ENG-002",
+    "name": "Ivory & Sage Draped Lotus Flower Gown",
+    "category": "Bridal Wear",
+    "occasion": "Engagement",
+    "gender": "Bride",
+    "colors": [
+      "Ivory",
+      "Sage Green",
+      "Soft Pink"
+    ],
+    "fabric": "Sculptural Draped Silk Organza with Painted Lotus Motif",
+    "price": "Price on Request (Bespoke)",
+    "description": "Couture corseted gown with architectural silk chiffon draping and hand-painted oversized lotus flower illustration.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 2,
+    "pageFile": "engagement_02.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.18,
+      "widthPct": 0.26,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-eng-002.jpg",
+    "fullPageImage": "/catalog-pages/engagement_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory",
+      "Sage Green",
+      "Soft Pink"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.926Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.926Z"
+  },
+  {
+    "id": "vas-eng-003",
+    "code": "VAS-ENG-003",
+    "name": "Crimson Velvet Blouse with Kaleidoscopic Kalidar Skirt",
+    "category": "Bridal Wear",
+    "occasion": "Engagement",
+    "gender": "Bride",
+    "colors": [
+      "Deep Crimson",
+      "Mustard",
+      "Emerald",
+      "Gold"
+    ],
+    "fabric": "Silk Velvet & Jacquard with Scalloped Embroidered Border",
+    "price": "Price on Request (Bespoke)",
+    "description": "Deep red velvet V-neck choli paired with a chevron patchwork kalidar skirt featuring miniature pictorial motifs.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 2,
+    "pageFile": "engagement_02.jpg",
+    "crop": {
+      "leftPct": 0.51,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-eng-003.jpg",
+    "fullPageImage": "/catalog-pages/engagement_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Deep Crimson",
+      "Mustard",
+      "Emerald",
+      "Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:51.969Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:51.969Z"
+  },
+  {
+    "id": "vas-eng-004",
+    "code": "VAS-ENG-004",
+    "name": "Blush Pink Shimmer Pre-Pleated Halter Gown",
+    "category": "Bridal Wear",
+    "occasion": "Engagement",
+    "gender": "Bride",
+    "colors": [
+      "Baby Pink",
+      "Silver Shimmer"
+    ],
+    "fabric": "Micro-Pleated Metallic Lamé with Crystal Halter Neck",
+    "price": "Price on Request (Bespoke)",
+    "description": "Modern cocktail engagement saree-gown with high neckline fringe crystals and sleek fluid metallic pleats.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 2,
+    "pageFile": "engagement_02.jpg",
+    "crop": {
+      "leftPct": 0.76,
+      "topPct": 0.18,
+      "widthPct": 0.24,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-eng-004.jpg",
+    "fullPageImage": "/catalog-pages/engagement_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Baby Pink",
+      "Silver Shimmer"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.009Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.009Z"
+  },
+  {
+    "id": "vas-eng-005",
+    "code": "VAS-ENG-005",
+    "name": "Black Velvet Tuxedo Bandhgala with Gold Damask Hem",
+    "category": "Groom Couture",
+    "occasion": "Engagement",
+    "gender": "Groom",
+    "colors": [
+      "Midnight Black",
+      "Gold Brocade"
+    ],
+    "fabric": "Premium Italian Velvet with Hand Zari Hemline",
+    "price": "Price on Request (Bespoke)",
+    "description": "Tailored midnight black velvet bandhgala jacket with opulent gold zardozi damask embroidery along the cuffs and jacket skirt.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 3,
+    "pageFile": "engagement_03.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.16,
+      "widthPct": 0.25,
+      "heightPct": 0.82
+    },
+    "image": "/catalog-images/vas-eng-005.jpg",
+    "fullPageImage": "/catalog-pages/engagement_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Midnight Black",
+      "Gold Brocade"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.054Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.054Z"
+  },
+  {
+    "id": "vas-eng-006",
+    "code": "VAS-ENG-006",
+    "name": "Ivory Silk Kurta with Pichwai Lotus & Cow Border",
+    "category": "Groom Couture",
+    "occasion": "Engagement",
+    "gender": "Groom",
+    "colors": [
+      "Ivory Cream",
+      "Blush Lotus",
+      "Gold"
+    ],
+    "fabric": "Chanderi Silk with Intricate Pichwai Needlework",
+    "price": "Price on Request (Bespoke)",
+    "description": "Artisanal ivory silk kurta celebrating heritage Pichwai art with sacred lotus and cow motifs along the hemline and cuffs.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 3,
+    "pageFile": "engagement_03.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.16,
+      "widthPct": 0.25,
+      "heightPct": 0.82
+    },
+    "image": "/catalog-images/vas-eng-006.jpg",
+    "fullPageImage": "/catalog-pages/engagement_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory Cream",
+      "Blush Lotus",
+      "Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.099Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.099Z"
+  },
+  {
+    "id": "vas-eng-007",
+    "code": "VAS-ENG-007",
+    "name": "Sky Blue Threadwork Nehru Jacket with Kurta Pajama",
+    "category": "Groom Couture",
+    "occasion": "Engagement",
+    "gender": "Groom",
+    "colors": [
+      "Sky Blue",
+      "White",
+      "Silver"
+    ],
+    "fabric": "Raw Silk Jacket with Fine Resham Needlepoint",
+    "price": "Price on Request (Bespoke)",
+    "description": "Dapper sky blue embroidered waistcoat worn over an ivory silk kurta and tailored trousers for day engagement ceremonies.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 3,
+    "pageFile": "engagement_03.jpg",
+    "crop": {
+      "leftPct": 0.51,
+      "topPct": 0.16,
+      "widthPct": 0.25,
+      "heightPct": 0.82
+    },
+    "image": "/catalog-images/vas-eng-007.jpg",
+    "fullPageImage": "/catalog-pages/engagement_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Sky Blue",
+      "White",
+      "Silver"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.140Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.140Z"
+  },
+  {
+    "id": "vas-eng-008",
+    "code": "VAS-ENG-008",
+    "name": "Rust Terracotta Tailored Bandhgala Suit",
+    "category": "Groom Couture",
+    "occasion": "Engagement",
+    "gender": "Groom",
+    "colors": [
+      "Terracotta Rust",
+      "Champagne Gold"
+    ],
+    "fabric": "Wool-Silk Blend with Collar & Shoulder Botanical Threadwork",
+    "price": "Price on Request (Bespoke)",
+    "description": "Modern bespoke rust bandhgala suit embellished with delicate shoulder botanicals and matched trousers.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 3,
+    "pageFile": "engagement_03.jpg",
+    "crop": {
+      "leftPct": 0.76,
+      "topPct": 0.16,
+      "widthPct": 0.24,
+      "heightPct": 0.82
+    },
+    "image": "/catalog-images/vas-eng-008.jpg",
+    "fullPageImage": "/catalog-pages/engagement_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Terracotta Rust",
+      "Champagne Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.181Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.181Z"
+  },
+  {
+    "id": "vas-eng-009",
+    "code": "VAS-ENG-009",
+    "name": "Blush Pink Lotus Cutout Blouse with Kalidar Skirt",
+    "category": "Kids Girls",
+    "occasion": "Engagement",
+    "gender": "Kids",
+    "colors": [
+      "Lotus Pink",
+      "Ivory White",
+      "Gold"
+    ],
+    "fabric": "Silk Satin with Zari Scalloped Hem",
+    "price": "Price on Request (Bespoke)",
+    "description": "Adorable junior couture lotus-petal cutout choli paired with a two-tone pleated flared skirt.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 4,
+    "pageFile": "engagement_04.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-eng-009.jpg",
+    "fullPageImage": "/catalog-pages/engagement_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Lotus Pink",
+      "Ivory White",
+      "Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.225Z",
+    "categoryId": "cat-kids-girls",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.225Z"
+  },
+  {
+    "id": "vas-eng-010",
+    "code": "VAS-ENG-010",
+    "name": "Ivory Pearl & Multicolor Floral Embroidered Sharara",
+    "category": "Kids Girls",
+    "occasion": "Engagement",
+    "gender": "Kids",
+    "colors": [
+      "Ivory",
+      "Pastel Rainbow",
+      "Pearls"
+    ],
+    "fabric": "Net & Georgette with Hand-Beaded Florals",
+    "price": "Price on Request (Bespoke)",
+    "description": "Delicate ivory sleeveless tunic encrusted with pearls and colorful corner embroideries over a tiered sharara.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 4,
+    "pageFile": "engagement_04.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.18,
+      "widthPct": 0.26,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-eng-010.jpg",
+    "fullPageImage": "/catalog-pages/engagement_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory",
+      "Pastel Rainbow",
+      "Pearls"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.268Z",
+    "categoryId": "cat-kids-girls",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.268Z"
+  },
+  {
+    "id": "vas-eng-011",
+    "code": "VAS-ENG-011",
+    "name": "Sky Blue Floral Embroidered Bandi with Silk Kurta",
+    "category": "Kids Boys",
+    "occasion": "Engagement",
+    "gender": "Kids",
+    "colors": [
+      "Pastel Sky Blue",
+      "Ivory White"
+    ],
+    "fabric": "Raw Silk Jacket with Silver Brocade Motifs",
+    "price": "Price on Request (Bespoke)",
+    "description": "Regal boys festive set featuring an ice blue brocade waistcoat paired with a classic white silk kurta pajama.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 5,
+    "pageFile": "engagement_05.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.12,
+      "widthPct": 0.25,
+      "heightPct": 0.86
+    },
+    "image": "/catalog-images/vas-eng-011.jpg",
+    "fullPageImage": "/catalog-pages/engagement_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Pastel Sky Blue",
+      "Ivory White"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.314Z",
+    "categoryId": "cat-kids-boys",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.314Z"
+  },
+  {
+    "id": "vas-eng-012",
+    "code": "VAS-ENG-012",
+    "name": "Classic Camel Beige Tailored Blazer & Chinos",
+    "category": "Kids Boys",
+    "occasion": "Engagement",
+    "gender": "Kids",
+    "colors": [
+      "Camel Beige",
+      "Crisp White"
+    ],
+    "fabric": "Linen-Cotton Blend with Tailored Lapels",
+    "price": "Price on Request (Bespoke)",
+    "description": "Smart and sophisticated tailored junior blazer and slim trousers with sneakers styling for modern celebrations.",
+    "sourceCatalog": "ENGAGEMENT_d957291d.pdf",
+    "sourceCatalogName": "Engagement Celebration",
+    "sourcePage": 5,
+    "pageFile": "engagement_05.jpg",
+    "crop": {
+      "leftPct": 0.76,
+      "topPct": 0.12,
+      "widthPct": 0.24,
+      "heightPct": 0.86
+    },
+    "image": "/catalog-images/vas-eng-012.jpg",
+    "fullPageImage": "/catalog-pages/engagement_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Camel Beige",
+      "Crisp White"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.355Z",
+    "categoryId": "cat-kids-boys",
+    "sourceCatalogId": "cat-engagement",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.355Z"
+  },
+  {
+    "id": "vas-hld-001",
+    "code": "VAS-HLD-001",
+    "name": "Sunset Ombre Embroidered Haldi Kurta Set",
+    "category": "Groom Couture",
+    "occasion": "Haldi",
+    "gender": "Groom",
+    "colors": [
+      "Warm Sunset Gold",
+      "Ivory Cream"
+    ],
+    "fabric": "Chanderi Silk with Ivory Floral Needlework",
+    "price": "Price on Request (Bespoke)",
+    "description": "Radiant gradient yellow kurta with ornate floral yoke embroidery and white silk churidar.",
+    "sourceCatalog": "Haldi__0ce6bdf7.pdf",
+    "sourceCatalogName": "Haldi Ceremony",
+    "sourcePage": 2,
+    "pageFile": "haldi_02.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.22,
+      "widthPct": 0.35,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-hld-001.jpg",
+    "fullPageImage": "/catalog-pages/haldi_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Warm Sunset Gold",
+      "Ivory Cream"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.406Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-haldi",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.406Z"
+  },
+  {
+    "id": "vas-hld-002",
+    "code": "VAS-HLD-002",
+    "name": "Mustard Gold Silk Kurta with Floral Kalamkari Dupatta",
+    "category": "Groom Couture",
+    "occasion": "Haldi",
+    "gender": "Groom",
+    "colors": [
+      "Mustard Yellow",
+      "Ivory",
+      "Multicolor Kalamkari"
+    ],
+    "fabric": "Tussar Silk Kurta with Hand-Painted Kalamkari Stole",
+    "price": "Price on Request (Bespoke)",
+    "description": "Lustrous mustard yellow tussar silk kurta accentuated by a bespoke hand-painted Kalamkari dupatta with tassel trims.",
+    "sourceCatalog": "Haldi__0ce6bdf7.pdf",
+    "sourceCatalogName": "Haldi Ceremony",
+    "sourcePage": 2,
+    "pageFile": "haldi_02.jpg",
+    "crop": {
+      "leftPct": 0.35,
+      "topPct": 0.22,
+      "widthPct": 0.32,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-hld-002.jpg",
+    "fullPageImage": "/catalog-pages/haldi_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Mustard Yellow",
+      "Ivory",
+      "Multicolor Kalamkari"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.453Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-haldi",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.453Z"
+  },
+  {
+    "id": "vas-hld-003",
+    "code": "VAS-HLD-003",
+    "name": "Sunshine Yellow Tiered Sharara with Embellished Cape",
+    "category": "Bridal Wear",
+    "occasion": "Haldi",
+    "gender": "Bride",
+    "colors": [
+      "Bright Canary Yellow",
+      "Gold Mirrors"
+    ],
+    "fabric": "Georgette with Mirror-Work Tassels & Cape",
+    "price": "Price on Request (Bespoke)",
+    "description": "Breathable layered tiered sharara paired with an embellished bustier and sheer flowing cape jacket.",
+    "sourceCatalog": "Haldi__0ce6bdf7.pdf",
+    "sourceCatalogName": "Haldi Ceremony",
+    "sourcePage": 3,
+    "pageFile": "haldi_03.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.22,
+      "widthPct": 0.19,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-hld-003.jpg",
+    "fullPageImage": "/catalog-pages/haldi_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Bright Canary Yellow",
+      "Gold Mirrors"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.491Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-haldi",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.491Z"
+  },
+  {
+    "id": "vas-hld-004",
+    "code": "VAS-HLD-004",
+    "name": "Bright Lemon Yellow Georgette Saree with Floral Blouse",
+    "category": "Bridal Wear",
+    "occasion": "Haldi",
+    "gender": "Bride",
+    "colors": [
+      "Lemon Yellow",
+      "White Pearls",
+      "Mirrorwork"
+    ],
+    "fabric": "Pure Georgette Saree with Heavily Embellished Choli",
+    "price": "Price on Request (Bespoke)",
+    "description": "Draped yellow georgette saree featuring delicate pearl scallops and a plunge neckline floral blouse.",
+    "sourceCatalog": "Haldi__0ce6bdf7.pdf",
+    "sourceCatalogName": "Haldi Ceremony",
+    "sourcePage": 3,
+    "pageFile": "haldi_03.jpg",
+    "crop": {
+      "leftPct": 0.19,
+      "topPct": 0.22,
+      "widthPct": 0.18,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-hld-004.jpg",
+    "fullPageImage": "/catalog-pages/haldi_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Lemon Yellow",
+      "White Pearls",
+      "Mirrorwork"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.529Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-haldi",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.529Z"
+  },
+  {
+    "id": "vas-hld-005",
+    "code": "VAS-HLD-005",
+    "name": "Multi-Tiered Sunset Ombre Ruffle Lehenga",
+    "category": "Bridal Wear",
+    "occasion": "Haldi",
+    "gender": "Bride",
+    "colors": [
+      "Cream",
+      "Marigold Yellow",
+      "Tangerine Orange"
+    ],
+    "fabric": "Tiered Crinkled Chiffon with Mirror Blouse",
+    "price": "Price on Request (Bespoke)",
+    "description": "Youthful sunset ombre tiered lehenga transitioning from ivory to warm marigold with mirror-embroidered choli.",
+    "sourceCatalog": "Haldi__0ce6bdf7.pdf",
+    "sourceCatalogName": "Haldi Ceremony",
+    "sourcePage": 3,
+    "pageFile": "haldi_03.jpg",
+    "crop": {
+      "leftPct": 0.37,
+      "topPct": 0.22,
+      "widthPct": 0.19,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-hld-005.jpg",
+    "fullPageImage": "/catalog-pages/haldi_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Cream",
+      "Marigold Yellow",
+      "Tangerine Orange"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.569Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-haldi",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.569Z"
+  },
+  {
+    "id": "vas-hld-006",
+    "code": "VAS-HLD-006",
+    "name": "Heritage Mustard Lehenga with Miniature Art Mural",
+    "category": "Bridal Wear",
+    "occasion": "Haldi",
+    "gender": "Bride",
+    "colors": [
+      "Mustard Gold",
+      "Mughal Color Palette",
+      "Pearls"
+    ],
+    "fabric": "Raw Silk Skirt with Miniature Royal Procession Painting",
+    "price": "Price on Request (Bespoke)",
+    "description": "Collector's bridal skirt illustrated with royal miniature courtroom scenes and paired with a pearl-studded blouse.",
+    "sourceCatalog": "Haldi__0ce6bdf7.pdf",
+    "sourceCatalogName": "Haldi Ceremony",
+    "sourcePage": 3,
+    "pageFile": "haldi_03.jpg",
+    "crop": {
+      "leftPct": 0.78,
+      "topPct": 0.22,
+      "widthPct": 0.21,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-hld-006.jpg",
+    "fullPageImage": "/catalog-pages/haldi_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Mustard Gold",
+      "Mughal Color Palette",
+      "Pearls"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.609Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-haldi",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.609Z"
+  },
+  {
+    "id": "vas-hld-007",
+    "code": "VAS-HLD-007",
+    "name": "Mustard Yellow Pearl-Accented Cloud Frock",
+    "category": "Kids Girls",
+    "occasion": "Haldi",
+    "gender": "Kids",
+    "colors": [
+      "Sunny Yellow",
+      "Ivory Pearls"
+    ],
+    "fabric": "Tulle Net with Pearl Encrusted Peter Pan Collar",
+    "price": "Price on Request (Bespoke)",
+    "description": "Fluffy sunshine yellow tulle dress with dramatic seed pearl collar and delicate pearl scatterings.",
+    "sourceCatalog": "Haldi__0ce6bdf7.pdf",
+    "sourceCatalogName": "Haldi Ceremony",
+    "sourcePage": 5,
+    "pageFile": "haldi_05.jpg",
+    "crop": {
+      "leftPct": 0.78,
+      "topPct": 0.12,
+      "widthPct": 0.21,
+      "heightPct": 0.86
+    },
+    "image": "/catalog-images/vas-hld-007.jpg",
+    "fullPageImage": "/catalog-pages/haldi_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Sunny Yellow",
+      "Ivory Pearls"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.651Z",
+    "categoryId": "cat-kids-girls",
+    "sourceCatalogId": "cat-haldi",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.651Z"
+  },
+  {
+    "id": "vas-hwc-001",
+    "code": "VAS-HWC-001",
+    "name": "Beige Raw Silk Asymmetric Kurta with Stitched Dhoti",
+    "category": "Men's Couture",
+    "occasion": "House Warming",
+    "gender": "Men",
+    "colors": [
+      "Beige",
+      "Champagne Gold"
+    ],
+    "fabric": "Raw Silk with Golden Beadwork & Scalloped Neckline",
+    "price": "Price on Request (Bespoke)",
+    "description": "Contemporary asymmetric cowl kurta with delicate French knot buttis and pre-stitched pleated dhoti.",
+    "sourceCatalog": "House_warming_ceremony_28991031.pdf",
+    "sourceCatalogName": "House Warming Ceremony",
+    "sourcePage": 2,
+    "pageFile": "house_warming_02.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-hwc-001.jpg",
+    "fullPageImage": "/catalog-pages/house_warming_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Beige",
+      "Champagne Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.694Z",
+    "categoryId": "cat-mens-couture",
+    "sourceCatalogId": "cat-house-warming",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.694Z"
+  },
+  {
+    "id": "vas-hwc-002",
+    "code": "VAS-HWC-002",
+    "name": "Copper Brown Angrakha with Gold Border Dhoti",
+    "category": "Men's Couture",
+    "occasion": "House Warming",
+    "gender": "Men",
+    "colors": [
+      "Copper Brown",
+      "Ivory Gold"
+    ],
+    "fabric": "Silk Jacquard with Embroidered Yoke & Kasavu Dhoti",
+    "price": "Price on Request (Bespoke)",
+    "description": "Warm copper-toned front-slit angrakha tunic styled over a shimmering ivory gold bordered traditional dhoti.",
+    "sourceCatalog": "House_warming_ceremony_28991031.pdf",
+    "sourceCatalogName": "House Warming Ceremony",
+    "sourcePage": 2,
+    "pageFile": "house_warming_02.jpg",
+    "crop": {
+      "leftPct": 0.5,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-hwc-002.jpg",
+    "fullPageImage": "/catalog-pages/house_warming_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Copper Brown",
+      "Ivory Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.738Z",
+    "categoryId": "cat-mens-couture",
+    "sourceCatalogId": "cat-house-warming",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.738Z"
+  },
+  {
+    "id": "vas-hwc-003",
+    "code": "VAS-HWC-003",
+    "name": "Crimson Red Velvet Flared Lehenga with Intricate Zari",
+    "category": "Women's Occasion Wear",
+    "occasion": "House Warming",
+    "gender": "Women",
+    "colors": [
+      "Deep Crimson",
+      "Gold Zari"
+    ],
+    "fabric": "Micro-Velvet with Heavy Zari Floral Kalis",
+    "price": "Price on Request (Bespoke)",
+    "description": "Deep red velvet festive lehenga adorned with antique zari bootas and an embroidered scalloped dupatta.",
+    "sourceCatalog": "House_warming_ceremony_28991031.pdf",
+    "sourceCatalogName": "House Warming Ceremony",
+    "sourcePage": 3,
+    "pageFile": "house_warming_03.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-hwc-003.jpg",
+    "fullPageImage": "/catalog-pages/house_warming_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Deep Crimson",
+      "Gold Zari"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.782Z",
+    "categoryId": "cat-womens-occasion",
+    "sourceCatalogId": "cat-house-warming",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.782Z"
+  },
+  {
+    "id": "vas-hwc-004",
+    "code": "VAS-HWC-004",
+    "name": "Aubergine Purple Organza Lehenga with Botanical Motifs",
+    "category": "Women's Occasion Wear",
+    "occasion": "House Warming",
+    "gender": "Women",
+    "colors": [
+      "Aubergine Purple",
+      "Rose Gold",
+      "Bronze"
+    ],
+    "fabric": "Pure Silk Organza with Cutwork Zardozi Border",
+    "price": "Price on Request (Bespoke)",
+    "description": "Royal deep purple organza skirt with multi-hued botanical floral borders and matching embellished choli.",
+    "sourceCatalog": "House_warming_ceremony_28991031.pdf",
+    "sourceCatalogName": "House Warming Ceremony",
+    "sourcePage": 3,
+    "pageFile": "house_warming_03.jpg",
+    "crop": {
+      "leftPct": 0.5,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-hwc-004.jpg",
+    "fullPageImage": "/catalog-pages/house_warming_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Aubergine Purple",
+      "Rose Gold",
+      "Bronze"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.827Z",
+    "categoryId": "cat-womens-occasion",
+    "sourceCatalogId": "cat-house-warming",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.827Z"
+  },
+  {
+    "id": "vas-hwc-005",
+    "code": "VAS-HWC-005",
+    "name": "White Elephant Embroidered Kurta with Blue Silk Dhoti",
+    "category": "Kids Boys",
+    "occasion": "House Warming",
+    "gender": "Kids",
+    "colors": [
+      "Ivory",
+      "Royal Navy Blue",
+      "Gold"
+    ],
+    "fabric": "Raw Silk with Royal Procession Elephant Borders",
+    "price": "Price on Request (Bespoke)",
+    "description": "Junior ceremony kurta featuring majestic hand-embroidered royal elephants over an ocean blue silk dhoti.",
+    "sourceCatalog": "House_warming_ceremony_28991031.pdf",
+    "sourceCatalogName": "House Warming Ceremony",
+    "sourcePage": 4,
+    "pageFile": "house_warming_04.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-hwc-005.jpg",
+    "fullPageImage": "/catalog-pages/house_warming_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory",
+      "Royal Navy Blue",
+      "Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.867Z",
+    "categoryId": "cat-kids-boys",
+    "sourceCatalogId": "cat-house-warming",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.867Z"
+  },
+  {
+    "id": "vas-hwc-006",
+    "code": "VAS-HWC-006",
+    "name": "Wine Brocade Flared Skirt with Tailored Embroidered Blouse",
+    "category": "Kids Girls",
+    "occasion": "House Warming",
+    "gender": "Kids",
+    "colors": [
+      "Wine Red",
+      "Rose Gold Zari"
+    ],
+    "fabric": "Woven Banarasi Brocade with Mandarin Collar Top",
+    "price": "Price on Request (Bespoke)",
+    "description": "Heirloom wine red Banarasi skirt paired with a structured high-collar embroidered festive crop jacket.",
+    "sourceCatalog": "House_warming_ceremony_28991031.pdf",
+    "sourceCatalogName": "House Warming Ceremony",
+    "sourcePage": 5,
+    "pageFile": "house_warming_05.jpg",
+    "crop": {
+      "leftPct": 0.3,
+      "topPct": 0.02,
+      "widthPct": 0.35,
+      "heightPct": 0.95
+    },
+    "image": "/catalog-images/vas-hwc-006.jpg",
+    "fullPageImage": "/catalog-pages/house_warming_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Wine Red",
+      "Rose Gold Zari"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.920Z",
+    "categoryId": "cat-kids-girls",
+    "sourceCatalogId": "cat-house-warming",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.920Z"
+  },
+  {
+    "id": "vas-pwd-001",
+    "code": "VAS-PWD-001",
+    "name": "Charcoal Ruffle Gown with Navy Tuxedo",
+    "category": "Couple Coordinates",
+    "occasion": "Pre-Wedding",
+    "gender": "Couples",
+    "colors": [
+      "Charcoal Grey",
+      "Dusty Rose",
+      "Navy Blue"
+    ],
+    "fabric": "Layered Ruffled Tulle with Corset Boning",
+    "price": "Price on Request (Bespoke)",
+    "description": "Romantic forest photoshoot ensemble with voluminous tiered tulle skirt and peak lapel formal tuxedo.",
+    "sourceCatalog": "Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+    "sourceCatalogName": "Pre-Wedding Shoot",
+    "sourcePage": 2,
+    "pageFile": "pre_wedding_02.jpg",
+    "crop": {
+      "leftPct": 0.03,
+      "topPct": 0.2,
+      "widthPct": 0.3,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-pwd-001.jpg",
+    "fullPageImage": "/catalog-pages/pre_wedding_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Charcoal Grey",
+      "Dusty Rose",
+      "Navy Blue"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:52.963Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-pre-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:52.963Z"
+  },
+  {
+    "id": "vas-pwd-002",
+    "code": "VAS-PWD-002",
+    "name": "Gold Sequin Mermaid Gown with Crisp Evening Tuxedo",
+    "category": "Couple Coordinates",
+    "occasion": "Pre-Wedding",
+    "gender": "Couples",
+    "colors": [
+      "Liquid Gold",
+      "Black",
+      "White"
+    ],
+    "fabric": "Sequined Mesh with Floor-Sweeping Chiffon Train",
+    "price": "Price on Request (Bespoke)",
+    "description": "Glamorous red-carpet couple look featuring a form-fitting strapless gold sequin gown with sweeping cape train.",
+    "sourceCatalog": "Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+    "sourceCatalogName": "Pre-Wedding Shoot",
+    "sourcePage": 2,
+    "pageFile": "pre_wedding_02.jpg",
+    "crop": {
+      "leftPct": 0.33,
+      "topPct": 0.2,
+      "widthPct": 0.34,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-pwd-002.jpg",
+    "fullPageImage": "/catalog-pages/pre_wedding_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Liquid Gold",
+      "Black",
+      "White"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.008Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-pre-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.008Z"
+  },
+  {
+    "id": "vas-pwd-003",
+    "code": "VAS-PWD-003",
+    "name": "Tangerine Mirror-Work Lehenga with Matching Kurta-Jacket",
+    "category": "Couple Coordinates",
+    "occasion": "Pre-Wedding",
+    "gender": "Couples",
+    "colors": [
+      "Tangerine Orange",
+      "Gold Mirrorwork"
+    ],
+    "fabric": "Georgette with Heavy Mirror Bootas & Dupatta",
+    "price": "Price on Request (Bespoke)",
+    "description": "Festive palace lawn pre-wedding coordinate in radiant marigold orange with full-skirt mirror reflections.",
+    "sourceCatalog": "Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+    "sourceCatalogName": "Pre-Wedding Shoot",
+    "sourcePage": 3,
+    "pageFile": "pre_wedding_03.jpg",
+    "crop": {
+      "leftPct": 0.69,
+      "topPct": 0.2,
+      "widthPct": 0.29,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-pwd-003.jpg",
+    "fullPageImage": "/catalog-pages/pre_wedding_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Tangerine Orange",
+      "Gold Mirrorwork"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.054Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-pre-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.054Z"
+  },
+  {
+    "id": "vas-pwd-004",
+    "code": "VAS-PWD-004",
+    "name": "Chalk White Double-Breasted Tailored Safari Suit",
+    "category": "Groom Couture",
+    "occasion": "Pre-Wedding",
+    "gender": "Groom",
+    "colors": [
+      "Chalk White",
+      "Gold Buttons"
+    ],
+    "fabric": "Structured Cotton Linen with Gold Crest Buttons",
+    "price": "Price on Request (Bespoke)",
+    "description": "Sharply tailored short-sleeve resort suit featuring peaked lapels and gilded naval buttons.",
+    "sourceCatalog": "Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+    "sourceCatalogName": "Pre-Wedding Shoot",
+    "sourcePage": 4,
+    "pageFile": "pre_wedding_04.jpg",
+    "crop": {
+      "leftPct": 0.33,
+      "topPct": 0.18,
+      "widthPct": 0.34,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-pwd-004.jpg",
+    "fullPageImage": "/catalog-pages/pre_wedding_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Chalk White",
+      "Gold Buttons"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.102Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-pre-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.102Z"
+  },
+  {
+    "id": "vas-pwd-005",
+    "code": "VAS-PWD-005",
+    "name": "Ice Blue High-Low Starburst Tulle Ballgown",
+    "category": "Bridal Wear",
+    "occasion": "Pre-Wedding",
+    "gender": "Bride",
+    "colors": [
+      "Ice Blue",
+      "Glitter Silver"
+    ],
+    "fabric": "Multi-Layered Starburst Sequined Tulle",
+    "price": "Price on Request (Bespoke)",
+    "description": "Fairytale off-shoulder gown with puffy sleeves, high-low hemline, and thousands of shimmering silver starlight sequins.",
+    "sourceCatalog": "Maroon_and_Pink_Elegant_Decorative_Wedding_Organizer_Presentation_2e1e5242.pdf",
+    "sourceCatalogName": "Pre-Wedding Shoot",
+    "sourcePage": 5,
+    "pageFile": "pre_wedding_05.jpg",
+    "crop": {
+      "leftPct": 0.33,
+      "topPct": 0.18,
+      "widthPct": 0.34,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-pwd-005.jpg",
+    "fullPageImage": "/catalog-pages/pre_wedding_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ice Blue",
+      "Glitter Silver"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.148Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-pre-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.148Z"
+  },
+  {
+    "id": "vas-nmc-001",
+    "code": "VAS-NMC-001",
+    "name": "Sky Blue Coordinated Family Ensemble",
+    "category": "Couple Coordinates",
+    "occasion": "Naming Ceremony",
+    "gender": "Couples",
+    "colors": [
+      "Powder Blue",
+      "Silver",
+      "Blush Pink"
+    ],
+    "fabric": "Chiffon & Raw Silk with Resham Embroidery",
+    "price": "Price on Request (Bespoke)",
+    "description": "Harmonious 4-piece coordinated family set featuring mother's lehenga, father's sherwani, and matching kids outfits.",
+    "sourceCatalog": "Naming_cermony_a8dcb215.pdf",
+    "sourceCatalogName": "Naming Ceremony",
+    "sourcePage": 3,
+    "pageFile": "naming_ceremony_03.jpg",
+    "crop": {
+      "leftPct": 0.53,
+      "topPct": 0.13,
+      "widthPct": 0.35,
+      "heightPct": 0.76
+    },
+    "image": "/catalog-images/vas-nmc-001.jpg",
+    "fullPageImage": "/catalog-pages/naming_ceremony_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Powder Blue",
+      "Silver",
+      "Blush Pink"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.193Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-naming-ceremony",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.193Z"
+  },
+  {
+    "id": "vas-nmc-002",
+    "code": "VAS-NMC-002",
+    "name": "Ivory Organza Puff-Sleeve Frock with Pastel Tulips",
+    "category": "Baby Girls",
+    "occasion": "Naming Ceremony",
+    "gender": "Baby",
+    "colors": [
+      "Ivory White",
+      "Pastel Pink Tulips"
+    ],
+    "fabric": "Organza Silk with Handcrafted 3D Fabric Tulips",
+    "price": "Price on Request (Bespoke)",
+    "description": "Heirloom newborn ceremony dress adorned with seed pearl neckline, voluminous puff sleeves, and tulip accents.",
+    "sourceCatalog": "Naming_cermony_a8dcb215.pdf",
+    "sourceCatalogName": "Naming Ceremony",
+    "sourcePage": 4,
+    "pageFile": "naming_ceremony_04.jpg",
+    "crop": {
+      "leftPct": 0.05,
+      "topPct": 0.28,
+      "widthPct": 0.3,
+      "heightPct": 0.68
+    },
+    "image": "/catalog-images/vas-nmc-002.jpg",
+    "fullPageImage": "/catalog-pages/naming_ceremony_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory White",
+      "Pastel Pink Tulips"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.233Z",
+    "categoryId": "cat-baby-girls",
+    "sourceCatalogId": "cat-naming-ceremony",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.233Z"
+  },
+  {
+    "id": "vas-nmc-003",
+    "code": "VAS-NMC-003",
+    "name": "Ice Blue Floral Applique Princess Ballgown",
+    "category": "Baby Girls",
+    "occasion": "Naming Ceremony",
+    "gender": "Baby",
+    "colors": [
+      "Ice Blue",
+      "Lavender",
+      "Seed Pearls"
+    ],
+    "fabric": "Soft French Tulle with 3D Hydrangea Blossoms",
+    "price": "Price on Request (Bespoke)",
+    "description": "Opulent infant ballgown featuring pearl-encrusted bodice and cascading silver flower petals.",
+    "sourceCatalog": "Naming_cermony_a8dcb215.pdf",
+    "sourceCatalogName": "Naming Ceremony",
+    "sourcePage": 4,
+    "pageFile": "naming_ceremony_04.jpg",
+    "crop": {
+      "leftPct": 0.65,
+      "topPct": 0.28,
+      "widthPct": 0.3,
+      "heightPct": 0.68
+    },
+    "image": "/catalog-images/vas-nmc-003.jpg",
+    "fullPageImage": "/catalog-pages/naming_ceremony_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ice Blue",
+      "Lavender",
+      "Seed Pearls"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.273Z",
+    "categoryId": "cat-baby-girls",
+    "sourceCatalogId": "cat-naming-ceremony",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.273Z"
+  },
+  {
+    "id": "vas-nmc-004",
+    "code": "VAS-NMC-004",
+    "name": "Royal Indigo Blue Banarasi Brocade Pavada Dress",
+    "category": "Baby Girls",
+    "occasion": "Naming Ceremony",
+    "gender": "Baby",
+    "colors": [
+      "Royal Blue",
+      "Gold Zari",
+      "Cream"
+    ],
+    "fabric": "Pure Banarasi Silk with Traditional Kalidar Weaves",
+    "price": "Price on Request (Bespoke)",
+    "description": "Traditional south Indian newborn pavada dress with rich peacock blue and gold brocade weave.",
+    "sourceCatalog": "Naming_cermony_a8dcb215.pdf",
+    "sourceCatalogName": "Naming Ceremony",
+    "sourcePage": 5,
+    "pageFile": "naming_ceremony_05.jpg",
+    "crop": {
+      "leftPct": 0.65,
+      "topPct": 0.28,
+      "widthPct": 0.3,
+      "heightPct": 0.68
+    },
+    "image": "/catalog-images/vas-nmc-004.jpg",
+    "fullPageImage": "/catalog-pages/naming_ceremony_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Royal Blue",
+      "Gold Zari",
+      "Cream"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.316Z",
+    "categoryId": "cat-baby-girls",
+    "sourceCatalogId": "cat-naming-ceremony",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.316Z"
+  },
+  {
+    "id": "vas-nmc-005",
+    "code": "VAS-NMC-005",
+    "name": "Ivory Silk Kurta Pajama with Golden Embroidery & Bow Tie",
+    "category": "Baby Boys",
+    "occasion": "Naming Ceremony",
+    "gender": "Baby",
+    "colors": [
+      "Ivory",
+      "Soft Gold"
+    ],
+    "fabric": "Mulberry Raw Silk with Hand Zari Threading",
+    "price": "Price on Request (Bespoke)",
+    "description": "Gentle baby boy ceremony set with buttoned Mandarin collar, matching silk bow tie, and relaxed trousers.",
+    "sourceCatalog": "Naming_cermony_a8dcb215.pdf",
+    "sourceCatalogName": "Naming Ceremony",
+    "sourcePage": 6,
+    "pageFile": "naming_ceremony_06.jpg",
+    "crop": {
+      "leftPct": 0.05,
+      "topPct": 0.28,
+      "widthPct": 0.3,
+      "heightPct": 0.68
+    },
+    "image": "/catalog-images/vas-nmc-005.jpg",
+    "fullPageImage": "/catalog-pages/naming_ceremony_06.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory",
+      "Soft Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.357Z",
+    "categoryId": "cat-baby-boys",
+    "sourceCatalogId": "cat-naming-ceremony",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.357Z"
+  },
+  {
+    "id": "vas-nmc-006",
+    "code": "VAS-NMC-006",
+    "name": "Midnight Velvet Bandhgala with Golden Deer & Tree Motif",
+    "category": "Baby Boys",
+    "occasion": "Naming Ceremony",
+    "gender": "Baby",
+    "colors": [
+      "Midnight Black",
+      "Gold Zardozi"
+    ],
+    "fabric": "Silk Velvet with Handcrafted Golden Deer Embroidery",
+    "price": "Price on Request (Bespoke)",
+    "description": "Regal baby boy miniature bandhgala coat embellished with a majestic golden deer standing beneath star-lit branches.",
+    "sourceCatalog": "Naming_cermony_a8dcb215.pdf",
+    "sourceCatalogName": "Naming Ceremony",
+    "sourcePage": 7,
+    "pageFile": "naming_ceremony_07.jpg",
+    "crop": {
+      "leftPct": 0.35,
+      "topPct": 0.28,
+      "widthPct": 0.3,
+      "heightPct": 0.68
+    },
+    "image": "/catalog-images/vas-nmc-006.jpg",
+    "fullPageImage": "/catalog-pages/naming_ceremony_07.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Midnight Black",
+      "Gold Zardozi"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.398Z",
+    "categoryId": "cat-baby-boys",
+    "sourceCatalogId": "cat-naming-ceremony",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.398Z"
+  },
+  {
+    "id": "vas-sng-001",
+    "code": "VAS-SNG-001",
+    "name": "Dusty Rose Pink Sequin Tuxedo with White Trousers",
+    "category": "Groom Couture",
+    "occasion": "Sangeeth",
+    "gender": "Groom",
+    "colors": [
+      "Dusty Rose Pink",
+      "Silver",
+      "Ivory"
+    ],
+    "fabric": "Geometric Sequin Fabric with Shawl Lapel",
+    "price": "Price on Request (Bespoke)",
+    "description": "Cocktail sangeeth tuxedo drenched in rose-pink micro sequins with satin shawl lapels and bowtie.",
+    "sourceCatalog": "Sangeeth_505cd679.pdf",
+    "sourceCatalogName": "Sangeeth Celebration",
+    "sourcePage": 2,
+    "pageFile": "sangeeth_02.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-sng-001.jpg",
+    "fullPageImage": "/catalog-pages/sangeeth_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Dusty Rose Pink",
+      "Silver",
+      "Ivory"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.440Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-sangeeth",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.440Z"
+  },
+  {
+    "id": "vas-sng-002",
+    "code": "VAS-SNG-002",
+    "name": "Black Velvet Asymmetric Bandhgala with Antique Silver Work",
+    "category": "Groom Couture",
+    "occasion": "Sangeeth",
+    "gender": "Groom",
+    "colors": [
+      "Jet Black",
+      "Antique Silver"
+    ],
+    "fabric": "Velvet with Diagonal Brocade Panel",
+    "price": "Price on Request (Bespoke)",
+    "description": "Contemporary asymmetric high-low bandhgala jacket with metallic pewter inlay and antique silver buttons.",
+    "sourceCatalog": "Sangeeth_505cd679.pdf",
+    "sourceCatalogName": "Sangeeth Celebration",
+    "sourcePage": 2,
+    "pageFile": "sangeeth_02.jpg",
+    "crop": {
+      "leftPct": 0.5,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-sng-002.jpg",
+    "fullPageImage": "/catalog-pages/sangeeth_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Jet Black",
+      "Antique Silver"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.484Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-sangeeth",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.484Z"
+  },
+  {
+    "id": "vas-sng-003",
+    "code": "VAS-SNG-003",
+    "name": "Molten Gold Sculptural Metallic Gown with Peplum Ruffles",
+    "category": "Bridal Wear",
+    "occasion": "Sangeeth",
+    "gender": "Bride",
+    "colors": [
+      "Liquid Gold",
+      "Bronze Shimmer"
+    ],
+    "fabric": "High-Shine Metallic Lamé with Sculpted Ruffles",
+    "price": "Price on Request (Bespoke)",
+    "description": "Dramatic architectural evening gown with strapless sweetheart neckline and multi-tiered embellished ruffles.",
+    "sourceCatalog": "Sangeeth_505cd679.pdf",
+    "sourceCatalogName": "Sangeeth Celebration",
+    "sourcePage": 3,
+    "pageFile": "sangeeth_03.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-sng-003.jpg",
+    "fullPageImage": "/catalog-pages/sangeeth_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Liquid Gold",
+      "Bronze Shimmer"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.528Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-sangeeth",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.528Z"
+  },
+  {
+    "id": "vas-sng-004",
+    "code": "VAS-SNG-004",
+    "name": "Midnight Navy Chevron Sequin Lehenga Ensemble",
+    "category": "Bridal Wear",
+    "occasion": "Sangeeth",
+    "gender": "Bride",
+    "colors": [
+      "Midnight Blue",
+      "Silver Crystals"
+    ],
+    "fabric": "Georgette with Linear Chevron Sequin Flutes",
+    "price": "Price on Request (Bespoke)",
+    "description": "Mesmerizing sangeeth dance lehenga covered in vertical rows of crystal and navy sequins with full-sleeve sweetheart choli.",
+    "sourceCatalog": "Sangeeth_505cd679.pdf",
+    "sourceCatalogName": "Sangeeth Celebration",
+    "sourcePage": 3,
+    "pageFile": "sangeeth_03.jpg",
+    "crop": {
+      "leftPct": 0.75,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-sng-004.jpg",
+    "fullPageImage": "/catalog-pages/sangeeth_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Midnight Blue",
+      "Silver Crystals"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.578Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-sangeeth",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.578Z"
+  },
+  {
+    "id": "vas-sng-005",
+    "code": "VAS-SNG-005",
+    "name": "Crimson Velvet Skater Dress with Draped Sleeve Bows",
+    "category": "Kids Girls",
+    "occasion": "Sangeeth",
+    "gender": "Kids",
+    "colors": [
+      "Crimson Red",
+      "Gold Pearls"
+    ],
+    "fabric": "Micro-Velvet with Floral Hem Embroidery",
+    "price": "Price on Request (Bespoke)",
+    "description": "Rich red junior party gown featuring shoulder bow ribbons and intricate floral zari border work.",
+    "sourceCatalog": "Sangeeth_505cd679.pdf",
+    "sourceCatalogName": "Sangeeth Celebration",
+    "sourcePage": 4,
+    "pageFile": "sangeeth_04.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.18,
+      "widthPct": 0.25,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-sng-005.jpg",
+    "fullPageImage": "/catalog-pages/sangeeth_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Crimson Red",
+      "Gold Pearls"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.627Z",
+    "categoryId": "cat-kids-girls",
+    "sourceCatalogId": "cat-sangeeth",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.627Z"
+  },
+  {
+    "id": "vas-sng-006",
+    "code": "VAS-SNG-006",
+    "name": "Aqua Shimmer Tuxedo Jacket with Geometric Crystals",
+    "category": "Kids Boys",
+    "occasion": "Sangeeth",
+    "gender": "Kids",
+    "colors": [
+      "Aqua Blue",
+      "Silver Crystals"
+    ],
+    "fabric": "Silk Satin with Embellished Lapels & Bow Tie",
+    "price": "Price on Request (Bespoke)",
+    "description": "Statement junior boy's evening jacket in glistening aqua with hand-stitched crystal streak patterns.",
+    "sourceCatalog": "Sangeeth_505cd679.pdf",
+    "sourceCatalogName": "Sangeeth Celebration",
+    "sourcePage": 5,
+    "pageFile": "sangeeth_05.jpg",
+    "crop": {
+      "leftPct": 0.33,
+      "topPct": 0.18,
+      "widthPct": 0.33,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-sng-006.jpg",
+    "fullPageImage": "/catalog-pages/sangeeth_05.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Aqua Blue",
+      "Silver Crystals"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.680Z",
+    "categoryId": "cat-kids-boys",
+    "sourceCatalogId": "cat-sangeeth",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.680Z"
+  },
+  {
+    "id": "vas-wed-001",
+    "code": "VAS-WED-001",
+    "name": "Pastel Lilac & Sky Blue Silk Kalidar Couple Ensemble",
+    "category": "Couple Coordinates",
+    "occasion": "Wedding",
+    "gender": "Couples",
+    "colors": [
+      "Lilac",
+      "Sky Blue",
+      "Champagne Gold"
+    ],
+    "fabric": "Handwoven Silk with Mirror Border & Silver Zari",
+    "price": "Price on Request (Bespoke)",
+    "description": "Day-wedding pastel bridal couple pairing a dual-tone lavender-blue kalidar lehenga with an open embroidered lilac sherwani.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 2,
+    "pageFile": "wedding_02.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.2,
+      "widthPct": 0.25,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-wed-001.jpg",
+    "fullPageImage": "/catalog-pages/wedding_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Lilac",
+      "Sky Blue",
+      "Champagne Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.723Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.723Z"
+  },
+  {
+    "id": "vas-wed-002",
+    "code": "VAS-WED-002",
+    "name": "Emerald Zardozi Floral Lehenga with Ivory Raw Silk Sherwani",
+    "category": "Couple Coordinates",
+    "occasion": "Wedding",
+    "gender": "Couples",
+    "colors": [
+      "Emerald Green",
+      "Ivory Cream",
+      "Ruby Red"
+    ],
+    "fabric": "Heavy Raw Silk with Hand-Sewn Zardozi Floral Tapestry",
+    "price": "Price on Request (Bespoke)",
+    "description": "Breathtaking heritage wedding ensemble showcasing deep forest green floral embroidery on bride paired with royal groom sherwani and emerald mala.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 2,
+    "pageFile": "wedding_02.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.2,
+      "widthPct": 0.25,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-wed-002.jpg",
+    "fullPageImage": "/catalog-pages/wedding_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Emerald Green",
+      "Ivory Cream",
+      "Ruby Red"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.768Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.768Z"
+  },
+  {
+    "id": "vas-wed-003",
+    "code": "VAS-WED-003",
+    "name": "Ice Blue Royal Palace Embroidered Wedding Coordinate",
+    "category": "Couple Coordinates",
+    "occasion": "Wedding",
+    "gender": "Couples",
+    "colors": [
+      "Ice Blue",
+      "Ivory Silver"
+    ],
+    "fabric": "Georgette & Tussar Silk with Resham Embroidery",
+    "price": "Price on Request (Bespoke)",
+    "description": "Ethereal palace destination wedding set in crystalline ice blue with matching sherwani and lehenga embroidery.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 2,
+    "pageFile": "wedding_02.jpg",
+    "crop": {
+      "leftPct": 0.5,
+      "topPct": 0.2,
+      "widthPct": 0.22,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-wed-003.jpg",
+    "fullPageImage": "/catalog-pages/wedding_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ice Blue",
+      "Ivory Silver"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.814Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.814Z"
+  },
+  {
+    "id": "vas-wed-004",
+    "code": "VAS-WED-004",
+    "name": "Midnight Navy Velvet Sherwani & Regal Zari Kalidar Couple",
+    "category": "Couple Coordinates",
+    "occasion": "Wedding",
+    "gender": "Couples",
+    "colors": [
+      "Midnight Navy",
+      "Burnished Gold"
+    ],
+    "fabric": "Micro-Velvet & Brocade with Zari Kalis",
+    "price": "Price on Request (Bespoke)",
+    "description": "Grand royal reception ensemble in deep midnight blue with extensive zardozi embroidery across groom's achkan and bridal lehenga.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 2,
+    "pageFile": "wedding_02.jpg",
+    "crop": {
+      "leftPct": 0.72,
+      "topPct": 0.2,
+      "widthPct": 0.28,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-wed-004.jpg",
+    "fullPageImage": "/catalog-pages/wedding_02.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Midnight Navy",
+      "Burnished Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.861Z",
+    "categoryId": "cat-couple-coordinates",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.861Z"
+  },
+  {
+    "id": "vas-wed-005",
+    "code": "VAS-WED-005",
+    "name": "Dusty Rose Floral Embroidered Sherwani with Silk Dhoti",
+    "category": "Groom Couture",
+    "occasion": "Wedding",
+    "gender": "Groom",
+    "colors": [
+      "Dusty Rose",
+      "Ivory Gold"
+    ],
+    "fabric": "Raw Silk with Tone-on-Tone Floral Embroidery",
+    "price": "Price on Request (Bespoke)",
+    "description": "Romantic groom sherwani in dusty rose pink paired with a coordinated pleated dhoti and embroidered mojris.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 3,
+    "pageFile": "wedding_03.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.2,
+      "widthPct": 0.25,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-wed-005.jpg",
+    "fullPageImage": "/catalog-pages/wedding_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Dusty Rose",
+      "Ivory Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.907Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.907Z"
+  },
+  {
+    "id": "vas-wed-006",
+    "code": "VAS-WED-006",
+    "name": "Mustard Gold Jacquard Angrakha with Emerald Royal Mala",
+    "category": "Groom Couture",
+    "occasion": "Wedding",
+    "gender": "Groom",
+    "colors": [
+      "Mustard Gold",
+      "Emerald Green"
+    ],
+    "fabric": "Pure Banarasi Woven Silk with Gold Threading",
+    "price": "Price on Request (Bespoke)",
+    "description": "Opulent ceremonial gold angrakha worn with traditional pleated silk dhoti and layered emerald bead necklaces.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 3,
+    "pageFile": "wedding_03.jpg",
+    "crop": {
+      "leftPct": 0.25,
+      "topPct": 0.2,
+      "widthPct": 0.25,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-wed-006.jpg",
+    "fullPageImage": "/catalog-pages/wedding_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Mustard Gold",
+      "Emerald Green"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.950Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.950Z"
+  },
+  {
+    "id": "vas-wed-007",
+    "code": "VAS-WED-007",
+    "name": "Royal Ivory Sherwani with Zari Safa & Embroidered Stole",
+    "category": "Groom Couture",
+    "occasion": "Wedding",
+    "gender": "Groom",
+    "colors": [
+      "Royal Ivory",
+      "Antique Gold"
+    ],
+    "fabric": "Heavy Matka Silk with Zari Embroidery & Tissue Safa",
+    "price": "Price on Request (Bespoke)",
+    "description": "Quintessential Indian Maharaja wedding sherwani complete with regal turban, matching doshala stole, and gold dhoti.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 3,
+    "pageFile": "wedding_03.jpg",
+    "crop": {
+      "leftPct": 0.72,
+      "topPct": 0.2,
+      "widthPct": 0.28,
+      "heightPct": 0.78
+    },
+    "image": "/catalog-images/vas-wed-007.jpg",
+    "fullPageImage": "/catalog-pages/wedding_03.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Royal Ivory",
+      "Antique Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:53.994Z",
+    "categoryId": "cat-groom-couture",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:53.994Z"
+  },
+  {
+    "id": "vas-wed-008",
+    "code": "VAS-WED-008",
+    "name": "Rose Gold & Ruby Lotus Heritage Kalidar Bridal Lehenga",
+    "category": "Bridal Wear",
+    "occasion": "Wedding",
+    "gender": "Bride",
+    "colors": [
+      "Rose Gold",
+      "Ruby Red",
+      "Blush Lotus"
+    ],
+    "fabric": "Handwoven Silk Tissue with 3D Zardozi Lotuses",
+    "price": "Price on Request (Bespoke)",
+    "description": "Masterpiece bridal lehenga skirt celebrating the sacred lotus flower in shades of ruby and rose gold on a woven metallic canvas.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 4,
+    "pageFile": "wedding_04.jpg",
+    "crop": {
+      "leftPct": 0,
+      "topPct": 0.18,
+      "widthPct": 0.36,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-wed-008.jpg",
+    "fullPageImage": "/catalog-pages/wedding_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Rose Gold",
+      "Ruby Red",
+      "Blush Lotus"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:54.048Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:54.048Z"
+  },
+  {
+    "id": "vas-wed-009",
+    "code": "VAS-WED-009",
+    "name": "Torani Mustard Silk Heritage Lehenga with Crimson Blouse",
+    "category": "Bridal Wear",
+    "occasion": "Wedding",
+    "gender": "Bride",
+    "colors": [
+      "Mustard Gold",
+      "Deep Crimson",
+      "Olive Green"
+    ],
+    "fabric": "Heritage Chanderi Silk with Paisley & Floral Gota Patti",
+    "price": "Price on Request (Bespoke)",
+    "description": "Acclaimed designer heritage bridal look featuring a flared mustard silk skirt, long-line crimson blouse, and olive organza veil.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 4,
+    "pageFile": "wedding_04.jpg",
+    "crop": {
+      "leftPct": 0.36,
+      "topPct": 0.18,
+      "widthPct": 0.28,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-wed-009.jpg",
+    "fullPageImage": "/catalog-pages/wedding_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Mustard Gold",
+      "Deep Crimson",
+      "Olive Green"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:54.095Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:54.095Z"
+  },
+  {
+    "id": "vas-wed-010",
+    "code": "VAS-WED-010",
+    "name": "Ivory & Crimson Banarasi Silk Bridal Lehenga with Golden Border",
+    "category": "Bridal Wear",
+    "occasion": "Wedding",
+    "gender": "Bride",
+    "colors": [
+      "Ivory",
+      "Crimson Maroon",
+      "Antique Gold"
+    ],
+    "fabric": "Pure Banarasi Silk & Velvet with Intricate Temple Borders",
+    "price": "Price on Request (Bespoke)",
+    "description": "Classic ivory wedding lehenga highlighted by a heavy velvet crimson border embellished with antique zardozi patterns.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 4,
+    "pageFile": "wedding_04.jpg",
+    "crop": {
+      "leftPct": 0.64,
+      "topPct": 0.18,
+      "widthPct": 0.36,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-wed-010.jpg",
+    "fullPageImage": "/catalog-pages/wedding_04.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory",
+      "Crimson Maroon",
+      "Antique Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:54.147Z",
+    "categoryId": "cat-bridal-wear",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:54.147Z"
+  },
+  {
+    "id": "vas-wed-011",
+    "code": "VAS-WED-011",
+    "name": "Black Velvet Bandhgala with Majestic Peacock Zardozi",
+    "category": "Kids Boys",
+    "occasion": "Wedding",
+    "gender": "Kids",
+    "colors": [
+      "Midnight Black",
+      "Antique Gold"
+    ],
+    "fabric": "Silk Velvet with Golden Peacock Threadwork",
+    "price": "Price on Request (Bespoke)",
+    "description": "Royal junior bandhgala tailored in black silk velvet featuring a majestic gold embroidered peacock spreading its feathers.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 6,
+    "pageFile": "wedding_06.jpg",
+    "crop": {
+      "leftPct": 0.28,
+      "topPct": 0.18,
+      "widthPct": 0.27,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-wed-011.jpg",
+    "fullPageImage": "/catalog-pages/wedding_06.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Midnight Black",
+      "Antique Gold"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:54.194Z",
+    "categoryId": "cat-kids-boys",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:54.194Z"
+  },
+  {
+    "id": "vas-wed-012",
+    "code": "VAS-WED-012",
+    "name": "Ivory Silk Kurta with Traditional Temple Border & Dhoti",
+    "category": "Kids Boys",
+    "occasion": "Wedding",
+    "gender": "Kids",
+    "colors": [
+      "Ivory White",
+      "Gold Zari",
+      "Multi-Color Border"
+    ],
+    "fabric": "Mulberry Silk with Temple Border Work",
+    "price": "Price on Request (Bespoke)",
+    "description": "Traditional south Indian boy's wedding set with illustrated border embroidery and pleated gold border dhoti.",
+    "sourceCatalog": "Wedding__10459534.pdf",
+    "sourceCatalogName": "Royal Wedding Couture",
+    "sourcePage": 6,
+    "pageFile": "wedding_06.jpg",
+    "crop": {
+      "leftPct": 0.55,
+      "topPct": 0.18,
+      "widthPct": 0.22,
+      "heightPct": 0.8
+    },
+    "image": "/catalog-images/vas-wed-012.jpg",
+    "fullPageImage": "/catalog-pages/wedding_06.jpg",
+    "published": true,
+    "sizes": [
+      "Made-to-Measure",
+      "Custom Fit",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "availableColors": [
+      "Ivory White",
+      "Gold Zari",
+      "Multi-Color Border"
+    ],
+    "currency": "INR",
+    "createdAt": "2026-10-22T17:27:54.235Z",
+    "categoryId": "cat-kids-boys",
+    "sourceCatalogId": "cat-wedding",
+    "pricingType": "bespoke",
+    "updatedAt": "2026-10-22T17:27:54.235Z"
+  }
+]

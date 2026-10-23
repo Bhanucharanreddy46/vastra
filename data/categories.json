@@ -1,0 +1,287 @@
+[
+  {
+    "id": "cat-couple-coordinates",
+    "name": "Couple Coordinates",
+    "slug": "couple-coordinates",
+    "description": "Harmonious bride and groom / partner coordinating couture ensembles designed in unison with mirrored motifs, complementary textiles, and synchronized color narratives.",
+    "gender": "Couples",
+    "applicableOccasions": [
+      "Wedding",
+      "Sangeeth",
+      "Haldi",
+      "Engagement",
+      "House Warming",
+      "Baby Shower",
+      "Pre-Wedding"
+    ],
+    "displayOrder": 1,
+    "featuredImage": "/catalog-images/vas-bsh-001.jpg",
+    "productCount": 14,
+    "isFeatured": true,
+    "tags": ["Coordinated Sets", "Matching Palette", "Zardozi Florals", "Silk & Chiffon", "Royal Couples"],
+    "metadata": {
+      "craftsmanship": "Handcrafted Zardozi, tonal resham embroidery, micro-pleated tulle, and pure Banarasi brocade",
+      "consultationType": "Private Bridal Suite & Couple Fitting Consultation",
+      "bespokeTurnaroundWeeks": "6 to 8 weeks",
+      "customizationOptions": [
+        "Synchronized Fabric Dyeing",
+        "Couples Monogram Embroidery",
+        "Coordinated Stole & Dupatta Weave",
+        "Made-to-Measure Architectural Fit"
+      ],
+      "priceRangeSummary": "Price on Request (Bespoke Haute Couture)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-bridal-wear",
+    "name": "Bridal Wear",
+    "slug": "bridal-wear",
+    "description": "Regal lehengas, handwoven Kanchipuram sarees, and ceremonial ensembles crafted with antique dabka, metallic sequins, and heritage zardozi for the discerning bride.",
+    "gender": "Women",
+    "applicableOccasions": [
+      "Wedding",
+      "Sangeeth",
+      "Haldi",
+      "Engagement",
+      "Pre-Wedding"
+    ],
+    "displayOrder": 2,
+    "featuredImage": "/catalog-images/vas-wed-001.jpg",
+    "productCount": 14,
+    "isFeatured": true,
+    "tags": ["Bridal Lehenga", "Heritage Velvet", "Raw Silk", "Antique Zardozi", "Veiled Dupatta"],
+    "metadata": {
+      "craftsmanship": "Heritage hand-embroidery including Pitta work, Marodi, Swarovski crystal encrusting, and fine French knots",
+      "consultationType": "Senior Atelier Master & Head Couturier Session",
+      "bespokeTurnaroundWeeks": "8 to 12 weeks",
+      "customizationOptions": [
+        "Custom Auspicious Shloka / Date Border Weaving",
+        "Double Dupatta Styling",
+        "Corset Structure & Can-Can Volume Customization",
+        "Bespoke Color Formulation"
+      ],
+      "priceRangeSummary": "Price on Request (Bespoke Heritage Tier)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-groom-couture",
+    "name": "Groom Couture",
+    "slug": "groom-couture",
+    "description": "Aristocratic sherwanis, bandhgalas, silk angrakhas, and contemporary evening tuxedos hand-tailored with bespoke shoulder lines and imperial bullion threadwork.",
+    "gender": "Men",
+    "applicableOccasions": [
+      "Wedding",
+      "Sangeeth",
+      "Haldi",
+      "Engagement",
+      "Pre-Wedding"
+    ],
+    "displayOrder": 3,
+    "featuredImage": "/catalog-images/vas-wed-002.jpg",
+    "productCount": 12,
+    "isFeatured": true,
+    "tags": ["Royal Sherwani", "Bandhgala", "Tuxedo", "Pichwai Silk", "Chikankari"],
+    "metadata": {
+      "craftsmanship": "Savile Row precision internal canvassing, Lucknowi Chikankari, and antique brass filigree buttons",
+      "consultationType": "Master Tailor Bespoke Measurement & Silhouette Review",
+      "bespokeTurnaroundWeeks": "5 to 7 weeks",
+      "customizationOptions": [
+        "Matching Stole & Safa Pagdi Weaving",
+        "Mother-of-Pearl & Semi-Precious Button Sets",
+        "Monogrammed Silk Lining",
+        "Coordinated Mojari Footwear Textile"
+      ],
+      "priceRangeSummary": "Price on Request (Bespoke Tailoring)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-womens-occasion",
+    "name": "Women's Occasion Wear",
+    "slug": "womens-occasion-wear",
+    "description": "Timeless celebration silhouettes including modern shararas, pre-draped concept sarees, dramatic cape sets, and handwoven festive drapes for auspicious occasions.",
+    "gender": "Women",
+    "applicableOccasions": [
+      "House Warming",
+      "Sangeeth",
+      "Haldi",
+      "Baby Shower",
+      "Naming Ceremony"
+    ],
+    "displayOrder": 4,
+    "featuredImage": "/catalog-images/vas-hwc-001.jpg",
+    "productCount": 5,
+    "isFeatured": false,
+    "tags": ["Sharara Set", "Pre-draped Saree", "Banarasi Brocade", "Mirror-work", "Festive Drapes"],
+    "metadata": {
+      "craftsmanship": "Lightweight pure Georgette, Organza with hand-cut scalloped borders, and Gota Patti embellishment",
+      "consultationType": "Stylist Consultation & Custom Sizing",
+      "bespokeTurnaroundWeeks": "3 to 5 weeks",
+      "customizationOptions": [
+        "Blouse Neckline & Sleeve Restyling",
+        "Dupatta Length & Border Variations",
+        "Lightweight Summer / Winter Lining"
+      ],
+      "priceRangeSummary": "Price on Request (Celebratory Ready-Couture)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-mens-couture",
+    "name": "Men's Couture",
+    "slug": "mens-couture",
+    "description": "Refined festive kurta sets, silk bundi jackets, draped Nehru silhouettes, and embroidered ceremonial waistcoats tailored for comfortable festive elegance.",
+    "gender": "Men",
+    "applicableOccasions": [
+      "House Warming",
+      "Haldi",
+      "Sangeeth",
+      "Naming Ceremony"
+    ],
+    "displayOrder": 5,
+    "featuredImage": "/catalog-images/vas-hwc-002.jpg",
+    "productCount": 5,
+    "isFeatured": false,
+    "tags": ["Kurta Set", "Silk Bundi", "Nehru Jacket", "Chanderi Silk", "Festive Elegance"],
+    "metadata": {
+      "craftsmanship": "Pure Chanderi and tussar silk weaves with thread embroidery and concealed plackets",
+      "consultationType": "Atelier Sizing & Fitting",
+      "bespokeTurnaroundWeeks": "3 to 4 weeks",
+      "customizationOptions": [
+        "Kurta Length & Collar Styling",
+        "Pocket Square & Stole Coordination",
+        "Pajama / Dhoti / Churidar Options"
+      ],
+      "priceRangeSummary": "Price on Request (Festive Bespoke)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-kids-girls",
+    "name": "Kids Girls",
+    "slug": "kids-girls",
+    "description": "Miniature luxury lehengas, tiered tulle celebration dresses, and silk pattu pavada sets designed with delicate feather-light linings for comfort and joyful movement.",
+    "gender": "Kids",
+    "applicableOccasions": [
+      "Wedding",
+      "Haldi",
+      "House Warming",
+      "Naming Ceremony"
+    ],
+    "displayOrder": 6,
+    "featuredImage": "/catalog-images/vas-wed-003.jpg",
+    "productCount": 5,
+    "isFeatured": false,
+    "tags": ["Junior Lehenga", "Tulle Frock", "Pattu Pavada", "Hypoallergenic Silk", "Comfort Fit"],
+    "metadata": {
+      "craftsmanship": "100% pure organic mulmul lining, skin-safe micro-sequins, and expandable margin seams for growing ages (1 to 12 years)",
+      "consultationType": "Junior Sizing & Measurement Support",
+      "bespokeTurnaroundWeeks": "2 to 4 weeks",
+      "customizationOptions": [
+        "Comfort Soft-Elastic Waistbands",
+        "Growth Margin Allowance in Seams",
+        "Matching Headband & Hair Accessories"
+      ],
+      "priceRangeSummary": "Price on Request (Junior Bespoke)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-kids-boys",
+    "name": "Kids Boys",
+    "slug": "kids-boys",
+    "description": "Junior royal sherwanis, festive silk kurtas with matching jackets, miniature bandhgalas, and dapper tailored tuxedos crafted with soft non-scratch interiors.",
+    "gender": "Kids",
+    "applicableOccasions": [
+      "Wedding",
+      "Haldi",
+      "House Warming",
+      "Engagement",
+      "Naming Ceremony"
+    ],
+    "displayOrder": 7,
+    "featuredImage": "/catalog-images/vas-wed-004.jpg",
+    "productCount": 6,
+    "isFeatured": false,
+    "tags": ["Junior Sherwani", "Boys Kurta Jacket", "Mini Bandhgala", "Tuxedo", "Festive Junior"],
+    "metadata": {
+      "craftsmanship": "Ultra-soft cotton linings, featherlight brocades, and snap-button closures for easy dressing",
+      "consultationType": "Junior Fitting Guidance",
+      "bespokeTurnaroundWeeks": "2 to 4 weeks",
+      "customizationOptions": [
+        "Comfort Stretch Waistband Pants",
+        "Matching Miniature Safa / Pocket Square",
+        "Father-Son Coordinated Styling"
+      ],
+      "priceRangeSummary": "Price on Request (Junior Couture)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-baby-girls",
+    "name": "Baby Girls",
+    "slug": "baby-girls",
+    "description": "Infant celebratory couture frocks, featherlight silk cradle gowns, and hand-embroidered naming ceremony outfits tailored with dermatologist-certified soft lining.",
+    "gender": "Kids",
+    "applicableOccasions": [
+      "Naming Ceremony",
+      "Baby Shower"
+    ],
+    "displayOrder": 8,
+    "featuredImage": "/catalog-images/vas-nam-001.jpg",
+    "productCount": 3,
+    "isFeatured": false,
+    "tags": ["Infant Frock", "Cradle Ceremony Gown", "Organic Silk", "Pure Cotton Lining", "Baby Couture"],
+    "metadata": {
+      "craftsmanship": "Sensory-soft French tulle, zero-irritation rolled seams, and tagless construction for 0 to 18 months",
+      "consultationType": "Infant Custom Size Consultation",
+      "bespokeTurnaroundWeeks": "2 to 3 weeks",
+      "customizationOptions": [
+        "Matching Bonnet & Baby Booties",
+        "Embroidered Birth Date Ribbon",
+        "Cradle Drapery Fabric Coordination"
+      ],
+      "priceRangeSummary": "Price on Request (Infant Atelier)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  },
+  {
+    "id": "cat-baby-boys",
+    "name": "Baby Boys",
+    "slug": "baby-boys",
+    "description": "Miniature infant velvet bandhgalas, silk dhoti sets, and soft festive rompers designed for naming rituals, cradle ceremonies, and first milestone portraits.",
+    "gender": "Kids",
+    "applicableOccasions": [
+      "Naming Ceremony",
+      "Baby Shower"
+    ],
+    "displayOrder": 9,
+    "featuredImage": "/catalog-images/vas-nam-002.jpg",
+    "productCount": 2,
+    "isFeatured": false,
+    "tags": ["Infant Bandhgala", "Baby Dhoti Kurta", "Cradle Attire", "Soft Velvet", "Milestone Outfit"],
+    "metadata": {
+      "craftsmanship": "Plush baby velvet, breathable mulberry silk, and concealed diaper-access snap buttons",
+      "consultationType": "Infant Atelier Support",
+      "bespokeTurnaroundWeeks": "2 to 3 weeks",
+      "customizationOptions": [
+        "Matching Baby Stole & Cap",
+        "Soft-Elastic Pre-Pleated Dhoti",
+        "Commemorative Keepsake Gift Box"
+      ],
+      "priceRangeSummary": "Price on Request (Infant Atelier)"
+    },
+    "createdAt": "2026-10-22T17:27:51.000Z",
+    "updatedAt": "2026-10-23T09:15:00.000Z"
+  }
+]
