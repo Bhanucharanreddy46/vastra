@@ -1,0 +1,119 @@
+[
+  {
+    "orderId": "VAS-ORD-2026-4892",
+    "transactionId": "TXN-UPI-BHANU-9481",
+    "trackingStage": "Atelier Tailoring",
+    "status": "In Progress",
+    "stageHistory": [
+      {
+        "stage": "Placed",
+        "timestamp": "28 Oct 2026, 04:15 PM",
+        "note": "Order confirmed & reserved via Instant UPI. Master craftsperson assigned."
+      },
+      {
+        "stage": "Atelier Tailoring",
+        "timestamp": "29 Oct 2026, 11:30 AM",
+        "note": "Mulberry silk cut, hand-guided zardozi embroidery in progress at Hyderabad atelier."
+      },
+      {
+        "stage": "Dispatched",
+        "timestamp": "30 Oct 2026, 05:18 pm",
+        "note": "Hand-inspected, packed in luxury garment chamber, handed to white-glove insured courier."
+      },
+      {
+        "stage": "Delivered",
+        "timestamp": "30 Oct 2026, 05:18 pm",
+        "note": "Delivered in person and signed by recipient. We hope the ensemble graces your occasion beautifully."
+      },
+      {
+        "stage": "Placed",
+        "timestamp": "30 Oct 2026, 05:18 pm",
+        "note": "Order placed & payment authorized successfully. Reserved with the Vastra Atelier."
+      },
+      {
+        "stage": "Atelier Tailoring",
+        "timestamp": "30 Oct 2026, 05:18 pm",
+        "note": "Garment hand-cut and assigned to master artisan. Zari and zardozi detailing underway."
+      }
+    ],
+    "items": [
+      {
+        "id": "vas-fst-001",
+        "code": "VAS-FST-001",
+        "name": "Handcrafted Zardozi Royal Ivory Sherwani Ensemble",
+        "price": 28500,
+        "selectedSize": "40",
+        "quantity": 1,
+        "image": "/catalog-images/vas-wed-001.jpg"
+      },
+      {
+        "id": "vas-fst-005",
+        "code": "VAS-FST-005",
+        "name": "Classic Midnight Velvet Bandhgala Tuxedo",
+        "price": 24000,
+        "selectedSize": "40",
+        "quantity": 1,
+        "image": "/catalog-images/vas-san-001.jpg"
+      }
+    ],
+    "amount": 52500,
+    "paymentMethod": "Instant UPI (Google Pay)",
+    "customerDetails": {
+      "name": "Bhanu Charan Reddy",
+      "phone": "+91 94402 09898",
+      "email": "kmbhanucharanreddy@gmail.com",
+      "address": "Villa 14, Royal Palm Residences, Road No. 36, Jubilee Hills, Hyderabad - 500033"
+    },
+    "estimatedDelivery": "4 Nov 2026",
+    "createdAt": "2026-10-28T10:45:00.000Z"
+  },
+  {
+    "orderId": "VAS-ORD-2026-3104",
+    "transactionId": "TXN-CARD-BHANU-2109",
+    "trackingStage": "Delivered",
+    "status": "Completed",
+    "stageHistory": [
+      {
+        "stage": "Placed",
+        "timestamp": "12 Oct 2026, 02:00 PM",
+        "note": "Payment authorized via Metal Amex."
+      },
+      {
+        "stage": "Atelier Tailoring",
+        "timestamp": "14 Oct 2026, 10:00 AM",
+        "note": "Bespoke tailoring and finishing completed."
+      },
+      {
+        "stage": "Dispatched",
+        "timestamp": "17 Oct 2026, 09:15 AM",
+        "note": "Air couriered in Vastra archival cedar garment box."
+      },
+      {
+        "stage": "Delivered",
+        "timestamp": "19 Oct 2026, 01:20 PM",
+        "note": "Delivered and signed by patron."
+      }
+    ],
+    "items": [
+      {
+        "id": "vas-fst-007",
+        "code": "VAS-FST-007",
+        "name": "Raw Silk Ochre Yellow Kurta & Bundi Ensemble",
+        "price": 14500,
+        "selectedSize": "40",
+        "quantity": 1,
+        "image": "/catalog-images/vas-hal-001.jpg"
+      }
+    ],
+    "amount": 14500,
+    "paymentMethod": "Luxury Card (Amex)",
+    "customerDetails": {
+      "name": "Bhanu Charan Reddy",
+      "phone": "+91 94402 09898",
+      "email": "kmbhanucharanreddy@gmail.com",
+      "address": "Villa 14, Royal Palm Residences, Road No. 36, Jubilee Hills, Hyderabad - 500033"
+    },
+    "estimatedDelivery": "Delivered on 19 Oct 2026",
+    "createdAt": "2026-10-12T08:30:00.000Z"
+  }
+]

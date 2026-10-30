@@ -1,0 +1,26 @@
+[
+  {
+    "uid": "patron_bhanu_001",
+    "name": "Bhanu Charan Reddy",
+    "email": "kmbhanucharanreddy@gmail.com",
+    "phone": "+91 94402 09898",
+    "address": {
+      "house": "Villa 14, Royal Palm Residences",
+      "street": "Road No. 36, Jubilee Hills",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "pincode": "500033",
+      "landmark": "Near Peddamma Temple"
+    },
+    "measurements": {
+      "chest": "40 inches",
+      "waist": "34 inches",
+      "kurtaLength": "42 inches",
+      "shoulder": "18.5 inches",
+      "sleeveLength": "25 inches"
+    },
+    "tier": "VIP Haute Patrons Club",
+    "memberSince": "October 2026",
+    "updatedAt": "2026-10-30T10:00:00.000Z"
+  }
+]

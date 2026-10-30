@@ -12,6 +12,8 @@
   <meta property="og:description" content="Explore our bespoke clothing catalog across Wedding, Sangeeth, Haldi, Engagement, Baby Shower, and Celebratory Occasions.">
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Jost:wght@300;400;500;600&family=Tiro+Devanagari+Sanskrit&display=swap">
+  <link rel="stylesheet" href="/vastra-cart.css">
+  <link rel="stylesheet" href="/auth.css">
   
   <style>
     :root {
@@ -585,13 +587,22 @@
     
     <nav class="header__nav" aria-label="Main Navigation">
       <a href="/">Home</a>
+      <a href="/#festive" style="color:var(--champagne)">Festive Collection</a>
       <a href="#showcase" class="active">Collection</a>
       <a href="#download-catalogs">Download Catalogs</a>
+      <a href="/profile.html" style="color:var(--champagne)">My Profile</a>
       <a href="/#about">About Atelier</a>
       <a href="#contact-inquiry" onclick="openDirectInquiry()">Contact</a>
     </nav>
 
     <div class="header__actions">
+      <button class="cart-nav-btn" id="openCartBtn" aria-label="Open Shopping Bag">
+        <span class="cart-nav-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </span>
+        <span class="cart-nav-text">Bag</span>
+        <span class="cart-count-badge" id="cartCountBadge">0</span>
+      </button>
       <button class="btn-outline" onclick="openAdminModal()">Admin Dashboard</button>
       <button class="btn-primary" onclick="openDirectInquiry()">Bespoke Inquiry</button>
     </div>
@@ -1584,5 +1595,7 @@
       });
     });
   </script>
+  <script src="/auth.js"></script>
+  <script src="/vastra-cart.js"></script>
 </body>
 </html>

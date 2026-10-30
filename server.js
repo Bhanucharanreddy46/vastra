@@ -19,7 +19,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname));
 
 // Data paths
+const PATRONS_FILE = path.join(__dirname, 'data', 'patrons.json');
 const PRODUCTS_FILE = path.join(__dirname, 'data', 'catalog_products.json');
+const FESTIVE_FILE = path.join(__dirname, 'data', 'festive_products.json');
+const ORDERS_FILE = path.join(__dirname, 'data', 'orders.json');
 const CATEGORIES_FILE = path.join(__dirname, 'data', 'categories.json');
 const CATALOGS_FILE = path.join(__dirname, 'data', 'catalogs.json');
 const INQUIRIES_FILE = path.join(__dirname, 'data', 'inquiries.json');
@@ -105,6 +108,239 @@ app.get('/api/catalog/products/:id', (req, res) => {
   }
 
   res.json({ success: true, product });
+});
+
+// 2b. Get Vastra Festive Collection products
+app.get('/api/festive/products', (req, res) => {
+  const { category, search } = req.query;
+  let products = readJsonFile(FESTIVE_FILE, []);
+
+  if (category && category !== 'all') {
+    products = products.filter(p => p.category?.toLowerCase() === category.toLowerCase());
+  }
+
+  if (search && search.trim() !== '') {
+    const q = search.toLowerCase().trim();
+    products = products.filter(p =>
+      p.name?.toLowerCase().includes(q) ||
+      p.code?.toLowerCase().includes(q) ||
+      p.description?.toLowerCase().includes(q) ||
+      p.category?.toLowerCase().includes(q) ||
+      p.fabric?.toLowerCase().includes(q)
+    );
+  }
+
+  res.json({ success: true, count: products.length, products });
+});
+
+// 2c. Submit completed order (simulated instant UPI / Card payment)
+app.post('/api/orders', (req, res) => {
+  const { items, paymentMethod, customerDetails, amount, status = 'Confirmed', patronEmail, patronId } = req.body;
+
+  if (!items || !items.length) {
+    return res.status(400).json({ success: false, error: 'Cart items are required' });
+  }
+
+  const orders = readJsonFile(ORDERS_FILE, []);
+  const randomSuffix = Math.floor(1000 + Math.random() * 9000);
+  const orderId = `VAS-ORD-2026-${randomSuffix}`;
+  const transactionId = `TXN-${paymentMethod?.toUpperCase().replace(/[^A-Z0-9]/g, '-') || 'UPI'}-${Date.now().toString(36).toUpperCase()}-${Math.floor(100 + Math.random() * 900)}`;
+
+  const email = patronEmail || customerDetails?.email || 'kmbhanucharanreddy@gmail.com';
+
+  const newOrder = {
+    orderId,
+    transactionId,
+    patronEmail: email.toLowerCase(),
+    patronId: patronId || 'patron_user',
+    items,
+    amount: amount || items.reduce((acc, it) => acc + (it.price * (it.quantity || 1)), 0),
+    paymentMethod: paymentMethod || 'Instant UPI',
+    customerDetails: customerDetails || {
+      name: 'Bhanu Charan Reddy',
+      phone: '+91 94402 09898',
+      email: email,
+      address: 'Villa 14, Royal Palm Residences, Jubilee Hills, Hyderabad - 500033'
+    },
+    trackingStage: 'Placed',
+    status,
+    stageHistory: [
+      {
+        stage: 'Placed',
+        timestamp: new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) + ', ' + new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }),
+        note: 'Order placed & payment authorized successfully. Reserved with the Vastra Atelier.'
+      }
+    ],
+    estimatedDelivery: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toLocaleDateString('en-IN', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric'
+    }),
+    createdAt: new Date().toISOString()
+  };
+
+  orders.unshift(newOrder);
+  writeJsonFile(ORDERS_FILE, orders);
+
+  res.status(201).json({
+    success: true,
+    message: 'Order placed and payment confirmed successfully',
+    order: newOrder
+  });
+});
+
+// 2d. Get single order details
+app.get('/api/orders/:id', (req, res) => {
+  const { id } = req.params;
+  const orders = readJsonFile(ORDERS_FILE, []);
+  const order = orders.find(o => o.orderId === id || o.transactionId === id);
+
+  if (!order) {
+    return res.status(404).json({ success: false, error: 'Order not found' });
+  }
+
+  res.json({ success: true, order });
+});
+
+// 2e. Patron Profile: Get profile
+app.get('/api/patron/profile', (req, res) => {
+  const { email } = req.query;
+  const patrons = readJsonFile(PATRONS_FILE, []);
+  
+  if (!email) {
+    return res.json({ success: true, profile: patrons[0] || null });
+  }
+
+  const queryEmail = email.toLowerCase().trim();
+  let patron = patrons.find(p => p.email?.toLowerCase().trim() === queryEmail);
+
+  if (!patron) {
+    // Generate default profile structure
+    patron = {
+      uid: `patron_${Date.now().toString(36)}`,
+      name: queryEmail.split('@')[0].replace(/[._-]/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+      email: queryEmail,
+      phone: '+91 94402 09898',
+      address: {
+        house: 'Flat 402, Highgrove Suites',
+        street: 'Jubilee Hills Road 36',
+        city: 'Hyderabad',
+        state: 'Telangana',
+        pincode: '500033',
+        landmark: 'Near Jubilee Club'
+      },
+      measurements: {
+        chest: '40 inches',
+        waist: '34 inches',
+        kurtaLength: '42 inches',
+        shoulder: '18 inches'
+      },
+      tier: 'Patron Club',
+      memberSince: 'October 2026',
+      updatedAt: new Date().toISOString()
+    };
+    patrons.push(patron);
+    writeJsonFile(PATRONS_FILE, patrons);
+  }
+
+  res.json({ success: true, profile: patron });
+});
+
+// 2f. Patron Profile: Save / Update profile
+app.post('/api/patron/profile', (req, res) => {
+  const { email, name, phone, address, measurements } = req.body;
+  if (!email) {
+    return res.status(400).json({ success: false, error: 'Email is required' });
+  }
+
+  const patrons = readJsonFile(PATRONS_FILE, []);
+  const queryEmail = email.toLowerCase().trim();
+  const index = patrons.findIndex(p => p.email?.toLowerCase().trim() === queryEmail);
+
+  let updatedProfile;
+  if (index !== -1) {
+    updatedProfile = {
+      ...patrons[index],
+      name: name || patrons[index].name,
+      phone: phone || patrons[index].phone,
+      address: address ? { ...patrons[index].address, ...address } : patrons[index].address,
+      measurements: measurements ? { ...patrons[index].measurements, ...measurements } : patrons[index].measurements,
+      updatedAt: new Date().toISOString()
+    };
+    patrons[index] = updatedProfile;
+  } else {
+    updatedProfile = {
+      uid: `patron_${Date.now().toString(36)}`,
+      email: queryEmail,
+      name: name || queryEmail.split('@')[0],
+      phone: phone || '+91 94402 09898',
+      address: address || {},
+      measurements: measurements || {},
+      tier: 'Patron Club',
+      memberSince: 'October 2026',
+      updatedAt: new Date().toISOString()
+    };
+    patrons.push(updatedProfile);
+  }
+
+  writeJsonFile(PATRONS_FILE, patrons);
+  res.json({ success: true, message: 'Profile updated successfully', profile: updatedProfile });
+});
+
+// 2g. Patron Orders: Get orders for authenticated patron
+app.get('/api/patron/orders', (req, res) => {
+  const { email } = req.query;
+  const orders = readJsonFile(ORDERS_FILE, []);
+
+  if (!email || email === 'all') {
+    return res.json({ success: true, count: orders.length, orders });
+  }
+
+  const qEmail = email.toLowerCase().trim();
+  const patronOrders = orders.filter(o => 
+    o.patronEmail?.toLowerCase() === qEmail || 
+    o.customerDetails?.email?.toLowerCase() === qEmail ||
+    // For demo convenience, if patron is Bhanu, match any order with his phone or name
+    (qEmail.includes('bhanu') && (o.customerDetails?.name?.toLowerCase().includes('bhanu') || o.customerDetails?.phone?.includes('94402')))
+  );
+
+  res.json({ success: true, count: patronOrders.length, orders: patronOrders });
+});
+
+// 2h. Patron Order: Advance 4-stage tracking state (Placed -> Atelier Tailoring -> Dispatched -> Delivered)
+app.post('/api/patron/orders/:id/advance', (req, res) => {
+  const { id } = req.params;
+  const orders = readJsonFile(ORDERS_FILE, []);
+  const order = orders.find(o => o.orderId === id || o.transactionId === id);
+
+  if (!order) {
+    return res.status(404).json({ success: false, error: 'Order not found' });
+  }
+
+  const stages = ['Placed', 'Atelier Tailoring', 'Dispatched', 'Delivered'];
+  const currentIdx = stages.indexOf(order.trackingStage || 'Placed');
+  const nextIdx = (currentIdx + 1) % stages.length;
+  const nextStage = stages[nextIdx];
+
+  const nowString = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) + ', ' + new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
+
+  const notesMap = {
+    'Placed': 'Order placed & payment authorized successfully. Reserved with the Vastra Atelier.',
+    'Atelier Tailoring': 'Garment hand-cut and assigned to master artisan. Zari and zardozi detailing underway.',
+    'Dispatched': 'Hand-inspected, packed in luxury garment chamber, handed to white-glove insured courier.',
+    'Delivered': 'Delivered in person and signed by recipient. We hope the ensemble graces your occasion beautifully.'
+  };
+
+  order.trackingStage = nextStage;
+  if (!order.stageHistory) order.stageHistory = [];
+  order.stageHistory.push({
+    stage: nextStage,
+    timestamp: nowString,
+    note: notesMap[nextStage]
+  });
+
+  writeJsonFile(ORDERS_FILE, orders);
+  res.json({ success: true, message: `Order tracking updated to ${nextStage}`, order });
 });
 
 // 3. Get catalog categories with metadata
@@ -257,6 +493,15 @@ app.get('/clothing-catalog', (req, res) => {
 
 app.get('/clothing-catalog/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'clothing-catalog.html'));
+});
+
+// Dedicated Patron Profile Dashboard Page
+app.get('/profile', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'profile.html'));
+});
+
+app.get('/profile.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'profile.html'));
 });
 
 // Home Page Fallback

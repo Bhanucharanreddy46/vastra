@@ -1,0 +1,371 @@
+/* ========================================================
+   VASTRA LUXURY PATRON AUTHENTICATION & LOGIN GATE STYLES
+   ======================================================== */
+
+:root {
+  --auth-ink: #11100E;
+  --auth-surface: #181613;
+  --auth-card: #201D19;
+  --auth-ivory: #F1EADB;
+  --auth-champagne: #D9C7A3;
+  --auth-gold: #B39A6B;
+  --auth-beige: #A69B86;
+  --auth-line: rgba(241, 234, 219, 0.12);
+  --auth-gold-line: rgba(217, 199, 163, 0.28);
+  --auth-ease: cubic-bezier(0.22, 0.7, 0.2, 1);
+}
+
+/* --- Mandatory Fullscreen Login Gate Curtain --- */
+.vastra-gate-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: var(--auth-ink);
+  background-image: 
+    radial-gradient(ellipse 90% 80% at 50% 20%, rgba(217, 199, 163, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 70% 60% at 50% 90%, rgba(17, 16, 14, 0.98) 0%, #0B0A09 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow-y: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s var(--auth-ease), visibility 0.8s var(--auth-ease), transform 0.8s var(--auth-ease);
+}
+
+.vastra-gate-curtain.is-unlocked {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(1.02);
+}
+
+.vastra-gate-card {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background: rgba(24, 22, 19, 0.96);
+  border: 1px solid var(--auth-gold-line);
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.03);
+  padding: clamp(28px, 5vw, 44px) clamp(24px, 5vw, 40px);
+  color: var(--auth-ivory);
+  text-align: center;
+  margin: auto;
+  animation: gateCardAppear 0.9s var(--auth-ease) forwards;
+}
+
+@keyframes gateCardAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vastra-gate-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--auth-champagne), transparent);
+}
+
+/* Branding in Gate */
+.vastra-gate-emblem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(217, 199, 163, 0.35);
+  margin-bottom: 16px;
+  color: var(--auth-champagne);
+  background: rgba(217, 199, 163, 0.05);
+}
+
+.vastra-gate-logo {
+  font-family: "Bodoni Moda", "Didot", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  letter-spacing: 0.32em;
+  text-indent: 0.32em;
+  text-transform: uppercase;
+  color: var(--auth-ivory);
+  margin-bottom: 6px;
+}
+
+.vastra-gate-tagline {
+  font-family: "Jost", sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--auth-champagne);
+  margin-bottom: 20px;
+}
+
+.vastra-gate-desc {
+  font-family: "Jost", sans-serif;
+  font-size: 0.9rem;
+  color: var(--auth-beige);
+  line-height: 1.55;
+  margin-bottom: 28px;
+}
+
+/* VIP Instant Access Button */
+.vip-fastpass-box {
+  background: rgba(217, 199, 163, 0.06);
+  border: 1px dashed rgba(217, 199, 163, 0.35);
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.vip-fastpass-box:hover {
+  background: rgba(217, 199, 163, 0.1);
+  border-color: var(--auth-champagne);
+}
+
+.vip-fastpass-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.vip-fastpass-title {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--auth-champagne);
+  font-weight: 500;
+}
+
+.vip-fastpass-email {
+  font-size: 0.8rem;
+  color: var(--auth-ivory);
+}
+
+.vip-fastpass-btn {
+  background: var(--auth-champagne);
+  color: var(--auth-ink);
+  border: none;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.vip-fastpass-btn:hover {
+  background: #FFF;
+  transform: translateY(-1px);
+}
+
+/* Google Sign In Button */
+.btn-google-auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 48px;
+  background: #FFFFFF;
+  color: #1F1F1F;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-family: "Jost", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s var(--auth-ease);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  margin-bottom: 20px;
+}
+
+.btn-google-auth svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-google-auth:hover {
+  background: #F4F1EA;
+  border-color: var(--auth-champagne);
+  box-shadow: 0 6px 20px rgba(217, 199, 163, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Divider */
+.gate-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 18px 0;
+  color: var(--auth-beige);
+  font-size: 0.65rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+.gate-divider::before,
+.gate-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--auth-line);
+}
+
+/* Auth Tabs */
+.gate-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--auth-line);
+  margin-bottom: 20px;
+}
+
+.gate-tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px 4px;
+  font-family: "Jost", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--auth-beige);
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.gate-tab-btn.is-active {
+  color: var(--auth-champagne);
+}
+
+.gate-tab-btn.is-active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--auth-champagne);
+}
+
+/* Form inputs */
+.gate-field {
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.gate-field label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--auth-beige);
+  margin-bottom: 6px;
+}
+
+.gate-field input {
+  width: 100%;
+  padding: 11px 14px;
+  background: rgba(17, 16, 14, 0.7);
+  border: 1px solid var(--auth-line);
+  color: var(--auth-ivory);
+  font-family: "Jost", sans-serif;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.gate-field input:focus {
+  border-color: var(--auth-champagne);
+  background: rgba(17, 16, 14, 0.95);
+}
+
+/* Submit CTA */
+.btn-gate-submit {
+  width: 100%;
+  min-height: 48px;
+  background: rgba(217, 199, 163, 0.12);
+  border: 1px solid var(--auth-champagne);
+  color: var(--auth-champagne);
+  font-family: "Jost", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  margin-top: 10px;
+}
+
+.btn-gate-submit:hover {
+  background: var(--auth-champagne);
+  color: var(--auth-ink);
+}
+
+.gate-error-msg {
+  display: none;
+  padding: 10px;
+  background: rgba(224, 164, 142, 0.15);
+  border: 1px solid rgba(224, 164, 142, 0.4);
+  color: #E0A48E;
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.gate-footer-note {
+  font-size: 0.72rem;
+  color: var(--auth-beige);
+  margin-top: 20px;
+}
+
+/* --- Header Patron Profile Navigation Elements --- */
+.patron-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid rgba(217, 199, 163, 0.35);
+  background: rgba(217, 199, 163, 0.05);
+  color: var(--auth-champagne);
+  font-family: "Jost", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  text-decoration: none;
+}
+
+.patron-nav-btn:hover {
+  background: rgba(217, 199, 163, 0.15);
+  border-color: var(--auth-champagne);
+  color: var(--auth-ivory);
+}
+
+.patron-nav-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--auth-champagne);
+  color: var(--auth-ink);
+  font-weight: 600;
+  font-size: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

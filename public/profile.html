@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Patron Profile & Atelier Order Tracking | Vastra</title>
+  <meta name="description" content="View your personal details, saved delivery address, bespoke measurements, and track your Vastra haute couture orders across all 4 atelier stages.">
+  <meta name="theme-color" content="#11100E">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Jost:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/auth.css">
+  <link rel="stylesheet" href="/profile.css">
+  <link rel="stylesheet" href="/vastra-cart.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="profile-header">
+    <a href="/" class="brand-link" aria-label="Vastra Home">Vastra</a>
+
+    <nav class="profile-header-nav" aria-label="Main Navigation">
+      <a href="/">Atelier Home</a>
+      <a href="/#festive">Festive Collection</a>
+      <a href="/clothing-catalog">Catalog</a>
+      <a href="#orders" class="active">My Orders</a>
+    </nav>
+
+    <div class="profile-header-actions">
+      <button class="cart-nav-btn" id="openCartBtn" aria-label="Open Shopping Bag">
+        <span class="cart-nav-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </span>
+        <span class="cart-nav-text">Bag</span>
+        <span class="cart-count-badge" id="cartCountBadge">0</span>
+      </button>
+
+      <button type="button" class="btn-signout" id="btnSignOut">Sign Out</button>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="profile-hero">
+    <div class="profile-hero-top">
+      <div class="patron-identity">
+        <div class="patron-avatar-large" id="patronAvatar">B</div>
+        <div>
+          <p class="patron-tagline">Patron Private Chamber</p>
+          <h1 class="patron-name-heading" id="patronName">Bhanu Charan Reddy</h1>
+          <p class="patron-subtext" id="patronEmail">kmbhanucharanreddy@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="patron-tier-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        <span id="patronTier">VIP Haute Patrons Club</span>
+      </div>
+    </div>
+
+    <!-- Tabs Bar -->
+    <div class="profile-tabs-bar" role="tablist">
+      <button type="button" class="profile-tab active" data-target="panelOrders" role="tab" aria-selected="true">
+        Order Tracking & History (<span id="ordersCount">0</span>)
+      </button>
+      <button type="button" class="profile-tab" data-target="panelAddress" role="tab" aria-selected="false">
+        Delivery Address & Details
+      </button>
+      <button type="button" class="profile-tab" data-target="panelMeasurements" role="tab" aria-selected="false">
+        Bespoke Measurements
+      </button>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="profile-content">
+    
+    <!-- PANEL 1: ORDER TRACKING & HISTORY -->
+    <section class="tab-panel active" id="panelOrders" role="tabpanel">
+      <div id="ordersContainer" class="order-list">
+        <div style="text-align:center; padding: 40px; color: var(--beige);">
+          <div style="display:inline-block; width:24px; height:24px; border:2px solid var(--champagne); border-right-color:transparent; border-radius:50%; animation:spin 1s linear infinite; margin-bottom:12px;"></div>
+          <p style="letter-spacing:0.2em; text-transform:uppercase; font-size:0.75rem;">Loading your atelier orders...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 2: PERSONAL INFORMATION & DELIVERY ADDRESS -->
+    <section class="tab-panel" id="panelAddress" role="tabpanel">
+      <div class="profile-form-grid">
+        
+        <!-- Personal Contact Box -->
+        <div class="form-box">
+          <h2 class="form-box-title">Personal Credentials</h2>
+          <p class="form-box-desc">Your verified patron contact credentials for white-glove communication.</p>
+
+          <form id="contactDetailsForm">
+            <div class="form-group">
+              <label for="inputPatronFullName">Full Name</label>
+              <input type="text" id="inputPatronFullName" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPatronEmail">Registered Email</label>
+              <input type="email" id="inputPatronEmail" class="form-input" readonly>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPatronPhone">Contact Phone (+91)</label>
+              <input type="tel" id="inputPatronPhone" class="form-input" required placeholder="+91 94402 09898">
+            </div>
+
+            <button type="submit" class="btn-save-profile">Save Contact Details</button>
+            <div class="save-status-msg" id="contactSaveMsg">✓ Contact details saved successfully.</div>
+          </form>
+        </div>
+
+        <!-- Saved Delivery Address Box -->
+        <div class="form-box">
+          <h2 class="form-box-title">Saved Delivery Address</h2>
+          <p class="form-box-desc">Primary destination for insured white-glove garment dispatches.</p>
+
+          <form id="deliveryAddressForm">
+            <div class="form-group">
+              <label for="inputAddressHouse">House / Flat / Suite No.</label>
+              <input type="text" id="inputAddressHouse" class="form-input" placeholder="e.g. Villa 14, Royal Palm Residences">
+            </div>
+
+            <div class="form-group">
+              <label for="inputAddressStreet">Street / Road / Colony</label>
+              <input type="text" id="inputAddressStreet" class="form-input" placeholder="e.g. Road No. 36, Jubilee Hills">
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="inputAddressCity">City</label>
+                <input type="text" id="inputAddressCity" class="form-input" placeholder="Hyderabad">
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddressState">State</label>
+                <input type="text" id="inputAddressState" class="form-input" placeholder="Telangana">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="inputAddressPin">PIN Code</label>
+                <input type="text" id="inputAddressPin" class="form-input" placeholder="500033" maxlength="6">
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddressLandmark">Landmark</label>
+                <input type="text" id="inputAddressLandmark" class="form-input" placeholder="Near Peddamma Temple">
+              </div>
+            </div>
+
+            <button type="submit" class="btn-save-profile">Save Delivery Address</button>
+            <div class="save-status-msg" id="addressSaveMsg">✓ Delivery address updated successfully.</div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PANEL 3: BESPOKE MEASUREMENTS -->
+    <section class="tab-panel" id="panelMeasurements" role="tabpanel">
+      <div class="form-box" style="max-width: 800px; margin: 0 auto;">
+        <h2 class="form-box-title">Bespoke Tailoring Sizing Profile</h2>
+        <p class="form-box-desc">
+          Your personal measurement specifications for handcrafted sherwanis, kurtas, bandhgalas, and Nehru jackets.
+        </p>
+
+        <form id="measurementsForm">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="measChest">Chest Size</label>
+              <input type="text" id="measChest" class="form-input" placeholder="40 inches">
+            </div>
+            <div class="form-group">
+              <label for="measWaist">Waist Size</label>
+              <input type="text" id="measWaist" class="form-input" placeholder="34 inches">
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="measKurta">Kurta / Sherwani Length</label>
+              <input type="text" id="measKurta" class="form-input" placeholder="42 inches">
+            </div>
+            <div class="form-group">
+              <label for="measShoulder">Shoulder Width</label>
+              <input type="text" id="measShoulder" class="form-input" placeholder="18.5 inches">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="measSleeve">Sleeve Length</label>
+            <input type="text" id="measSleeve" class="form-input" placeholder="25 inches">
+          </div>
+
+          <button type="submit" class="btn-save-profile">Update Measurement Specs</button>
+          <div class="save-status-msg" id="measSaveMsg">✓ Sizing profile saved for future orders.</div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Client-side Scripts -->
+  <script src="/auth.js"></script>
+  <script src="/vastra-cart.js"></script>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const STAGES = ['Placed', 'Atelier Tailoring', 'Dispatched', 'Delivered'];
+      let currentPatron = null;
+      let patronOrders = [];
+
+      function formatINR(val) {
+        return '₹' + Number(val || 0).toLocaleString('en-IN');
+      }
+
+      // Tab Switching
+      const tabs = document.querySelectorAll('.profile-tab');
+      const panels = document.querySelectorAll('.tab-panel');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          panels.forEach(p => p.classList.remove('active'));
+
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+          const targetId = tab.dataset.target;
+          const targetPanel = document.getElementById(targetId);
+          if (targetPanel) targetPanel.classList.add('active');
+        });
+      });
+
+      // Sign Out Button
+      document.getElementById('btnSignOut').addEventListener('click', () => {
+        if (confirm('Are you sure you wish to sign out of your patron chamber?')) {
+          window.VastraAuth.logout();
+        }
+      });
+
+      // Load Patron Profile & Orders
+      async function initProfileView() {
+        const user = window.VastraAuth.getUser();
+        if (!user) {
+          // Gate will automatically prompt login
+          return;
+        }
+        currentPatron = user;
+
+        // Render top hero details
+        const patronNameEl = document.getElementById('patronName');
+        const patronEmailEl = document.getElementById('patronEmail');
+        const patronAvatarEl = document.getElementById('patronAvatar');
+        const patronTierEl = document.getElementById('patronTier');
+
+        if (patronNameEl) patronNameEl.textContent = user.name || 'Valued Patron';
+        if (patronEmailEl) patronEmailEl.textContent = user.email || '';
+        if (patronAvatarEl) patronAvatarEl.textContent = (user.name || user.email || 'P').charAt(0).toUpperCase();
+        if (patronTierEl) patronTierEl.textContent = user.tier || 'VIP Haute Patrons Club';
+
+        // Pre-fill form inputs
+        document.getElementById('inputPatronFullName').value = user.name || '';
+        document.getElementById('inputPatronEmail').value = user.email || '';
+        document.getElementById('inputPatronPhone').value = user.phone || '+91 94402 09898';
+
+        // Fetch detailed profile from server
+        try {
+          const res = await fetch(`/api/patron/profile?email=${encodeURIComponent(user.email)}`);
+          const data = await res.json();
+          if (data.success && data.profile) {
+            const p = data.profile;
+            if (p.address) {
+              document.getElementById('inputAddressHouse').value = p.address.house || '';
+              document.getElementById('inputAddressStreet').value = p.address.street || '';
+              document.getElementById('inputAddressCity').value = p.address.city || 'Hyderabad';
+              document.getElementById('inputAddressState').value = p.address.state || 'Telangana';
+              document.getElementById('inputAddressPin').value = p.address.pincode || '500033';
+              document.getElementById('inputAddressLandmark').value = p.address.landmark || '';
+            }
+            if (p.measurements) {
+              document.getElementById('measChest').value = p.measurements.chest || '40 inches';
+              document.getElementById('measWaist').value = p.measurements.waist || '34 inches';
+              document.getElementById('measKurta').value = p.measurements.kurtaLength || '42 inches';
+              document.getElementById('measShoulder').value = p.measurements.shoulder || '18.5 inches';
+              document.getElementById('measSleeve').value = p.measurements.sleeveLength || '25 inches';
+            }
+          }
+        } catch (err) {
+          console.warn('Could not fetch server profile:', err);
+        }
+
+        // Fetch Orders
+        loadPatronOrders(user.email);
+      }
+
+      async function loadPatronOrders(email) {
+        const container = document.getElementById('ordersContainer');
+        const countEl = document.getElementById('ordersCount');
+
+        try {
+          const res = await fetch(`/api/patron/orders?email=${encodeURIComponent(email)}`);
+          const data = await res.json();
+          patronOrders = data.orders || [];
+
+          if (countEl) countEl.textContent = String(patronOrders.length);
+
+          if (!patronOrders.length) {
+            container.innerHTML = `
+              <div class="empty-orders-view">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" style="color:var(--champagne); margin-bottom:12px;">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+                <h3 style="font-family:var(--display); font-size:1.4rem;">No Orders Placed Yet</h3>
+                <p>Explore our bespoke Festive & Wedding collections to reserve your first haute couture ensemble.</p>
+                <a href="/clothing-catalog" class="btn-explore-collection">Explore Catalog</a>
+              </div>
+            `;
+            return;
+          }
+
+          renderOrders(patronOrders);
+        } catch (err) {
+          console.error('Failed to load orders', err);
+          container.innerHTML = `<p style="color:#E0A48E; text-align:center;">Unable to load orders at this moment.</p>`;
+        }
+      }
+
+      function renderOrders(orders) {
+        const container = document.getElementById('ordersContainer');
+        container.innerHTML = orders.map(order => {
+          const currentStage = order.trackingStage || 'Placed';
+          const stageIdx = STAGES.indexOf(currentStage);
+          const progressPercent = Math.max(0, (stageIdx / (STAGES.length - 1)) * 75);
+
+          // Get latest stage history note
+          const latestHistory = (order.stageHistory && order.stageHistory.length)
+            ? order.stageHistory[order.stageHistory.length - 1]
+            : { stage: currentStage, note: 'Order reserved and confirmed.', timestamp: '' };
+
+          // Build Stepper Nodes for the 4 mandatory stages: Placed, Atelier Tailoring, Dispatched, Delivered
+          const stepperNodesHtml = STAGES.map((st, idx) => {
+            let stateClass = '';
+            let iconOrNum = idx + 1;
+            if (idx < stageIdx) {
+              stateClass = 'completed';
+              iconOrNum = '✓';
+            } else if (idx === stageIdx) {
+              stateClass = 'active';
+            }
+
+            // Find timestamp if in history
+            const hist = order.stageHistory?.find(h => h.stage === st);
+            const timeLabel = hist ? hist.timestamp : (idx <= stageIdx ? 'Completed' : 'Upcoming');
+
+            return `
+              <div class="step-node ${stateClass}">
+                <div class="step-circle">${iconOrNum}</div>
+                <div>
+                  <span class="step-name">${st}</span>
+                  <span class="step-time" style="display:block;">${timeLabel}</span>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          // Items HTML
+          const itemsHtml = (order.items || []).map(it => `
+            <div class="order-item-row">
+              <img src="${it.image || '/catalog-images/vas-wed-001.jpg'}" alt="${it.name}" class="order-item-img">
+              <div class="order-item-info">
+                <h4 class="order-item-title">${it.name}</h4>
+                <div class="order-item-spec">Code: <strong>${it.code || 'VAS'}</strong> &bull; Size: <strong>${it.selectedSize || '40'}</strong> &bull; Qty: <strong>${it.quantity || 1}</strong></div>
+              </div>
+              <div class="order-item-price">${formatINR(it.price * (it.quantity || 1))}</div>
+            </div>
+          `).join('');
+
+          // WhatsApp query link
+          const waMsg = encodeURIComponent(`Hello Vastra Atelier Concierge, I am inquiring about my Order ${order.orderId} (Current Stage: ${currentStage}). Kindly provide the dispatch update.`);
+          const waUrl = `https://wa.me/919440209898?text=${waMsg}`;
+
+          return `
+            <article class="order-card" id="card-${order.orderId}">
+              
+              <!-- Order Header -->
+              <div class="order-card__head">
+                <div class="order-meta-group">
+                  <div class="order-meta-item">
+                    <span>Order Reference</span>
+                    <strong>${order.orderId}</strong>
+                  </div>
+                  <div class="order-meta-item">
+                    <span>Order Date</span>
+                    <strong>${new Date(order.createdAt).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</strong>
+                  </div>
+                  <div class="order-meta-item">
+                    <span>Total Paid</span>
+                    <strong style="color:var(--champagne)">${formatINR(order.amount)}</strong>
+                  </div>
+                  <div class="order-meta-item">
+                    <span>Payment Mode</span>
+                    <strong>${order.paymentMethod || 'Instant UPI'}</strong>
+                  </div>
+                </div>
+
+                <div class="order-status-badge">
+                  <span>●</span>
+                  <span>${currentStage}</span>
+                </div>
+              </div>
+
+              <!-- 4-STAGE TIMELINE STEPPER -->
+              <div class="tracking-stepper-box">
+                <div class="stepper-header-title">
+                  <span>Atelier Production & Delivery Progress</span>
+                  <span style="color:var(--beige); font-size:0.68rem;">Est. Arrival: ${order.estimatedDelivery || '4-6 Business Days'}</span>
+                </div>
+
+                <div class="stepper-track">
+                  <div class="stepper-track-progress" style="width: ${progressPercent}%;"></div>
+                  ${stepperNodesHtml}
+                </div>
+
+                <div class="tracking-log-box">
+                  <div>
+                    <strong>Latest Atelier Log:</strong> ${latestHistory.note || 'Order is being processed with master artisans.'}
+                  </div>
+                  ${latestHistory.timestamp ? `<small style="color:var(--beige); white-space:nowrap;">${latestHistory.timestamp}</small>` : ''}
+                </div>
+              </div>
+
+              <!-- Item Details -->
+              <div class="order-card__body">
+                <div class="order-items-grid">
+                  ${itemsHtml}
+                </div>
+              </div>
+
+              <!-- Footer with Address & WhatsApp / Stage Advance Action -->
+              <div class="order-card__foot">
+                <div class="order-address-snippet">
+                  <span style="display:block; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.18em; color:var(--champagne); margin-bottom:2px;">Destination Address:</span>
+                  ${order.customerDetails?.address || 'Villa 14, Royal Palm Residences, Road No. 36, Jubilee Hills, Hyderabad - 500033'}
+                </div>
+
+                <div class="order-action-btns">
+                  <!-- Interactive Stage Simulator to verify all 4 stages -->
+                  <button type="button" class="btn-simulate-stage" onclick="window.advanceOrderStage('${order.orderId}')" title="Test next stage in timeline">
+                    Simulate Next Stage →
+                  </button>
+
+                  <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn-wa-inquire">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67"/></svg>
+                    <span>Concierge Inquire</span>
+                  </a>
+                </div>
+              </div>
+
+            </article>
+          `;
+        }).join('');
+      }
+
+      // Advance stage simulator exposed globally
+      window.advanceOrderStage = async function (orderId) {
+        try {
+          const res = await fetch(`/api/patron/orders/${orderId}/advance`, {
+            method: 'POST'
+          });
+          const data = await res.json();
+          if (data.success && currentPatron) {
+            loadPatronOrders(currentPatron.email);
+          }
+        } catch (err) {
+          console.error('Failed to advance order stage:', err);
+        }
+      };
+
+      // Save Contact Details Form
+      document.getElementById('contactDetailsForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('inputPatronFullName').value.trim();
+        const phone = document.getElementById('inputPatronPhone').value.trim();
+        const email = document.getElementById('inputPatronEmail').value.trim();
+        const msg = document.getElementById('contactSaveMsg');
+
+        try {
+          const res = await fetch('/api/patron/profile', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, name, phone })
+          });
+          const data = await res.json();
+          if (data.success) {
+            // Update session
+            const user = window.VastraAuth.getUser();
+            user.name = name;
+            user.phone = phone;
+            window.VastraAuth.saveSession(user);
+            document.getElementById('patronName').textContent = name;
+            msg.style.display = 'block';
+            setTimeout(() => { msg.style.display = 'none'; }, 3000);
+          }
+        } catch (err) {
+          alert('Failed to save contact details: ' + err.message);
+        }
+      });
+
+      // Save Delivery Address Form
+      document.getElementById('deliveryAddressForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('inputPatronEmail').value.trim();
+        const address = {
+          house: document.getElementById('inputAddressHouse').value.trim(),
+          street: document.getElementById('inputAddressStreet').value.trim(),
+          city: document.getElementById('inputAddressCity').value.trim(),
+          state: document.getElementById('inputAddressState').value.trim(),
+          pincode: document.getElementById('inputAddressPin').value.trim(),
+          landmark: document.getElementById('inputAddressLandmark').value.trim()
+        };
+        const msg = document.getElementById('addressSaveMsg');
+
+        try {
+          const res = await fetch('/api/patron/profile', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, address })
+          });
+          const data = await res.json();
+          if (data.success) {
+            msg.style.display = 'block';
+            setTimeout(() => { msg.style.display = 'none'; }, 3000);
+          }
+        } catch (err) {
+          alert('Failed to save delivery address: ' + err.message);
+        }
+      });
+
+      // Save Measurements Form
+      document.getElementById('measurementsForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('inputPatronEmail').value.trim();
+        const measurements = {
+          chest: document.getElementById('measChest').value.trim(),
+          waist: document.getElementById('measWaist').value.trim(),
+          kurtaLength: document.getElementById('measKurta').value.trim(),
+          shoulder: document.getElementById('measShoulder').value.trim(),
+          sleeveLength: document.getElementById('measSleeve').value.trim()
+        };
+        const msg = document.getElementById('measSaveMsg');
+
+        try {
+          const res = await fetch('/api/patron/profile', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, measurements })
+          });
+          const data = await res.json();
+          if (data.success) {
+            msg.style.display = 'block';
+            setTimeout(() => { msg.style.display = 'none'; }, 3000);
+          }
+        } catch (err) {
+          alert('Failed to save measurements: ' + err.message);
+        }
+      });
+
+      // Listen for auth change
+      window.addEventListener('vastra-auth-changed', (e) => {
+        if (e.detail?.user) {
+          initProfileView();
+        }
+      });
+
+      // Initialize
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(initProfileView, 100);
+      });
+    })();
+  </script>
+</body>
+</html>

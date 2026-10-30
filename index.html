@@ -11,6 +11,8 @@
 <meta property="og:image" content="https://YOUR-DOMAIN/images/og-vastra.jpg">  (1200×630, wordmark in ivory on charcoal)
 <meta name="twitter:card" content="summary_large_image"> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Sanskrit&display=swap">
+<link rel="stylesheet" href="/vastra-cart.css">
+<link rel="stylesheet" href="/auth.css">
 
 <script>
 /* ============================================================
@@ -94,16 +96,17 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .is-ready .loader__in{transform:scale(1.5);opacity:0}
 
 /* ---------- navigation ---------- */
-.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
   padding:calc(env(safe-area-inset-top,0px) + 22px) var(--gutter) 22px;transition:background-color .6s var(--ease),padding .6s var(--ease)}
 .nav.is-solid{background:var(--ink);padding-block:calc(env(safe-area-inset-top,0px) + 14px) 14px;box-shadow:0 1px 0 var(--line)}
-.nav__brand{font-family:var(--display);font-size:1.05rem;letter-spacing:.3em;text-transform:uppercase}
-.nav__links{display:flex;gap:clamp(22px,3.4vw,46px);color:var(--beige)}
+.nav__brand{font-family:var(--display);font-size:1.05rem;letter-spacing:.3em;text-transform:uppercase;justify-self:start}
+.nav__links{display:flex;justify-content:center;align-items:center;gap:clamp(22px,3.4vw,46px);color:var(--beige);justify-self:center;text-align:center}
 .nav__links a{transition:color .4s var(--ease)}
 .nav__links a:hover,.nav__links a:focus-visible{color:var(--ivory)}
+.nav__actions{justify-self:end;display:flex;align-items:center;gap:12px}
 .burger{display:none;width:44px;height:44px;margin-right:-10px;place-items:center}
 .burger span{display:block;width:24px;height:1px;background:var(--ivory);box-shadow:0 7px 0 var(--ivory);transform:translateY(-3.5px)}
-@media (max-width:760px){.nav__links{display:none}.burger{display:grid}}
+@media (max-width:760px){.nav{display:flex;justify-content:space-between;align-items:center}.nav__links{display:none}.burger{display:grid}}
 
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:100svh;display:grid;grid-template-rows:1fr auto;isolation:isolate;overflow:hidden}
@@ -311,12 +314,21 @@ dialog[open]::backdrop{animation:fade .6s var(--ease)}
 <header class="nav" id="nav">
   <a class="nav__brand" href="#top" data-brand aria-label="Vastra, back to top">Vastra</a>
   <nav class="nav__links label" aria-label="Primary">
-    <a class="u" href="/clothing-catalog" data-magnetic style="color:var(--champagne)">Clothing Catalog</a>
+    <a class="u" href="#festive" data-magnetic style="color:var(--champagne)">Festive</a>
+    <a class="u" href="/clothing-catalog" data-magnetic>Catalog</a>
+    <a class="u" href="/profile.html" data-magnetic style="color:var(--champagne)">My Profile</a>
     <a class="u" href="#about" data-magnetic>About</a>
-    <a class="u" href="#contact" data-magnetic>Contact</a>
-    <a class="u" data-instagram href="#" target="_blank" rel="noopener noreferrer" data-magnetic>Instagram</a>
   </nav>
-  <button class="burger" id="openMenu" aria-label="Open menu" aria-haspopup="dialog"><span></span></button>
+  <div class="nav__actions">
+    <button class="cart-nav-btn" id="openCartBtn" aria-label="Open Shopping Bag">
+      <span class="cart-nav-icon">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </span>
+      <span class="cart-nav-text">Bag</span>
+      <span class="cart-count-badge" id="cartCountBadge">0</span>
+    </button>
+    <button class="burger" id="openMenu" aria-label="Open menu" aria-haspopup="dialog"><span></span></button>
+  </div>
 </header>
 
 <main id="top">
@@ -341,6 +353,44 @@ dialog[open]::backdrop{animation:fade .6s var(--ease)}
       <span class="hero__deva" lang="sa">वस्त्र <small lang="en">Sanskrit, “garment”</small></span>
       <span>© 2026 <span data-brand>Vastra</span></span>
       <a class="hero__scroll u" href="#about" data-magnetic>Scroll</a>
+    </div>
+  </section>
+
+  <!-- ================= DEDICATED FESTIVE COLLECTION SHOWCASE ================= -->
+  <section class="festive-section" id="festive" aria-labelledby="festiveTitle">
+    <div class="festive-head">
+      <span class="label" style="color:var(--champagne); letter-spacing:.32em;">Atelier Ready-to-Wear</span>
+      <h2 class="festive-title" id="festiveTitle" data-reveal>The Festive Collection</h2>
+      <p class="festive-sub serif-it" data-reveal style="--d:.1s">
+        Celebratory Indian luxury engineered with architectural tailoring, pure Banarasi silks, hand-laid Zardozi, and heritage needlecraft.
+      </p>
+      
+      <!-- Category Filter Tabs -->
+      <div class="festive-filter-tabs" data-reveal style="--d:.15s" id="festiveTabs">
+        <button type="button" class="festive-tab-btn active" data-cat="all">All Festive</button>
+        <button type="button" class="festive-tab-btn" data-cat="Royal Sherwanis">Royal Sherwanis</button>
+        <button type="button" class="festive-tab-btn" data-cat="Indo-Western & Shrugs">Indo-Western & Shrugs</button>
+        <button type="button" class="festive-tab-btn" data-cat="Bandhgalas & Tuxedos">Bandhgalas & Tuxedos</button>
+        <button type="button" class="festive-tab-btn" data-cat="Kurta & Bundi Sets">Kurta & Bundi Sets</button>
+        <button type="button" class="festive-tab-btn" data-cat="Party & Festive Shirts">Festive Shirts</button>
+      </div>
+    </div>
+
+    <!-- Products Grid loaded from /api/festive/products -->
+    <div class="festive-grid" id="festiveProductsGrid">
+      <div style="grid-column: 1 / -1; text-align:center; padding: 40px; color: var(--beige);">
+        <div class="spin" style="display:inline-block; width:24px; height:24px; border-width:2px; border-color:var(--champagne); border-right-color:transparent; margin-bottom:12px;"></div>
+        <p class="label" style="letter-spacing:0.2em;">Loading Vastra Festive Collection...</p>
+      </div>
+    </div>
+
+    <!-- Festive Footer Hotline -->
+    <div style="text-align:center; margin-top:clamp(48px, 7vh, 72px); display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <p style="color:var(--beige); font-size:0.95rem;">Looking for bespoke bridal coordinates, custom alterations, or expedited atelier dispatch?</p>
+      <a href="https://wa.me/919440209898?text=Hello%20Vastra%2C%20I%20would%20like%20to%20consult%20regarding%20the%20Festive%20Collection." target="_blank" rel="noopener noreferrer" class="whatsapp-inquire-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.44C8.95 7.44 8.68 7.5 8.46 7.74C8.24 7.98 7.62 8.56 7.62 9.73C7.62 10.9 8.47 12.03 8.6 12.2C8.73 12.37 10.28 14.75 12.65 15.77C14.62 16.62 15.02 16.45 15.46 16.41C15.9 16.37 16.88 15.83 17.08 15.26C17.28 14.7 17.28 14.21 17.22 14.11C17.16 14.01 17.01 13.95 16.78 13.84C16.55 13.72 15.43 13.17 15.22 13.1C15.01 13.02 14.86 12.98 14.71 13.21C14.56 13.44 14.13 13.95 14 14.1C13.87 14.25 13.74 14.27 13.51 14.16C13.28 14.04 12.54 13.8 11.66 13.02C10.98 12.41 10.52 11.66 10.39 11.43C10.26 11.2 10.37 11.08 10.49 10.96C10.6 10.86 10.73 10.68 10.85 10.54C10.97 10.4 11.01 10.29 11.09 10.14C11.17 9.99 11.13 9.86 11.07 9.74C11.01 9.63 10.56 8.52 10.37 8.06C10.19 7.62 10 7.68 9.86 7.67C9.73 7.67 9.58 7.66 9.42 7.66C9.27 7.66 9.11 7.44 9.11 7.44Z"/></svg>
+        <span>Enquire via WhatsApp (+91 94402 09898)</span>
+      </a>
     </div>
   </section>
 
@@ -459,11 +509,12 @@ dialog[open]::backdrop{animation:fade .6s var(--ease)}
       <button class="x" data-close aria-label="Close menu"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
     </div>
     <nav class="menu__links" aria-label="Mobile">
-      <a href="/clothing-catalog" style="--i:0; color:var(--champagne);">Clothing Catalog</a>
-      <a href="#about" style="--i:1" data-close>About</a>
-      <a href="#contact" style="--i:2" data-close>Contact</a>
-      <a data-instagram href="#" target="_blank" rel="noopener noreferrer" style="--i:3">Instagram</a>
-      <a href="#" style="--i:4" data-close data-open-notify>Get Notified</a>
+      <a href="/profile.html" style="--i:0; color:var(--champagne);">My Profile & Orders</a>
+      <a href="/clothing-catalog" style="--i:1; color:var(--champagne);">Clothing Catalog</a>
+      <a href="#about" style="--i:2" data-close>About</a>
+      <a href="#contact" style="--i:3" data-close>Contact</a>
+      <a data-instagram href="#" target="_blank" rel="noopener noreferrer" style="--i:4">Instagram</a>
+      <a href="#" style="--i:5" data-close data-open-notify>Get Notified</a>
     </nav>
     <p class="menu__foot label">© 2026 Vastra</p>
   </div>
@@ -767,6 +818,154 @@ dialog[open]::backdrop{animation:fade .6s var(--ease)}
       el.addEventListener("mouseleave", () => el.style.transform = "");
     });
   }
+})();
+</script>
+
+<!-- Vastra Patron Auth & Login Gate -->
+<script src="/auth.js"></script>
+
+<!-- Vastra Cart Engine -->
+<script src="/vastra-cart.js"></script>
+
+<!-- Festive Collection Interactive Showcase Controller -->
+<script>
+(function() {
+  const gridEl = document.getElementById('festiveProductsGrid');
+  const tabsContainer = document.getElementById('festiveTabs');
+  let festiveProducts = [];
+  let currentCategory = 'all';
+
+  function formatPrice(num) {
+    return '₹' + Number(num).toLocaleString('en-IN');
+  }
+
+  async function loadFestiveProducts() {
+    try {
+      const res = await fetch('/api/festive/products');
+      const data = await res.json();
+      if (data.success && data.products && data.products.length) {
+        festiveProducts = data.products;
+      }
+    } catch (e) {
+      console.warn('Using embedded festive data', e);
+    }
+    renderGrid();
+  }
+
+  function renderGrid() {
+    if (!gridEl) return;
+    const filtered = currentCategory === 'all' 
+      ? festiveProducts 
+      : festiveProducts.filter(p => p.category.toLowerCase() === currentCategory.toLowerCase());
+
+    if (!filtered.length) {
+      gridEl.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align:center; padding: 40px; color: var(--beige);">
+          <p class="serif-it" style="font-size:1.2rem; color:var(--ivory);">No ensembles found in this category.</p>
+        </div>
+      `;
+      return;
+    }
+
+    gridEl.innerHTML = filtered.map(p => {
+      const saveAmount = p.mrp ? (p.mrp - p.price) : 0;
+      return `
+        <article class="festive-card" data-product-id="${p.id}">
+          <div class="festive-card__media">
+            <img class="festive-card__img" src="${p.image}" alt="${p.name}" loading="lazy">
+            ${p.badge ? `<span class="festive-card__badge">${p.badge}</span>` : ''}
+          </div>
+          <div class="festive-card__content">
+            <span class="festive-card__cat">${p.category} &bull; ${p.code}</span>
+            <h3 class="festive-card__title">${p.name}</h3>
+            
+            <div class="festive-card__price-row">
+              <span class="festive-card__price">${formatPrice(p.price)}</span>
+              ${p.mrp ? `<span class="festive-card__mrp">${formatPrice(p.mrp)}</span>` : ''}
+              ${saveAmount > 0 ? `<span class="festive-card__save">Save ${formatPrice(saveAmount)}</span>` : ''}
+            </div>
+
+            <div class="festive-sizes-wrap">
+              <span class="festive-sizes-label">Select Standard Size:</span>
+              <div class="festive-size-chips">
+                ${(p.sizes || ['36', '38', '40', '42', '44', '46', 'Custom Fit']).map((sz, idx) => `
+                  <button type="button" class="size-chip ${sz === '40' ? 'active' : ''}" data-size="${sz}">${sz}</button>
+                `).join('')}
+              </div>
+            </div>
+
+            <div class="festive-card__actions">
+              <button type="button" class="card-add-bag-btn" data-add-bag="${p.id}">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span>Add to Bag</span>
+              </button>
+              <a href="https://wa.me/919440209898?text=${encodeURIComponent('Hello Vastra Atelier, I would like to enquire about ' + p.name + ' (' + p.code + ') in size 40. Price: ' + formatPrice(p.price))}" target="_blank" rel="noopener noreferrer" class="card-wa-btn" data-wa-link="${p.id}" aria-label="Enquire via WhatsApp">
+                <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.44C8.95 7.44 8.68 7.5 8.46 7.74C8.24 7.98 7.62 8.56 7.62 9.73C7.62 10.9 8.47 12.03 8.6 12.2C8.73 12.37 10.28 14.75 12.65 15.77C14.62 16.62 15.02 16.45 15.46 16.41C15.9 16.37 16.88 15.83 17.08 15.26C17.28 14.7 17.28 14.21 17.22 14.11C17.16 14.01 17.01 13.95 16.78 13.84C16.55 13.72 15.43 13.17 15.22 13.1C15.01 13.02 14.86 12.98 14.71 13.21C14.56 13.44 14.13 13.95 14 14.1C13.87 14.25 13.74 14.27 13.51 14.16C13.28 14.04 12.54 13.8 11.66 13.02C10.98 12.41 10.52 11.66 10.39 11.43C10.26 11.2 10.37 11.08 10.49 10.96C10.6 10.86 10.73 10.68 10.85 10.54C10.97 10.4 11.01 10.29 11.09 10.14C11.17 9.99 11.13 9.86 11.07 9.74C11.01 9.63 10.56 8.52 10.37 8.06C10.19 7.62 10 7.68 9.86 7.67C9.73 7.67 9.58 7.66 9.42 7.66C9.27 7.66 9.11 7.44 9.11 7.44Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    // Attach size selection & Add to Bag handlers
+    gridEl.querySelectorAll('.festive-card').forEach(card => {
+      const pid = card.dataset.productId;
+      const product = festiveProducts.find(p => p.id === pid);
+      if (!product) return;
+
+      let selectedSize = '40';
+      const sizeChips = card.querySelectorAll('.size-chip');
+      const waBtn = card.querySelector('[data-wa-link]');
+
+      sizeChips.forEach(chip => {
+        chip.addEventListener('click', (e) => {
+          sizeChips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          selectedSize = chip.dataset.size;
+
+          // Update WhatsApp link text with chosen size
+          if (waBtn) {
+            const txt = `Hello Vastra Atelier, I would like to enquire about ${product.name} (${product.code}) in size ${selectedSize}. Price: ${formatPrice(product.price)}`;
+            waBtn.href = `https://wa.me/919440209898?text=${encodeURIComponent(txt)}`;
+          }
+        });
+      });
+
+      const addBtn = card.querySelector('[data-add-bag]');
+      if (addBtn) {
+        addBtn.addEventListener('click', () => {
+          if (window.VastraCart) {
+            window.VastraCart.add(product, selectedSize, 1);
+            const span = addBtn.querySelector('span');
+            if (span) {
+              const orig = span.textContent;
+              span.textContent = 'Added to Bag ✓';
+              setTimeout(() => { span.textContent = orig; }, 1800);
+            }
+            // Trigger floating pill open or direct drawer open
+            const pill = document.getElementById('floatingCartPill');
+            if (pill) pill.click();
+          }
+        });
+      }
+    });
+  }
+
+  // Bind category tabs
+  if (tabsContainer) {
+    tabsContainer.querySelectorAll('.festive-tab-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        tabsContainer.querySelectorAll('.festive-tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.cat;
+        renderGrid();
+      });
+    });
+  }
+
+  // Initialize
+  loadFestiveProducts();
 })();
 </script>
 
